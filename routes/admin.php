@@ -9,10 +9,6 @@ Route::get('/', function () {
     return view('admin.dashboard');
 })->middleware('auth:admin');
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware('auth:admin');
-
 Route::get('/login', 'LoginController@showLoginForm');
 Route::post('/login', 'LoginController@login');
 Route::post('/logout', 'LoginController@logout');
