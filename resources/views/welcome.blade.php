@@ -8,7 +8,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.useso.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.gmirror.org/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
