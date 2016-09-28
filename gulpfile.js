@@ -18,6 +18,9 @@ elixir(mix => {
        .webpack('app.js');
     mix.sass('admin.scss')
        .webpack('admin.js');
+    mix.copy('resources/assets/image', 'public/image');
+    mix.copy('resources/assets/vrplay', 'public/vrplay');
+    mix.copy('./node_modules/bootstrap-sass/assets/fonts', 'public/fonts');
     mix.browserSync({
         proxy: '0.0.0.0:8000'
     });

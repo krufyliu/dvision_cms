@@ -1,0 +1,338 @@
+.footer-links {
+  padding-left: 0;
+
+  list-style: none;
+
+  color: #999;
+  // text-align: center;
+  li {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 20px;
+  }
+}
+
+main {
+  overflow: hidden;
+
+  padding-top: 50px;
+}
+
+
+
+.carousel-indicators {
+  li {
+    margin: 0 10px;
+
+    border-color: #3aafd6;
+  }
+  li.active {
+    width: 14px;
+    height: 14px;
+    margin: 0 10px;
+
+    background-color: #3aafd6;
+  }
+}
+
+.video {
+  .video-item {
+    overflow: hidden;
+
+    padding: 0;
+    a {
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+      div {
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        color: rgba(255,255,255,.9);
+        background-color: #3aafd6;
+        background-color: rgba(58, 175, 214, .8);
+        p {
+          position: relative;
+          top: 50%;
+
+          width: 66%;
+          margin: 0 auto;
+          margin-top: -35px;
+          .play {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto;
+
+            background-image: url('/image/play.png');
+            background-size: 100% 100%;
+          }
+          span.h5 {
+            overflow: hidden;
+
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        span {
+          font-weight: normal;
+
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.team {
+  .team-item {
+    overflow: hidden;
+
+    padding: 0;
+    img {
+      width: 100%;
+    }
+    div {
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+
+      color: rgba(255,255,255,.9);
+      background-color: #3aafd6;
+      background-color: rgba(58, 175, 214, .8);
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 366px;
+        height: 192px;
+        margin-top: -95px;
+        margin-left: -180px;
+      }
+      p.visible-xs.visible-sm {
+        height: 19px;
+        margin-top: -18px;
+      }
+      span {
+        font-weight: normal;
+
+        display: block;
+      }
+    }
+  }
+}
+
+.team-timeline {
+  background-color: #e2f0f7;
+  ul {
+    list-style: none;
+    li {
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+  }
+  p.h3 {
+    margin-bottom: 30px;
+  }
+}
+
+.news {
+  background-color: #f1f0f0;
+  .thumbnail {
+    padding: 0;
+
+    border: 0;
+    border-radius: 0;
+  }
+  .news-box {
+    position: relative;
+
+    overflow: hidden;
+  }
+  .news-boxbg {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition: all 300ms ease;
+
+    background: url('news02.png') no-repeat center center;
+    background-color: rgba(58, 175, 214, .8);
+  }
+  .news-box:hover .news-boxbg {
+    top: 0;
+  }
+  .caption {
+    a {
+      color: #333333;
+    }
+  }
+}
+.border-radius {
+  border-radius: 20px;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+.text-lighter {
+  font-weight: 100;
+}
+
+.margin-middle {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.padding-middle {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.grace-bg {
+  background-color: #f5f0f0;
+}
+
+.arrow-up {
+  /*以下属性可以是IE5兼容*/
+  font-size: 0;
+  line-height: 0;
+
+  position: absolute;
+  left: 50%;
+
+  width: 0;
+  height: 0;
+  margin-top: -18px;
+  margin-left: -18px;
+
+  border-right: 18px solid transparent;
+  border-bottom: 28px solid #f5f0f0;
+  border-left: 18px solid transparent;
+}
+
+.contact {
+  margin: 0;
+  // display: flex;
+
+  background-color: #65c5d5;
+  [class^=col-] {
+    padding: 0;
+  }
+}
+
+.contact-body {
+  display: flex;
+
+  color: #fff;
+
+  justify-content: center;
+  align-items: center;
+  span {
+    margin-right: 20px;
+  }
+  .text {
+    list-style: none;
+    span {
+      font-size: 18px;
+    }
+    label {
+      margin-right: 20px;
+    }
+  }
+}
+
+.carousel-join {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+
+  color: #fff;
+}
+
+.carousel-come {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+
+  margin-left: -220px;
+
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .video {
+    .video-item {
+      overflow: hidden;
+
+      padding: 0;
+      a {
+        overflow: hidden;
+        div {
+          position: absolute;
+          top: 0;
+
+          width: 100%;
+          height: 100%;
+
+          color: rgba(255,255,255,.9);
+          background-color: rgba(0,0,0,.3);
+        }
+      }
+    }
+  }
+
+  .team {
+    .team-item {
+      overflow: hidden;
+      overflow: hidden;
+
+      padding: 0;
+      div {
+        position: absolute;
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+
+        color: rgba(255,255,255,.9);
+        background-color: rgba(0,0,0,.3);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-body {
+    height: 490px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-body {
+    height: 680px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .contact-body {
+    height: 750px;
+  }
+}
+
+
+@media screen and (min-width: 2560px) {
+  .contact-body {
+    height: 1024px;
+  }
+}

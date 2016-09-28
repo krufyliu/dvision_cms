@@ -13,8 +13,5 @@ require('./bootstrap');
  * the application, or feel free to tweak this setup for your needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
-
-const app = new Vue({
-    el: 'body'
-});
+require('../vendor/modernizr.custom.js');
+require('../vendor/jquery.hoverdir.js');

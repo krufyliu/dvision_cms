@@ -1,5 +1,7 @@
 /node_modules
 /public/storage
+/public/vrplay
+/public/fonts
 /public/image
 /public/css
 /public/js

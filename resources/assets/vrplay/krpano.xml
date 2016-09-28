@@ -1,0 +1,75 @@
+﻿<krpano>
+
+  <action name="startup" autorun="onstart">
+    
+    if(device.panovideosupport == false,
+      error('Sorry, but panoramic videos are not supported by your current browser!');
+      ,
+      loadscene(videopano);
+      );
+  </action>
+
+  <scene name="videopano" title="">
+
+    <!-- include the videoplayer interface / skin (with VR support) -->
+    <include url="skin/videointerface.xml" />
+
+    <!-- include the videoplayer plugin -->
+<!--     <plugin name="video"
+            url.html5="%SWFPATH%/plugins/videoplayer.js"
+            url.flash="%SWFPATH%/plugins/videoplayer.swf"
+            pausedonstart="true"
+            loop="true"
+            volume="1.0"
+            onloaded="add_video_sources();"
+            /> -->
+
+    <plugin name="video"
+            devices="all"
+            url.flash="%SWFPATH%/plugins/videoplayer.swf"
+            url.html5="%SWFPATH%/plugins/videoplayer.js"
+
+            videourl.ios="%$videourl_low%.mp4|%$soundurl%.m4a"
+            videourl.no-ios="%$videourl_high%.mp4|%$soundurl%.m4a"
+
+            videoUrl1="1"
+            pausedonstart="true"
+            loop="true"
+            volume="1.0"
+            enabled="true"
+            zorder="0"
+            align="center"
+            ox="0"
+            oy="0"
+            width.no-panovideosupport="100%"
+            height.no-panovideosupport="prop"
+            
+            onvideoready="videointerface_videoready();"
+            onvideocomplete="videointerface_videocomplete();"
+            onvideopaused="videoonpause();"
+            onloaded="add_video_sources();"
+            />
+
+    <!-- use the videoplayer plugin as panoramic image source -->
+    <image>
+      <sphere url="plugin:video" />
+    </image>
+
+    <!-- set the default view -->
+    <view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="130" fovmax="130" distortion="0.0" />
+
+    <!-- add the video sources and play the video -->
+    <action name="add_video_sources">
+      videointerface_addsource('1024x512', '%$videourl_low%.mp4|%$soundurl%.m4a');
+      videointerface_addsource('1920x960', '%$videourl_high%.mp4|%$soundurl%.m4a');
+      if(device.ios,
+        <!-- iOS Safari has a very slow 'video-to-webgl-texture' transfer, therefore use a low-res video by default -->
+        videointerface_play('1024x512');
+        ,
+        videointerface_play('1920x960');
+        );
+    </action>
+
+  </scene>
+
+</krpano>

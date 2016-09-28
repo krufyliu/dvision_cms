@@ -3,7 +3,11 @@
 @import url(https://fonts.gmirror.org/css?family=Raleway:300,400,600);
 
 // Variables
-@import "app_variables";
+@import "app/variables";
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Custom
+@import "app/hover";
+@import "app/main";
