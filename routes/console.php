@@ -2,6 +2,7 @@
 
 use Illuminate\Foundation\Inspiring;
 
+use App\Models\Admin;
 /*
 |--------------------------------------------------------------------------
 | Console Routes
@@ -16,3 +17,19 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+Artisan::command('admin:create', function () {
+    $this->line('Input admin information to create an admin');
+    $name = $this->ask('Admin name');
+    $email = $this->ask('Admin email');
+    $password = $this->secret('Admin password');
+    $password_confirm = $this->secret('Confirm admin password');
+    if ($password != $password_confirm) {
+        $this->error('Password mismatch!');
+        return;
+    }
+    Admin::create(['name' => $name, 'email' => $email, 'password' => bcrypt($password)]);
+    $this->info('Create admin successfully');
+})->describe('create admin');
+
+
