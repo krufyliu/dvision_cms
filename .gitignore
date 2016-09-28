@@ -1,5 +1,10 @@
 /node_modules
 /public/storage
+/public/vrplay
+/public/fonts
+/public/image
+/public/css
+/public/js
 /vendor
 /.idea
 Homestead.json
@@ -8,4 +13,5 @@ Homestead.yaml
 .DS_Store
 *.swp
 *.swo
-
+*.mp4
+*.m4a
