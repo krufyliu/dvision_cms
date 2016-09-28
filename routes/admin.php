@@ -12,3 +12,11 @@ Route::get('/', function () {
 Route::get('/login', 'LoginController@showLoginForm');
 Route::post('/login', 'LoginController@login');
 Route::post('/logout', 'LoginController@logout');
+
+Route::get('/video', function () {
+    return view('admin.video.index');
+});
+
+Route::get('/video/new', function () {
+    return view('admin.video.new');
+});
