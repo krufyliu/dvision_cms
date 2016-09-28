@@ -543,3 +543,25 @@ table.dataTable thead .sorting:after {
         border-left-width: 0;
     }
 }
+
+.text-lighter {
+    font-weight: lighter;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    opacity: 0;
+    cursor: inherit;
+    display: block;
+    outline: none;
+    background: white;
+}
