@@ -70,16 +70,16 @@
                             <a href="#"><i class="fa fa-dashboard fa-fw"></i> 控制台</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-edit fa-fw"></i> 文章</a>
+                            <a href="{{ url('/admin/posts') }}"><i class="fa fa-edit fa-fw"></i> 文章</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-youtube-play fa-fw"></i> 视频</a>
+                            <a href="{{ url('/admin/videos') }}"><i class="fa fa-youtube-play fa-fw"></i> 视频</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-newspaper-o fa-fw"></i> 职位</a>
+                            <a href="{{ url('/admin/career_jobs') }}"><i class="fa fa-newspaper-o fa-fw"></i> 职位</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-unlink fa-fw"></i> 链接</a>
+                            <a href="{{ url('/admin/links') }}"><i class="fa fa-unlink fa-fw"></i> 链接</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-user fa-fw"></i> 账户</a>
