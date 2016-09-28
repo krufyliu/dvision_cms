@@ -21,62 +21,73 @@
 </script>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
+<div id="wrapper">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
-
-            <!-- Collapsed Hamburger -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                <span class="sr-only">Toggle Navigation</span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
-            <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/admin') }}">
-                {{ config('app.name', 'Laravel') }}
-            </a>
+            <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
         </div>
 
-        <div class="collapse navbar-collapse" id="app-navbar-collapse">
-            <!-- Left Side Of Navbar -->
-            <ul class="nav navbar-nav">
-                &nbsp;
-            </ul>
+        <ul class="nav navbar-top-links navbar-right">
 
-            <!-- Right Side Of Navbar -->
-            <ul class="nav navbar-nav navbar-right">
-                <!-- Authentication Links -->
-                @if (Auth::guest())
-                    <li><a href="{{ url('/admin/login') }}">登录</a></li>
-                @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::guard('admin')->user()->name }} <span class="caret"></span>
-                        </a>
-
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="{{ url('/admin/logout') }}"
-                                   onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                                   注销
-                                </a>
-
-                                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                        </ul>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                     </li>
-                @endif
-            </ul>
-        </div>
-    </div>
-</nav>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
 
-@yield('content')
+            </li>
+
+        </ul>
+
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> 控制台</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-edit fa-fw"></i> 文章</a>
+                    </li>
+                    <li>
+                        <a href="tables.html"><i class="fa fa-youtube-play fa-fw"></i> 视频</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-newspaper-o fa-fw"></i> 职位</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-unlink fa-fw"></i> 链接</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-user fa-fw"></i> 账户</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-cogs fa-fw"></i> 配置</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page-wrapper">
+        @yield('content')
+    </div>
+
+</div>
+
 
 <!-- Scripts -->
 <script src="/js/admin.js"></script>
