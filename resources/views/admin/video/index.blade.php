@@ -4,8 +4,8 @@
 <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
         <h1 class="title text-lighter">
-      文章
-        <a href="{{ url('/admin/posts/create') }}" class="btn btn-default btn-xs"><i class="fa fa-plus"></i></a>
+      视频
+        <a href="{{ url('/admin/videos/create') }}" class="btn btn-default btn-xs"><i class="fa fa-plus"></i></a>
         </h1>
         <hr>
         <div class="well">
@@ -35,8 +35,8 @@
                             <thead>
                                 <tr>
                                     <th>标题</th>
-                                    <th>封面图片</th>
-                                    <th>内容</th>
+                                    <th>视频封面</th>
+                                    <th>描述</th>
                                     <th>创建时间</th>
                                     <th>创建人</th>
                                 </tr>

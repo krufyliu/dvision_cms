@@ -78,14 +78,11 @@
                         <li>
                             <a href="{{ url('/admin/career_jobs') }}"><i class="fa fa-newspaper-o fa-fw"></i> 职位</a>
                         </li>
-                        <li>
-                            <a href="{{ url('/admin/links') }}"><i class="fa fa-unlink fa-fw"></i> 链接</a>
-                        </li>
-                        <li>
+                        <!-- <li>
                             <a href="#"><i class="fa fa-user fa-fw"></i> 账户</a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href="#"><i class="fa fa-cogs fa-fw"></i> 配置</a>
+                            <a href="{{ url('/admin/config') }}"><i class="fa fa-cogs fa-fw"></i> 配置</a>
                         </li>
                     </ul>
                 </div>
