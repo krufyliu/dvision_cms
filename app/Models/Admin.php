@@ -26,4 +26,24 @@ class Admin extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function posts()
+    {
+        return $this->hasMany('App\Models\Post', 'creator_id');
+    }
+
+    public function videos()
+    {
+        return $this->hasMany('App\Models\Video', 'creator_id');
+    }
+
+    public function links()
+    {
+        return $this->hasMany('App\Models\Link', 'creator_id');
+    }
+
+    public function careerJobs()
+    {
+        return $this->hasMany('App\Models\CareerJob', 'creator_id');
+    }
 }
