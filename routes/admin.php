@@ -15,3 +15,5 @@ Route::post('/logout', 'LoginController@logout');
 
 Route::resource('posts', 'PostController');
 Route::resource('videos', 'VideoController');
+
+Route::post('/upload/image', 'UploadController@storeImage');

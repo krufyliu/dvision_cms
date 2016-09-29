@@ -8,4 +8,9 @@ window._ = require('lodash');
  */
 
 window.$ = window.jQuery = require('jquery');
+window.jQuery.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': Laravel.csrfToken
+    }
+});
 require('bootstrap-sass');
