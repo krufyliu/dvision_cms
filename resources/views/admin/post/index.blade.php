@@ -5,7 +5,7 @@
     <div class="col-sm-10 col-sm-offset-1">
         <h1 class="title text-lighter">
       文章
-        <a href="{{ url('/admin/video/new') }}" class="btn btn-default btn-xs"><i class="fa fa-plus"></i></a>
+        <a href="{{ url('/admin/posts/create') }}" class="btn btn-default btn-xs"><i class="fa fa-plus"></i></a>
         </h1>
         <hr>
         <div class="well">

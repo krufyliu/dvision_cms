@@ -5,7 +5,7 @@
     <div class="col-sm-10 col-sm-offset-1">
         <h1 class="title text-lighter">
       创建文章
-        <a href="{{ url('/admin/video') }}" class="btn btn-default btn-xs"><i class="fa fa-mail-reply"></i></a>
+        <a href="{{ url('/admin/posts') }}" class="btn btn-default btn-xs"><i class="fa fa-mail-reply"></i></a>
         </h1>
         <hr>
         <div class="well">
@@ -51,7 +51,28 @@
     <script type="text/javascript" src="/vendor/summernote/summernote.min.js"></script>
     <script type="text/javascript">
         $('#summernote').summernote({
-            height: '300px'
+            height: '300px',
+            callbacks: {
+                onImageUpload: function(files) {
+                    var $summernote = $(this);
+                    sendFile(files[0],$summernote);
+                }
+            }
         });
+        function sendFile(file, $summernote) {
+            data = new FormData();
+            data.append("file", file);
+            $.ajax({
+                data: data,
+                type: "POST",
+                url: "/admin/upload/image",
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function(url) {
+                    $summernote.summernote('insertImage', document.location.origin + url);
+                }
+            });
+        }
     </script>
 @endsection

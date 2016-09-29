@@ -27,7 +27,7 @@ class VideoController extends Controller
     public function create()
     {
         //
-        return view('admin.video.new');
+        return view('admin.video.create');
     }
 
     /**
