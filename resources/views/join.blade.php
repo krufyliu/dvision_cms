@@ -20,96 +20,22 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-4 col-md-offset-2 col-lg-offset-4 margin-middle">
-            <p class="h3 text-lighter text-center">
-                计算机视觉工程师
-            </p>
-            <div class="col-md-6 margin-middle">
-                部门: 软件部
-            </div>
-            <div class="col-md-6 margin-middle">
-                工作地点: 深圳
-            </div>
-            <div class="col-md-12">
-                <p>
-                    <div>
-                        岗位职责：
-                    </div>
-                    <div>
-                        1. 分析评估计算机视觉算法在GPU上实现的可行性；
-                    </div>
-                    <div>
-                        2. 开发具体图像、视频算法的GPU实现并进行性能调优。
-                    </div>
-                    <div>
-                        任职资格：
-                    </div>
-                    <div>
-                        1. 本科及以上学历，计算机相关专业，2年及以上GPGPU开发工作经验；
-                    </div>
-                    <div>
-                        2. 良好的C/C++基础；
-                    </div>
-                    <div>
-                        3. 精通并行计算方法和并行算法设计，熟悉NVIDIA GPU运作原理、体系结构和代码优化技术；
-                    </div>
-                    <div>
-                        4. 熟练使用CUDA或OpenCL编程；
-                    </div>
-                    <div>
-                        5. 有计算机视觉领域相关经验或算法移植背景者优先；
-                    </div>
-                    <div>
-                        6. 良好的沟通能力和团队协作能力。
-                    </div>
+        @foreach($careerjobs as $careerjob)
+            <div class="col-sm-12 col-md-8 col-lg-4 col-md-offset-2 col-lg-offset-4 margin-middle">
+                <p class="h3 text-lighter text-center">
+                    {{ $careerjob->title }}
                 </p>
+                <div class="col-md-6 margin-middle">
+                    部门: {{ $careerjob->department }}
+                </div>
+                <div class="col-md-6 margin-middle">
+                    工作地点: {{ $careerjob->location }}
+                </div>
+                <div class="col-md-12">
+                    {!! $careerjob->description !!}
+                </div>
             </div>
-        </div>
-        <div class="col-sm-12 col-md-8 col-lg-4 col-md-offset-2 col-lg-offset-4 margin-middle">
-            <p class="h3 text-lighter text-center">
-                计算机视觉工程师
-            </p>
-            <div class="col-md-6 margin-middle">
-                部门: 软件部
-            </div>
-            <div class="col-md-6 margin-middle">
-                工作地点: 深圳
-            </div>
-            <div class="col-md-12">
-                <p>
-                    <div>
-                        岗位职责：
-                    </div>
-                    <div>
-                        1. 分析评估计算机视觉算法在GPU上实现的可行性；
-                    </div>
-                    <div>
-                        2. 开发具体图像、视频算法的GPU实现并进行性能调优。
-                    </div>
-                    <div>
-                        任职资格：
-                    </div>
-                    <div>
-                        1. 本科及以上学历，计算机相关专业，2年及以上GPGPU开发工作经验；
-                    </div>
-                    <div>
-                        2. 良好的C/C++基础；
-                    </div>
-                    <div>
-                        3. 精通并行计算方法和并行算法设计，熟悉NVIDIA GPU运作原理、体系结构和代码优化技术；
-                    </div>
-                    <div>
-                        4. 熟练使用CUDA或OpenCL编程；
-                    </div>
-                    <div>
-                        5. 有计算机视觉领域相关经验或算法移植背景者优先；
-                    </div>
-                    <div>
-                        6. 良好的沟通能力和团队协作能力。
-                    </div>
-                </p>
-            </div>
-        </div>
+        @endforeach
     </div>
     <div class="row">
         <div class="col-md-12 margin-middle">

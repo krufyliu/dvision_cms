@@ -16,7 +16,7 @@
                     <span class="help-block"></span>
                 </div>
                 <div class="form-group">
-                    <label class="control-label">视频封面</label>
+                    <label class="control-label">视频封面(尺寸必须为 1024*480)</label>
                     <div class="fileUpload" name="image">
                         <span class="btn btn-default btn-file btn-xs">
                           选择文件 <input type="file">

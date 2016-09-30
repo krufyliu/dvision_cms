@@ -12,4 +12,9 @@ class CareerJob extends Model
     {
         return $this->belongsTo('App\Models\Admin', 'creator_id');
     }
+
+    public function path()
+    {
+        return '/admin/career_jobs/' . $this->id;
+    }
 }

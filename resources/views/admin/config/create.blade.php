@@ -28,7 +28,7 @@
             </form>
             <br>
             <div class="buttons text-right">
-              <a class="btn btn-info" href="/admin/posts">保存</a>
+              <a class="btn btn-primary" href="/admin/posts">保存</a>
             </div>
         </div>
     </div>

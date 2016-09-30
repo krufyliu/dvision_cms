@@ -35,9 +35,8 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/join', function () {
-    return view('join');
-});
+Route::get('/join', 'StaticController@join');
+
 
 Route::get('/news', function () {
     return view('news');
