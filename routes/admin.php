@@ -22,6 +22,8 @@ Route::resource('videos', 'VideoController');
 Route::resource('career_jobs', 'CareerJobController');
 
 Route::post('/upload/image', 'UploadController@storeImage');
+Route::post('/upload/file', 'UploadController@storeFile');
+Route::post('/upload/delete', 'UploadController@deleteFile');
 
 // config
 Route::post('/config', 'ConfigController@store');

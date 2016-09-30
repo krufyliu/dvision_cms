@@ -2,97 +2,62 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Validator;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Models\Post;
+use Validator;
 
 class PostController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+        $posts = Post::orderBy('created_at', 'desc')->with('creator')->paginate(10);
         return view('admin.post.index', ['posts' => $posts]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('admin.post.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $this->validator($request)->validate();
-        $post = new Post($request->only(['title', 'cover_image', 'content']));
-        $post->status = 1;
-        $request->user()->posts()->save($post);
-        return redirect('/admin/posts');
+        Post::create([
+                'title' => $request->title,
+                'content' => $request->content,
+                'cover_image' => $request->cover_image,
+                'status' => 1,
+                'creator_id' => $request->user()->id
+            ]
+        );
+        return redirect()->action('Admin\PostController@index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param Request $request
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
-        return view('admin.post.show', ['post' => Post::find($id)]);
+        // return view('admin.post.show', ['post' => Post::find($id)]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         return view('admin.post.edit', ['post' => Post::find($id)]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         $post = Post::find($id);
         $this->validator($request)->validate();
         $post->update($request->only(['title', 'cover_image', 'content']));
+        return redirect()->action('Admin\PostController@index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         Post::find($id)->delete();
-        return redirect('/admin/posts');
+        return redirect()->action('Admin\PostController@index');
     }
 
     protected  function validator(Request $request)

@@ -25,7 +25,7 @@
                             </thead>
                             <tbody>
                                 @foreach($careerjobs as $careerjob)
-                                    <tr data-href="{{ $careerjob->path() . '/edit' }}">
+                                    <tr class="{{ $loop->iteration % 2 == 0 ? 'even' : 'odd' }}" data-href="{{ $careerjob->path() . '/edit' }}">
                                         <td>{{ $careerjob->title }}</td>
                                         <td>{{ $careerjob->department }}</td>
                                         <td>{{ $careerjob->location }}</td>
@@ -41,7 +41,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="dataTables_info" id="dataTables-example_info" role="status" aria-live="polite">
-                            Showing {{ ($careerjobs->currentPage()-1)*$careerjobs->perPage() + 1 }} to {{ ($careerjobs->currentPage()-1)*$careerjobs->perPage() + $careerjobs->count() }} of {{ $careerjobs->total() }} entries
+                            Showing {{ ($careerjobs->currentPage()-1) * $careerjobs->perPage() + 1 }} to {{ ($careerjobs->currentPage()-1) * $careerjobs->perPage() + $careerjobs->count() }} of {{ $careerjobs->total() }} entries
                         </div>
                     </div>
                     <div class="col-sm-6">
