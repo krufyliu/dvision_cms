@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+use App\Notifications\AdminResetPassword as AdminResetPasswordNotification;
+
 class Admin extends Authenticatable
 {
     use Notifiable;
@@ -45,5 +47,10 @@ class Admin extends Authenticatable
     public function careerJobs()
     {
         return $this->hasMany('App\Models\CareerJob', 'creator_id');
+    }
+
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new AdminResetPasswordNotification($token));
     }
 }

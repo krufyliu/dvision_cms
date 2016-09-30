@@ -12,6 +12,10 @@ Route::get('/', function () {
 Route::get('/login', 'LoginController@showLoginForm')->name('admin.login');
 Route::post('/login', 'LoginController@login');
 Route::post('/logout', 'LoginController@logout');
+Route::get('/password/reset', 'ForgotPasswordController@showLinkRequestForm');
+Route::post('/password/email', 'ForgotPasswordController@sendResetLinkEmail');
+Route::post('/password/reset', 'ResetPasswordController@reset');
+Route::get('/password/reset/{token}', 'ResetPasswordController@showResetForm');
 
 Route::resource('posts', 'PostController');
 Route::resource('videos', 'VideoController');
