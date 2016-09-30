@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Video;
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
+use Validator;
 
 class VideoController extends Controller
 {
@@ -15,8 +16,8 @@ class VideoController extends Controller
      */
     public function index()
     {
-        //
-        return view('admin.video.index');
+        $videos = Video::orderBy('created_at', 'desc')->paginate(10);
+        return view('admin.video.index', ['videos' => $videos]);
     }
 
     /**
@@ -38,7 +39,9 @@ class VideoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validator($request)->validate();
+        $request->user()->videos()->save($request->only(['title', 'cover_image', 'url', 'description', 'category_id']));
+        return redirect('/admin/videos');
     }
 
     /**
@@ -49,7 +52,7 @@ class VideoController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('admin.video.show', ['video' => Video::find($id)]);
     }
 
     /**
@@ -60,7 +63,7 @@ class VideoController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('admin.video.edit', ['video' => Video::find($id)]);
     }
 
     /**
@@ -72,7 +75,10 @@ class VideoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validator($request)->validate();
+        $post = Post::find($id);
+        $post->update($request->only(['title', 'cover_image', 'url', 'description', 'category_id']));
+        return redirect('/admin/videos');
     }
 
     /**
@@ -83,6 +89,17 @@ class VideoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Video::find($id)->delete();
+        return redirect('/admin/videos');
+    }
+
+    protected function validator(Request $request)
+    {
+        return Validator::make($request->all(), [
+            'title' => 'required',
+            'cover_image' => 'required',
+            'url' => 'required',
+            'category_id' => 'required|integer|exists:video_categories,id'
+        ]);
     }
 }

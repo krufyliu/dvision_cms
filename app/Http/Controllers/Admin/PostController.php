@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use Validator;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Models\Post;
 
 class PostController extends Controller
 {
@@ -15,7 +17,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('admin.post.index');
+        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+        return view('admin.post.index', ['posts' => $posts]);
     }
 
     /**
@@ -36,18 +39,23 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validator($request)->validate();
+        $post = new Post($request->only(['title', 'cover_image', 'content']));
+        $post->status = 1;
+        $request->user()->posts()->save($post);
+        return redirect('/admin/posts');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        //
+        return view('admin.post.show', ['post' => Post::find($id)]);
     }
 
     /**
@@ -58,7 +66,7 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('admin.post.edit', ['post' => Post::find($id)]);
     }
 
     /**
@@ -70,7 +78,9 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $post = Post::find($id);
+        $this->validator($request)->validate();
+        $post->update($request->only(['title', 'cover_image', 'content']));
     }
 
     /**
@@ -81,6 +91,16 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Post::find($id)->delete();
+        return redirect('/admin/posts');
+    }
+
+    protected  function validator(Request $request)
+    {
+        return Validator::make($request->all(), [
+            'title' => 'required',
+            'cover_image' => 'required',
+            'content' => 'required'
+        ]);
     }
 }
