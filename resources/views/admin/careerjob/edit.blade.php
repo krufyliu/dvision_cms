@@ -4,16 +4,17 @@
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
             <h1 class="title text-lighter">
-          创建职位
+          更新职位
             <a href="{{ url('/admin/career_jobs') }}" class="btn btn-default btn-xs"><i class="fa fa-mail-reply"></i></a>
             </h1>
             <hr>
             <div class="well">
-                <form role="form" method="post" action="{{ url('/admin/career_jobs') }}">
+                <form role="form" method="post" action="{{ $careerjob->path() }}">
                     {{ csrf_field() }}
+                    {{ method_field('PATCH') }}
                     <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
                         <label class="control-label">标题</label>
-                        <input class="form-control" type="text" name="title" required></input>
+                        <input class="form-control" type="text" name="title" value="{{ $careerjob->title }}" required></input>
                         @if ($errors->has('title'))
                             <span class="help-block">
                                 {{ $errors->first('title') }}
@@ -23,7 +24,7 @@
 
                     <div class="form-group{{ $errors->has('department') ? ' has-error' : '' }}">
                         <label class="control-label">部门</label>
-                        <input class="form-control" type="text" name="department" required></input>
+                        <input class="form-control" type="text" name="department" value="{{ $careerjob->department }}" required></input>
                         @if ($errors->has('department'))
                             <span class="help-block">
                                 {{ $errors->first('department') }}
@@ -33,7 +34,7 @@
 
                     <div class="form-group{{ $errors->has('location') ? ' has-error' : '' }}">
                         <label class="control-label">地点</label>
-                        <input class="form-control" type="text" name="location" required></input>
+                        <input class="form-control" type="text" name="location" value="{{ $careerjob->location }}" required></input>
                         @if ($errors->has('location'))
                             <span class="help-block">
                                 {{ $errors->first('location') }}
@@ -42,7 +43,7 @@
                     </div>
                     <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
                         <label class="control-label">内容</label>
-                        <textarea class="form-control" name="description" id="summernote"></textarea>
+                        <textarea class="form-control" name="description" id="summernote">{{ $careerjob->description }}</textarea>
                         @if ($errors->has('description'))
                             <span class="help-block">
                                 {{ $errors->first('description') }}
@@ -52,8 +53,17 @@
                     <br>
                     <div class="buttons text-right">
                       <a class="btn btn-default" href="{{ url('/admin/career_jobs') }}">取消</a>
-                      <button class="btn btn-primary" type="submit" create-btn">创建</button>
+                      <a class="btn btn-danger"
+                         href="{{ url('/admin/career_jobs') }}"
+                         onclick="event.preventDefault();
+                                     document.getElementById('delete-form').submit();">删除</a>
+                      <button class="btn btn-primary" type="submit">保存</button>
                     </div>
+                </form>
+
+                <form id="delete-form" action="{{ $careerjob->path() }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                    {{ method_field('DELETE') }}
                 </form>
             </div>
         </div>

@@ -30,7 +30,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">量子视觉</a>
+            <a class="navbar-brand" href="{{ url('/')}}">量子视觉</a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
             @if (Auth::guest())
@@ -67,7 +67,7 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="#"><i class="fa fa-dashboard fa-fw"></i> 控制台</a>
+                            <a href="{{ url('/admin') }}"><i class="fa fa-dashboard fa-fw"></i> 控制台</a>
                         </li>
                         <li>
                             <a href="{{ url('/admin/posts') }}"><i class="fa fa-edit fa-fw"></i> 文章</a>

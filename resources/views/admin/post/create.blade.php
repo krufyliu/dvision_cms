@@ -16,7 +16,7 @@
                     <span class="help-block">标题不能为空</span>
                 </div>
                 <div class="form-group">
-                    <label class="control-label">封面图片</label>
+                    <label class="control-label">封面图片(尺寸必须为 360*280)</label>
                     <div class="fileUpload" name="image">
                         <span class="btn btn-default btn-file btn-xs">
                           选择文件 <input type="file">

@@ -15,3 +15,9 @@ require('./bootstrap');
 
 require('../vendor/metisMenu/metisMenu');
 require('../vendor/sb-admin-2');
+
+$("table tr").bind("click",function(){
+    if($(this).data('href')){
+        location.href = $(this).data('href');
+    }
+});
