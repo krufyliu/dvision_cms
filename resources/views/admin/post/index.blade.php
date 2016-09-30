@@ -36,82 +36,25 @@
                                 <tr>
                                     <th>标题</th>
                                     <th>封面图片</th>
-                                    <th>内容</th>
                                     <th>创建时间</th>
+                                    <th>更新时间</th>
                                     <th>创建人</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="odd">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 4.0</td>
-                                    <td>Win 95+</td>
-                                    <td>4</td>
-                                    <td>X</td>
-                                </tr>
-                                <tr class="even">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 5.0</td>
-                                    <td>Win 95+</td>
-                                    <td>5</td>
-                                    <td>C</td>
-                                </tr>
-                                <tr class="odd">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 5.5</td>
-                                    <td>Win 95+</td>
-                                    <td>5.5</td>
-                                    <td>A</td>
-                                </tr>
-                                <tr class="even">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 6</td>
-                                    <td>Win 98+</td>
-                                    <td>6</td>
-                                    <td>A</td>
-                                </tr>
-                                <tr class="odd">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 7</td>
-                                    <td>Win XP SP2+</td>
-                                    <td>7</td>
-                                    <td>A</td>
-                                </tr>
-                                <tr class="even">
-                                    <td>Trident</td>
-                                    <td>AOL browser (AOL desktop)</td>
-                                    <td>Win XP</td>
-                                    <td>6</td>
-                                    <td>A</td>
-                                </tr>
-                                <tr class="odd">
-                                    <td>Gecko</td>
-                                    <td>Firefox 1.0</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td>1.7</td>
-                                    <td>A</td>
-                                </tr>
-                                <tr class="even">
-                                    <td>Gecko</td>
-                                    <td>Firefox 1.5</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td>1.8</td>
-                                    <td>A</td>
-                                </tr>
-                                <tr class="odd">
-                                    <td>Gecko</td>
-                                    <td>Firefox 2.0</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td>1.8</td>
-                                    <td>A</td>
-                                </tr>
-                                <tr class="even">
-                                    <td>Gecko</td>
-                                    <td>Firefox 3.0</td>
-                                    <td>Win 2k+ / OSX.3+</td>
-                                    <td>1.9</td>
-                                    <td>A</td>
-                                </tr>
+                                @foreach($posts as $post)
+                                    <tr class="{{ $loop->iteration % 2 == 0 ? 'even' : 'odd' }}" data-href="{{ $post->path() . '/edit' }}">
+                                        <td>{{ $post->title }}</td>
+                                        <td>
+                                            <a class="text-muted" href="{{ '/storage/' . $post->cover_image }}" target="_blank">
+                                                {{ '/storage/' . $post->cover_image }}
+                                            </a>
+                                        </td>
+                                        <td>{{ $post->created_at }}</td>
+                                        <td>{{ $post->updated_at }}</td>
+                                        <td>{{ $post->creator->name }}</td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -119,21 +62,12 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="dataTables_info" id="dataTables-example_info" role="status" aria-live="polite">
-                            Showing 1 to 10 of 57 entries
+                            Showing {{ ($posts->currentPage()-1) * $posts->perPage() + 1 }} to {{ ($posts->currentPage()-1) * $posts->perPage() + $posts->count() }} of {{ $posts->total() }} entries
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
-                            <ul class="pagination">
-                                <li class="paginate_button previous disabled" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous"><a href="#">Previous</a></li>
-                                <li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li>
-                                <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">2</a></li>
-                                <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">3</a></li>
-                                <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">4</a></li>
-                                <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li>
-                                <li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">6</a></li>
-                                <li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next"><a href="#">Next</a></li>
-                            </ul>
+                            {{ $posts->links() }}
                         </div>
                     </div>
                 </div>
