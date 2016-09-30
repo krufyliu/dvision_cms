@@ -51,8 +51,8 @@
                     </div>
                     <br>
                     <div class="buttons text-right">
-                      <a class="btn btn-default" href="{{ url('/admin/career_jobs') }}">取消</a>
-                      <button class="btn btn-primary" type="submit" create-btn">创建</button>
+                        <a class="btn btn-default" href="{{ url('/admin/career_jobs') }}">取消</a>
+                        <button class="btn btn-primary" type="submit">创建</button>
                     </div>
                 </form>
             </div>

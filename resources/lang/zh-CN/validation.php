@@ -141,7 +141,8 @@ return [
         'available'             => '可用的',
         'size'                  => '大小',
         'department'            => '部门',
-        'location'              => '地点'
+        'location'              => '地点',
+        'cover_image'           => '图片'
     ],
 
 ];
