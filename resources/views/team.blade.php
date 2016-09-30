@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="row team margin-middle">
-        <div class="col-xs-12 col-sm-6 col-md-6 team-item">
+        <div class="col-xs-12 col-sm-6 col-md-4 team-item">
             <img src="/image/tem03.jpg" class="img-responsive" alt="Responsive image"/>
             <div>
                 <p class="visible-xs visible-sm">
@@ -54,7 +54,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 team-item">
+        <div class="col-xs-12 col-sm-6 col-md-4 team-item">
             <img src="/image/tem02.jpg" class="img-responsive" alt="Responsive image"/>
             <div>
                 <p class="visible-xs visible-sm">
@@ -66,7 +66,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 team-item">
+        <div class="col-xs-12 col-sm-6 col-md-4 team-item">
             <img src="/image/tem04.jpg" class="img-responsive" alt="Responsive image"/>
             <div>
                 <p class="visible-xs visible-sm">
@@ -78,7 +78,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 team-item">
+        <div class="col-xs-12 col-sm-6 col-md-4 team-item">
             <img src="/image/tem05.jpg" class="img-responsive" alt="Responsive image"/>
             <div>
                 <p class="visible-xs visible-sm">
@@ -90,7 +90,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 team-item">
+        <div class="col-xs-12 col-sm-6 col-md-4 team-item">
             <img src="/image/tem06.jpg" class="img-responsive" alt="Responsive image"/>
             <div>
                 <p class="visible-xs visible-sm">
@@ -102,7 +102,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 team-item">
+        <div class="col-xs-12 col-sm-6 col-md-4 team-item">
             <img src="/image/tem07.jpg" class="img-responsive" alt="Responsive image"/>
             <div>
                 <p class="visible-xs visible-sm">

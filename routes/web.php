@@ -37,7 +37,5 @@ Route::get('/contact', function () {
 
 Route::get('/join', 'StaticController@join');
 
-
-Route::get('/news', function () {
-    return view('news');
-});
+Route::get('/news', 'StaticController@news');
+Route::get('/news/{id}', 'StaticController@newsShow');
