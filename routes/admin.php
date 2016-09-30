@@ -15,5 +15,10 @@ Route::post('/logout', 'LoginController@logout');
 
 Route::resource('posts', 'PostController');
 Route::resource('videos', 'VideoController');
+Route::resource('career_jobs', 'CareerJobController');
 
 Route::post('/upload/image', 'UploadController@storeImage');
+
+// config
+Route::post('/config', 'ConfigController@store');
+Route::get('/config', 'ConfigController@create');
