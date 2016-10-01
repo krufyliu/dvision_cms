@@ -31,26 +31,28 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
-                            <thead>
-                                <tr>
-                                    <th>标题</th>
-                                    <th>视频封面</th>
-                                    <th>描述</th>
-                                    <th>创建时间</th>
-                                    <th>创建人</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="odd">
-                                    <td>Trident</td>
-                                    <td>Internet Explorer 4.0</td>
-                                    <td>Win 95+</td>
-                                    <td>4</td>
-                                    <td>X</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">>
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>标题</th>
+                                        <th>视频封面</th>
+                                        <th>描述</th>
+                                        <th>创建时间</th>
+                                        <th>创建人</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="odd">
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 4.0</td>
+                                        <td>Win 95+</td>
+                                        <td>4</td>
+                                        <td>X</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
