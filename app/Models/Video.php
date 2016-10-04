@@ -18,4 +18,13 @@ class Video extends Model
     {
         return $this->belongsTo('App\Models\VideoCategory', 'category_id');
     }
+
+    public function path($prefix=null)
+    {
+        if (empty($prefix)) {
+            return "$prefix/videos/{$this->id}";
+        } else {
+            return "videos/{$this->id}";
+        }
+    }
 }

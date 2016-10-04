@@ -25,7 +25,7 @@
                             </thead>
                             <tbody>
                                 @foreach($videos as $video)
-                                <tr class="odd">
+                                <tr class="{{ $loop->iteration % 2 == 0 ? 'even' : 'odd' }}">
                                     <td>{{ $video->title }}</td>
                                     <td><a href="{{ '/storage/'.$video->cover_image }}">{{ '/storage/'.$video->cover_image }}</a></td>
                                     <td>{{ $video->category->title }}</td>
