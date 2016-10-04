@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Video extends Model
 {
     protected $fillable = ['title', 'cover_image', 'url', 'description', 'category_id'];
+    protected $casts = ['url' => 'array'];
 
     public function creator()
     {

@@ -14,7 +14,7 @@ class VideoController extends Controller
 
     public function index()
     {
-        $videos = Video::orderBy('created_at', 'desc')->with('creator')->paginate(10);
+        $videos = Video::orderBy('created_at', 'desc')->with(['creator', 'category'])->paginate(10);
         return view('admin.video.index', ['videos' => $videos]);
     }
 
@@ -28,7 +28,7 @@ class VideoController extends Controller
     public function store(Request $request)
     {
         $this->validator($request)->validate();
-        $request->user()->videos()->save($request->only(['title', 'cover_image', 'url', 'description', 'category_id']));
+        $request->user()->videos()->create($request->only(['title', 'cover_image', 'url', 'description', 'category_id']));
         return redirect('/admin/videos');
     }
 
@@ -59,11 +59,20 @@ class VideoController extends Controller
 
     protected function validator(Request $request)
     {
-        return Validator::make($request->all(), [
+        $validator =  Validator::make($request->all(), [
             'title' => 'required',
             'cover_image' => 'required',
-            'url' => 'required',
+            'url.audio' => 'required|url',
+            'url.video_720p' => 'required|url',
+            'url.video_1080p' => 'required|url',
             'category_id' => 'required|integer|exists:video_categories,id'
         ]);
+        $validator->setAttributenames([
+            'url.audio' => '音频链接',
+            'url.video_720p' => '720P视频链接',
+            'url.video_1080p' => '1080P视频链接',
+            'category_id' => '分类',
+        ]);
+        return $validator;
     }
 }

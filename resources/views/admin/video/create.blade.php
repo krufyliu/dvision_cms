@@ -9,20 +9,23 @@
         </h1>
         <hr>
         <div class="well">
-            <form>
-                <div class="form-group">
+            <form method="post" action="/admin/videos">
+                {{ csrf_field() }}
+                <div class="form-group {{ has_error_class($errors, 'title') }}">
                     <label class="control-label">标题</label>
-                    <input class="form-control" type="text" required></input>
-                    <span class="help-block"></span>
+                    <input class="form-control" type="text" name="title" value="{{ old('title') }}" required></input>
+                    {{ error_block($errors, 'title') }}
                 </div>
                 <div class="form-group">
                     <labtel class="control-label">分类</label>
                     <div class="row">
                         <div class="col-md-5">
-                            <select class="form-control" id="categorySelect">
+                            <select name="category_id" class="form-control {{ has_error_class($errors, 'category_id') }}" id="categorySelect">
                                 <option value="0">请选择</option>
                                 @foreach($categories as $category)
-                                <option value="{{ $category->id }}">{{ $category->title }}</option>
+                                <option value="{{ $category->id }}" {{ $category->id === old('category_id') ? 'selected' : '' }}>
+                                    {{ $category->title }}
+                                </option>
                                 @endforeach
                             </select>
                         </div>
@@ -30,45 +33,39 @@
                             <span class="btn btn-primary" data-toggle="modal" data-target="#categoryDialog">新增分类</span>
                         </div>
                     </div>
-                    <span class="help-block"></span>
+                    {{ error_block($errors, 'category_id') }}
                 </div>
-                <div class="form-group">
+                <div class="form-group {{ has_error_class($errors, 'cover_image') }}">
                     <label class="control-label">视频封面(尺寸必须为 1024*480)</label>
                     <div id="fileuploader">Upload</div>
-                    <input type="hidden" name="cover_image" required>
-                    @if ($errors->has('cover_image'))
-                        <span class="help-block">
-                            {{ $errors->first('cover_image') }}
-                        </span>
-                    @endif
+                    <input type="hidden" name="cover_image" value="{{ old('cover_image') }}"required>
+                    {{ error_block($errors, 'cover_image') }}
                 </div>
-                <div class="form-group">
+                <div class="form-group {{ has_error_class($errors, 'url.audio') }}">
                     <label class="control-label">音频地址(仅支持m4a, 地址勿加后缀)</label>
-                    <input class="form-control" type="text" required></input>
-                    <span class="help-block"></span>
+                    <input name="url[audio]" value="{{ old('url.audio') }}" class="form-control" type="text" required></inputnam>
+                    {{ error_block($errors, 'url.audio') }}
                 </div>
-                <div class="form-group">
+                <div class="form-group {{ has_error_class($errors, 'url.video_720p') }}">
                     <label class="control-label">720P视频地址(仅支持mp4, 地址勿加后缀)</label>
-                    <input class="form-control" type="text" required></input>
-                    <span class="help-block"></span>
+                    <input name="url[video_720p]" value="{{ old('url.video_720p') }}" class="form-control" type="text" required></input>
+                    {{ error_block($errors, 'url.video_720p') }}
                 </div>
-                <div class="form-group">
+                <div class="form-group {{ has_error_class($errors, 'url.video_1080') }}">
                     <label class="control-label">1080P视频地址(仅支持mp4, 地址勿加后缀)</label>
-                    <input class="form-control" type="text" required></input>
+                    <input name="url[video_1080p]" value="{{ old('url.video_1080p') }}" class="form-control" type="text" required></input>
+                    {{ error_block($errors, 'url.video_1080p') }}
+                </div>
+                <div class="form-group {{ old('description') }}">
+                    <label class="control-label">内容</label>
+                    <textarea class="form-control" name="description" value="{{ old('description') }}" id="summernote"></textarea>
                     <span class="help-block"></span>
                 </div>
-                <div class="form-group">
-                    <label class="control-label">内容</label>
-                    <textarea class="form-control" name="content" id="summernote"></textarea>
-                    <span class="help-block"></span>
+                <div class="buttons text-right">
+                    <a class="btn btn-default" href="/admin/videos">取消</a>
+                    <button class="btn btn-primary" type="submit">创建</button>
                 </div>
             </form>
-            <br>
-            <div class="buttons text-right">
-              <a class="btn btn-default" href="/admin/videos">取消</a>
-              <a class="btn btn-primary create-btn">创建</a>
-              <a class="btn btn-danger" href="">删除</a>
-            </div>
         </div>
     </div>
 </div>
@@ -138,10 +135,18 @@
         $("#fileuploader").uploadFile({
             url: "/admin/upload/file",
             fileName: "myfile",
+            maxFileSize: 2*1024*1024,
             multiple: false,
             maxFileCount: 1,
             acceptFiles: "image/*",
             showDelete: true,
+            showPreview: true,
+            @if (!empty(old('cover_image')))
+            onLoad: function(obj) {
+                console.log(obj);
+                {{--obj.createProgress("{{ old('cover_image') }}", "{{ '/storage/'.old('cover_image') }}");--}}
+            },
+            @endif
             deleteCallback: function (data, pd) {
                 var data = JSON.parse(data);
                 for (var i = 0; i < data.length; i++) {
