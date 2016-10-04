@@ -4,9 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
+use Validator;
 use App\Http\Requests;
 use App\Models\Video;
-use Validator;
+use App\Models\VideoCategory;
 
 class VideoController extends Controller
 {
@@ -20,7 +21,8 @@ class VideoController extends Controller
     public function create()
     {
         //
-        return view('admin.video.create');
+        $categories = VideoCategory::all();
+        return view('admin.video.create', ['categories' => $categories]);
     }
 
     public function store(Request $request)
@@ -37,7 +39,8 @@ class VideoController extends Controller
 
     public function edit($id)
     {
-        return view('admin.video.edit', ['video' => Video::find($id)]);
+        $categories = VideoCategory::all();
+        return view('admin.video.edit', ['video' => Video::find($id), 'categories' => $categories]);
     }
 
     public function update(Request $request, $id)
