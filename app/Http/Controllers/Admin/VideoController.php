@@ -22,7 +22,7 @@ class VideoController extends Controller
     {
         //
         $categories = VideoCategory::all();
-        return view('admin.video.create', ['categories' => $categories]);
+        return view('admin.video.create_or_update', ['categories' => $categories]);
     }
 
     public function store(Request $request)
@@ -39,14 +39,13 @@ class VideoController extends Controller
 
     public function edit($id)
     {
-        $categories = VideoCategory::all();
-        return view('admin.video.edit', ['video' => Video::find($id), 'categories' => $categories]);
+        return view('admin.video.create_or_update', ['video' => Video::find($id)]);
     }
 
     public function update(Request $request, $id)
     {
         $this->validator($request)->validate();
-        $post = Post::find($id);
+        $post = Video::find($id);
         $post->update($request->only(['title', 'cover_image', 'url', 'description', 'category_id']));
         return redirect('/admin/videos');
     }

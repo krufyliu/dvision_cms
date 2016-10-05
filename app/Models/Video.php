@@ -22,9 +22,9 @@ class Video extends Model
     public function path($prefix=null)
     {
         if (empty($prefix)) {
-            return "$prefix/videos/{$this->id}";
+            return "/videos/{$this->id}";
         } else {
-            return "videos/{$this->id}";
+            return "/$prefix/videos/{$this->id}";
         }
     }
 }

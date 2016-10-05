@@ -1,33 +1,34 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
-        <h1 class="title text-lighter">
-        创建视频
-        <a href="{{ url('/admin/videos') }}" class="btn btn-default btn-xs"><i class="fa fa-mail-reply"></i></a>
-        </h1>
-        <hr>
-        <div class="well">
-            <form method="post" action="/admin/videos">
-                {{ csrf_field() }}
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h1 class="title text-lighter">
+                @if (isset($video))
+                    更新视频
+                @else
+                    创建视频
+                @endif
+                <a href="{{ url('/admin/videos') }}" class="btn btn-default btn-xs"><i class="fa fa-mail-reply"></i></a>
+            </h1>
+            <hr>
+            <div class="well">
+                @if (isset($video))
+                {!! Form::model($video, ['url' => $video->path('admin'), 'method' => 'patch']) !!}
+                @else
+                {!! Form::open(['url' => 'admin/videos']) !!}
+                @endif
                 <div class="form-group {{ has_error_class($errors, 'title') }}">
-                    <label class="control-label">标题</label>
-                    <input class="form-control" type="text" name="title" value="{{ old('title') }}" required></input>
+                    {!! Form::label('title', '标题', ['class' => 'control-label']) !!}
+                    {!! Form::text('title', null, ['class' => 'form-control']) !!}
                     {{ error_block($errors, 'title') }}
                 </div>
                 <div class="form-group">
-                    <labtel class="control-label">分类</label>
+                    {!! Form::label('category_id', '分类', ['class' => 'control-label']) !!}
                     <div class="row">
                         <div class="col-md-5">
-                            <select name="category_id" class="form-control {{ has_error_class($errors, 'category_id') }}" id="categorySelect">
-                                <option value="0">请选择</option>
-                                @foreach($categories as $category)
-                                <option value="{{ $category->id }}" {{ $category->id === old('category_id') ? 'selected' : '' }}>
-                                    {{ $category->title }}
-                                </option>
-                                @endforeach
-                            </select>
+                            {!! Form::select('category_id', \App\Models\VideoCategory::keyNames(), null,
+                                ['placeholder' => '选择分类', 'class' => 'form-control']) !!}
                         </div>
                         <div class="col-md-6">
                             <span class="btn btn-primary" data-toggle="modal" data-target="#categoryDialog">新增分类</span>
@@ -36,68 +37,81 @@
                     {{ error_block($errors, 'category_id') }}
                 </div>
                 <div class="form-group {{ has_error_class($errors, 'cover_image') }}">
-                    <label class="control-label">视频封面(尺寸必须为 1024*480)</label>
+                    {!! Form::label('cover_image', '视频封面(尺寸必须为 1024*480)', ['class' => 'control-label']) !!}
+                    <label class="control-label"></label>
                     <div id="fileuploader">Upload</div>
-                    <input type="hidden" name="cover_image" value="{{ old('cover_image') }}"required>
+                    {!! Form::hidden('cover_image', null, ['class' => 'form-control']) !!}
                     {{ error_block($errors, 'cover_image') }}
                 </div>
                 <div class="form-group {{ has_error_class($errors, 'url.audio') }}">
-                    <label class="control-label">音频地址(仅支持m4a, 地址勿加后缀)</label>
-                    <input name="url[audio]" value="{{ old('url.audio') }}" class="form-control" type="text" required></inputnam>
+                    {!! Form::label('url[audio]', '音频地址(仅支持m4a, 地址勿加后缀)', ['class' => 'control-label']) !!}
+                    {!! Form::text('url[audio]', null, ['class' => 'form-control']) !!}
                     {{ error_block($errors, 'url.audio') }}
                 </div>
                 <div class="form-group {{ has_error_class($errors, 'url.video_720p') }}">
-                    <label class="control-label">720P视频地址(仅支持mp4, 地址勿加后缀)</label>
-                    <input name="url[video_720p]" value="{{ old('url.video_720p') }}" class="form-control" type="text" required></input>
+                    {!! Form::label('url[video_720p]', '720P视频地址(仅支持mp4, 地址勿加后缀)', ['class' => 'control-label']) !!}
+                    {!! Form::text('url[video_720p]', null, ['class' => 'form-control']) !!}
                     {{ error_block($errors, 'url.video_720p') }}
                 </div>
                 <div class="form-group {{ has_error_class($errors, 'url.video_1080p') }}">
-                    <label class="control-label">1080P视频地址(仅支持mp4, 地址勿加后缀)</label>
-                    <input name="url[video_1080p]" value="{{ old('url.video_1080p') }}" class="form-control" type="text" required></input>
+                    {!! Form::label('url[video_1080p]', '1080P视频地址(仅支持mp4, 地址勿加后缀)', ['class' => 'control-label']) !!}
+                    {!! Form::text('url[video_1080p]', null, ['class' => 'form-control']) !!}
                     {{ error_block($errors, 'url.video_1080p') }}
                 </div>
                 <div class="form-group {{ old('description') }}">
-                    <label class="control-label">内容</label>
-                    <textarea class="form-control" name="description" value="{{ old('description') }}" id="summernote"></textarea>
-                    <span class="help-block"></span>
+                    {!! Form::label('description', '内容', ['class' => 'control-label']) !!}
+                    {!! Form::textarea('description', null, ['class' => 'form-control', 'id' => 'summernote']) !!}
+                    {{ error_block($errors, 'description') }}
                 </div>
                 <div class="buttons text-right">
                     <a class="btn btn-default" href="/admin/videos">取消</a>
-                    <button class="btn btn-primary" type="submit">创建</button>
+                    @if (isset($video))
+                        <a class="btn btn-danger"
+                           href="{{ url('/admin/posts') }}"
+                           onclick="event.preventDefault();
+                                     document.getElementById('delete-form').submit();">删除</a>
+                        <button class="btn btn-primary" type="submit">保存</button>
+                    @else
+                        <button class="btn btn-primary" type="submit">创建</button>
+                    @endif
                 </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="categoryDialog" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="myModalLabel">新增视频分类</h4>
-            </div>
-            <div class="modal-body">
-                <form class="form-horizontal" action="/admin/video_categories" method="post">
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">分类名:</label>
-                        <div class="col-sm-10">
-                            <input class="form-control" type="text" name="title">
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
+                {!! Form::close() !!}
+                <form id="delete-form" action="{{ $video->path('admin') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                    {{ method_field('DELETE') }}
                 </form>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                <button type="button" class="btn btn-primary" id="categoryAdd">创建</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="categoryDialog" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">新增视频分类</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" action="/admin/video_categories" method="post">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">分类名:</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="title">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="categoryAdd">创建</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 @endsection
 
@@ -141,12 +155,6 @@
             acceptFiles: "image/*",
             showDelete: true,
             showPreview: true,
-            @if (!empty(old('cover_image')))
-            onLoad: function(obj) {
-                console.log(obj);
-                {{--obj.createProgress("{{ old('cover_image') }}", "{{ '/storage/'.old('cover_image') }}");--}}
-            },
-            @endif
             deleteCallback: function (data, pd) {
                 var data = JSON.parse(data);
                 for (var i = 0; i < data.length; i++) {
