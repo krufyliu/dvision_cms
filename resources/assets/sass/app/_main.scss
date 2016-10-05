@@ -270,7 +270,26 @@ footer {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+#pano {
+  height: 400px;
+}
+
+@media (min-width: 320px) and (max-width: 320px) {
+
+  #pano {
+    height: 300px;
+  }
+}
+
+
+@media (min-width: 375px) and (max-width: 375px) {
+
+  #pano {
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
   .video {
     .video-item {
       overflow: hidden;
@@ -309,6 +328,10 @@ footer {
         background-color: rgba(0,0,0,.3);
       }
     }
+  }
+
+  #pano {
+    height: 420px;
   }
 }
 

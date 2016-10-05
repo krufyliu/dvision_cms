@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div id="pano" style="width:100%; height:600px;">
+    <div id="pano" style="width:100%;">
         <noscript>
         <table style="width:100%;height:100%;">
         <tr style="vertical-align:middle;text-align:center;">
@@ -19,49 +19,11 @@
         <div class="row margin-middle">
             <div class="col-md-8">
                 <p class="h3 text-lighter">
-                    万水千山总是情
+                    {{ $video->title }}
                 </p>
                 <p>
-                    文本文本
+                    {!! $video->description !!}
                 </p>
-            </div>
-        </div>
-        <div class="row video">
-            <div class="col-xs-12 col-sm-6 col-md-4 video-item">
-                <a href="#">
-                <img src="/image/video01.jpg" class="img-responsive" alt="Responsive image"/>
-                <div>
-                    <p class="text-center">
-                        <!-- <span class="fa fa-youtube-play fa-3x"></span> -->
-                        <span class="play"></span>
-                        <span class="h5 text-lighter">万水千山总是万水千山总是万水千山总是万水千山总是万水千山总是万水千山总是</span>
-                    </p>
-                </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 video-item">
-                <a href="#">
-                <img src="/image/video02.jpg" class="img-responsive" alt="Responsive image"/>
-                <div>
-                    <p class="text-center">
-                        <!-- <span class="fa fa-youtube-play fa-3x"></span> -->
-                        <span class="play"></span>
-                        <span class="h5 text-lighter">万水千山总是情</span>
-                    </p>
-                </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 video-item">
-                <a href="#">
-                <img src="/image/video03.jpg" class="img-responsive" alt="Responsive image"/>
-                <div>
-                    <p class="text-center">
-                        <!-- <span class="fa fa-youtube-play fa-3x"></span> -->
-                        <span class="play"></span>
-                        <span class="h5 text-lighter">万水千山总是情</span>
-                    </p>
-                </div>
-                </a>
             </div>
         </div>
     </div>
@@ -72,19 +34,16 @@
     <script type="text/javascript">
     $(document).ready(function() {
         var u = navigator.userAgent;
-        // alert(u)
         var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
         var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
         window.currentNum = "";
         var timer="";
         window.base = document.location.origin+"/";
         var settings = {};
-        settings["posterurl_low"] = base + "image/video-1024x512-poster.jpg";
-        settings["posterurl_high"] = base + "image/video-1920x960-poster.jpg";
-        settings["videourl_low"] = base+ "image/video-1024x512";
-        settings["videourl_high"] = base+ "image/video-1920x960";
+        settings["videourl_low"] = "{{ $video->url['video_720p'] }}";
+        settings["videourl_high"] = "{{ $video->url['video_1080p'] }}";
         if(isiOS){
-            settings["soundurl"] =base+ "image/iphone-audio";
+            settings["soundurl"] = "{{ $video->url['audio'] }}";
         }
         if (!document.domain ||
               (navigator.userAgent.indexOf("Android") >= 0 && navigator.userAgent.indexOf("QQ") >= 0) ||
@@ -99,7 +58,7 @@
                 target: "pano",
                 mobilescale: 0.4,
                 passQueryParameters: true,
-                bgcolor: "#ffffff",
+                bgcolor: "#f0f0f0",
                 html5: "prefer",
                 webglsettings: {
                     preserveDrawingBuffer: false,
