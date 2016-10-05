@@ -15,14 +15,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/video', function () {
-    return view('video.index');
-});
-
-Route::get('/video/{id}', function () {
-    return view('video.show');
-});
-
 Route::get('/service', function () {
     return view('service');
 });
@@ -34,6 +26,11 @@ Route::get('/team', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/', 'StaticController@home');
+
+Route::get('/video', 'StaticController@video');
+Route::get('/video/{id}', 'StaticController@videoShow');
 
 Route::get('/join', 'StaticController@join');
 
