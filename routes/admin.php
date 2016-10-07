@@ -17,6 +17,10 @@ Route::post('/password/email', 'ForgotPasswordController@sendResetLinkEmail');
 Route::post('/password/reset', 'ResetPasswordController@reset');
 Route::get('/password/reset/{token}', 'ResetPasswordController@showResetForm');
 
+Route::resource('admins', 'AdminController');
+Route::get('profile', 'AdminController@profile');
+Route::patch('profile', 'AdminController@updateProfile');
+
 Route::resource('posts', 'PostController');
 Route::resource('videos', 'VideoController');
 Route::resource('career_jobs', 'CareerJobController');
