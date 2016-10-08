@@ -19,16 +19,16 @@ class PostController extends Controller
 
     public function create()
     {
-        return view('admin.post.create');
+        return view('admin.post.create_or_update');
     }
 
     public function store(Request $request)
     {
         $this->validator($request)->validate();
         Post::create([
-                'title' => $request->title,
-                'content' => $request->content,
-                'cover_image' => $request->cover_image,
+                'title' => $request->input('title'),
+                'content' => $request->input('content'),
+                'cover_image' => $request->input('cover_image'),
                 'status' => 1,
                 'creator_id' => $request->user()->id
             ]
@@ -43,7 +43,7 @@ class PostController extends Controller
 
     public function edit($id)
     {
-        return view('admin.post.edit', ['post' => Post::find($id)]);
+        return view('admin.post.create_or_update', ['post' => Post::find($id)]);
     }
 
     public function update(Request $request, $id)

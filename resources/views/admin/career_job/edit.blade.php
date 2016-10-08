@@ -9,12 +9,12 @@
             </h1>
             <hr>
             <div class="well">
-                <form role="form" method="post" action="{{ $careerjob->path() }}">
+                <form role="form" method="post" action="{{ $career_job->path() }}">
                     {{ csrf_field() }}
                     {{ method_field('PATCH') }}
                     <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
                         <label class="control-label">标题</label>
-                        <input class="form-control" type="text" name="title" value="{{ $careerjob->title }}" required></input>
+                        <input class="form-control" type="text" name="title" value="{{ $career_job->title }}" required></input>
                         @if ($errors->has('title'))
                             <span class="help-block">
                                 {{ $errors->first('title') }}
@@ -24,7 +24,7 @@
 
                     <div class="form-group{{ $errors->has('department') ? ' has-error' : '' }}">
                         <label class="control-label">部门</label>
-                        <input class="form-control" type="text" name="department" value="{{ $careerjob->department }}" required></input>
+                        <input class="form-control" type="text" name="department" value="{{ $career_job->department }}" required></input>
                         @if ($errors->has('department'))
                             <span class="help-block">
                                 {{ $errors->first('department') }}
@@ -34,7 +34,7 @@
 
                     <div class="form-group{{ $errors->has('location') ? ' has-error' : '' }}">
                         <label class="control-label">地点</label>
-                        <input class="form-control" type="text" name="location" value="{{ $careerjob->location }}" required></input>
+                        <input class="form-control" type="text" name="location" value="{{ $career_job->location }}" required></input>
                         @if ($errors->has('location'))
                             <span class="help-block">
                                 {{ $errors->first('location') }}
@@ -43,7 +43,7 @@
                     </div>
                     <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
                         <label class="control-label">内容</label>
-                        <textarea class="form-control" name="description" id="summernote">{{ $careerjob->description }}</textarea>
+                        <textarea class="form-control" name="description" id="summernote">{{ $career_job->description }}</textarea>
                         @if ($errors->has('description'))
                             <span class="help-block">
                                 {{ $errors->first('description') }}
@@ -61,7 +61,7 @@
                     </div>
                 </form>
 
-                <form id="delete-form" action="{{ $careerjob->path() }}" method="POST" style="display: none;">
+                <form id="delete-form" action="{{ $career_job->path() }}" method="POST" style="display: none;">
                     {{ csrf_field() }}
                     {{ method_field('DELETE') }}
                 </form>

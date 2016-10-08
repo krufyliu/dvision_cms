@@ -27,7 +27,7 @@
                                 @foreach($videos as $video)
                                 <tr class="{{ $loop->iteration % 2 == 0 ? 'even' : 'odd' }}" data-href="{{ $video->path('admin').'/edit' }}">
                                     <td>{{ $video->title }}</td>
-                                    <td><a href="{{ '/storage/'.$video->cover_image }}">{{ '/storage/'.$video->cover_image }}</a></td>
+                                    <td><a class="text-muted" href="{{ '/storage/'.$video->cover_image }}">{{ '/storage/'.$video->cover_image }}</a></td>
                                     <td>{{ $video->category->title }}</td>
                                     <td>{{ $video->created_at }}</td>
                                     <td>{{ $video->updated_at }}</td>

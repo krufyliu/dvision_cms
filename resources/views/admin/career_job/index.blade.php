@@ -25,14 +25,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($careerjobs as $careerjob)
-                                        <tr class="{{ $loop->iteration % 2 == 0 ? 'even' : 'odd' }}" data-href="{{ $careerjob->path() . '/edit' }}">
-                                            <td>{{ $careerjob->title }}</td>
-                                            <td>{{ $careerjob->department }}</td>
-                                            <td>{{ $careerjob->location }}</td>
-                                            <td>{{ $careerjob->created_at }}</td>
-                                            <td>{{ $careerjob->updated_at }}</td>
-                                            <td>{{ $careerjob->creator->name }}</td>
+                                    @foreach($career_jobs as $career_job)
+                                        <tr class="{{ $loop->iteration % 2 == 0 ? 'even' : 'odd' }}" data-href="{{ $career_job->path() . '/edit' }}">
+                                            <td>{{ $career_job->title }}</td>
+                                            <td>{{ $career_job->department }}</td>
+                                            <td>{{ $career_job->location }}</td>
+                                            <td>{{ $career_job->created_at }}</td>
+                                            <td>{{ $career_job->updated_at }}</td>
+                                            <td>{{ $career_job->creator->name }}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
@@ -43,12 +43,12 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="dataTables_info" id="dataTables-example_info" role="status" aria-live="polite">
-                            Showing {{ ($careerjobs->currentPage()-1) * $careerjobs->perPage() + 1 }} to {{ ($careerjobs->currentPage()-1) * $careerjobs->perPage() + $careerjobs->count() }} of {{ $careerjobs->total() }} entries
+                            Showing {{ ($career_jobs->currentPage()-1) * $career_jobs->perPage() + 1 }} to {{ ($career_jobs->currentPage()-1) * $career_jobs->perPage() + $career_jobs->count() }} of {{ $career_jobs->total() }} entries
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
-                            {{ $careerjobs->links() }}
+                            {{ $career_jobs->links() }}
                         </div>
                     </div>
                 </div>

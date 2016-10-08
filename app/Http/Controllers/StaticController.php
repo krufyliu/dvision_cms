@@ -35,10 +35,14 @@ class StaticController extends Controller
         return view('news.show', ['post' => $post]);
     }
 
-    public function video()
+    public function video(Request $request)
     {
-        $videos = Video::orderBy('created_at', 'desc')->with(['creator', 'category'])->get();
-        return view('video.index', ['videos' => $videos]);
+        $resource = Video::query();
+        if (!empty($request->input('category_id'))) {
+            $resource = $resource->where('category_id', $request->input('category_id'));
+        }
+        $videos = $resource->orderBy('created_at', 'desc')->get();
+        return view('video.index', compact('videos'));
     }
 
     public function videoShow($id)

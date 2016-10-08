@@ -15,9 +15,9 @@
     <div class="row margin-middle">
         <div class="col-md-12">
             <div class="btn-group">
-                    <a href="/video" class="btn btn-primary">全部</a>
-                @foreach($videos as $video)
-                    <a href="#" class="btn btn-default">{{$video->category->title}}</a>
+                <a href="/video" class="btn btn-primary">全部</a>
+                @foreach(App\Models\VideoCategory::all() as $category)
+                    <a href="{{ url('video?category_id=').$category->id }}" class="btn btn-default">{{$category->title}}</a>
                 @endforeach
             </div>
         </div>

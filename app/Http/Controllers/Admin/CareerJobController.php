@@ -13,23 +13,23 @@ class CareerJobController extends Controller
 
     public function index()
     {
-        $careerjobs = CareerJob::orderBy('created_at', 'desc')->with('creator')->paginate(10);
-        return view('admin.careerjob.index', ['careerjobs' => $careerjobs]);
+        $career_jobs = CareerJob::orderBy('created_at', 'desc')->with('creator')->paginate(10);
+        return view('admin.career_job.index', ['career_jobs' => $career_jobs]);
     }
 
     public function create()
     {
-        return view('admin.careerjob.create');
+        return view('admin.career_job.create_or_update');
     }
 
     public function store(Request $request)
     {
         $this->validator($request)->validate();
         CareerJob::create([
-                'title' => $request->title,
-                'description' => $request->description,
-                'location' => $request->location,
-                'department' => $request->department,
+                'title' => $request->input('title'),
+                'description' => $request->input('description'),
+                'location' => $request->input('location'),
+                'department' => $request->input('department'),
                 'status' => 1,
                 'creator_id' => $request->user()->id
             ]
@@ -45,15 +45,15 @@ class CareerJobController extends Controller
 
     public function edit($id)
     {
-        $careerjob = CareerJob::find($id);
-        return view('admin.careerjob.edit', ['careerjob' => $careerjob]);
+        $career_job = CareerJob::find($id);
+        return view('admin.career_job.create_or_update', ['career_job' => $career_job]);
     }
 
     public function update(Request $request, $id)
     {
-        $careerjob = CareerJob::find($id);
+        $career_job = CareerJob::find($id);
         $this->validator($request)->validate();
-        $careerjob->update($request->only(['title', 'description', 'location', 'department']));
+        $career_job->update($request->only(['title', 'description', 'location', 'department']));
         return redirect()->action('Admin\CareerJobController@index');
     }
 

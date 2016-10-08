@@ -67,7 +67,6 @@
                     <a class="btn btn-default" href="/admin/videos">取消</a>
                     @if (isset($video))
                         <a class="btn btn-danger"
-                           href="{{ url('/admin/posts') }}"
                            onclick="event.preventDefault();
                                      document.getElementById('delete-form').submit();">删除</a>
                         <button class="btn btn-primary" type="submit">保存</button>
@@ -76,10 +75,12 @@
                     @endif
                 </div>
                 {!! Form::close() !!}
+                @if(isset($video))
                 <form id="delete-form" action="{{ $video->path('admin') }}" method="POST" style="display: none;">
                     {{ csrf_field() }}
                     {{ method_field('DELETE') }}
                 </form>
+                @endif
             </div>
         </div>
     </div>
