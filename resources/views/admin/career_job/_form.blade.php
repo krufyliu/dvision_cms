@@ -41,7 +41,7 @@
 
 {!! Form::close() !!}
 @if(isset($career_job))
-    <form id="delete-form" action="{{ $career_job->path() }}" method="career_job" style="display: none;">
+    <form id="delete-form" action="{{ $career_job->path() }}" method="POST" style="display: none;">
         {{ csrf_field() }}
         {{ method_field('DELETE') }}
     </form>
