@@ -29,7 +29,7 @@
                 <div>
                     <p class="text-center">
                         <span class="play"></span>
-                        <span class="h5 text-lighter">{{ $video->title }}</span>
+                        <span class="h5">{{ $video->title }}</span>
                     </p>
                 </div>
                 </a>
