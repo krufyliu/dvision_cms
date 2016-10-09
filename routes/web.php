@@ -11,34 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'StaticController@home');
 
-Route::get('/video', function () {
-    return view('video.index');
-});
+Route::get('/service', 'StaticController@service');
 
-Route::get('/video/{id}', function () {
-    return view('video.show');
-});
+Route::get('/team', 'StaticController@team');
 
-Route::get('/service', function () {
-    return view('service');
-});
+Route::get('/contact', 'StaticController@contact');
 
-Route::get('/team', function () {
-    return view('team');
-});
+Route::get('/video', 'StaticController@video');
+Route::get('/video/{id}', 'StaticController@videoShow');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/join', 'StaticController@join');
 
-Route::get('/join', function () {
-    return view('join');
-});
-
-Route::get('/news', function () {
-    return view('news');
-});
+Route::get('/news', 'StaticController@news');
+Route::get('/news/{id}', 'StaticController@newsShow');

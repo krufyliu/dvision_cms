@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 
@@ -54,6 +53,6 @@ class LoginController extends Controller
         $this->guard()->logout();
         $request->session()->flush();
         $request->session()->regenerate();
-        return redirect()->route('/admin/login');
+        return redirect()->route('admin.login');
     }
 }

@@ -1,10 +1,12 @@
 /node_modules
 /public/storage
 /public/vrplay
+/public/vendor
 /public/fonts
 /public/image
 /public/css
 /public/js
+/public/upload
 /vendor
 /.idea
 Homestead.json

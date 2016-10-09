@@ -10,7 +10,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', '量子视觉') }}</title>
+    <title>量子视觉{{ '-' . $title }}</title>
+    <meta name="keywords" content="量子视觉科技有限公司,量子视觉,VR视频,全景,VR服务,DKvision,vision">
+    <meta name="description" content="DKvision致力于打造下一代虚拟现实的完整解决方案">
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -40,16 +42,9 @@
             <div class="collapse navbar-collapse" id="navbar-collapse-1"  role="navigation">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{ url('/video') }}">VR视频</a></li>
-                    <li><a href="#">产品</a></li>
-                    <!-- <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品 <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">16目一体机</a></li>
-                      <li><a href="#">8目一体机</a></li>
-                    </ul>
-                    </li> -->
+                    <!-- <li><a href="#">产品</a></li> -->
                     <li><a href="{{ url('/service') }}">服务</a></li>
-                    <li><a href="#">下载</a></li>
+                    <!-- <li><a href="#">下载</a></li> -->
                 </ul>
             </div>
         </div>

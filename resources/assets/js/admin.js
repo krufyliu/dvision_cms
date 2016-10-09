@@ -13,8 +13,11 @@ require('./bootstrap');
  * the application, or feel free to tweak this setup for your needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+require('../vendor/metisMenu/metisMenu');
+require('../vendor/sb-admin-2');
 
-const app = new Vue({
-    el: 'body'
+$("table tr").bind("click",function(){
+    if($(this).data('href')){
+        location.href = $(this).data('href');
+    }
 });

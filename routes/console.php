@@ -28,7 +28,7 @@ Artisan::command('admin:create', function () {
         $this->error('Password mismatch!');
         return;
     }
-    Admin::create(['name' => $name, 'email' => $email, 'password' => bcrypt($password)]);
+    Admin::create(['name' => $name, 'email' => $email, 'password' => bcrypt($password), 'is_super' => true]);
     $this->info('Create admin successfully');
 })->describe('create admin');
 

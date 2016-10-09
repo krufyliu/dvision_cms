@@ -7,3 +7,11 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
+
+// Custom
+@import "../vendor/metisMenu/metisMenu";
+@import "../vendor/dataTables.bootstrap";
+@import "../vendor/summernote/summernote";
+@import "../vendor/jquery-upload-file/uploadfile";
+@import "admin/main";
