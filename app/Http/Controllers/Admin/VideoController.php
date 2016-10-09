@@ -64,13 +64,15 @@ class VideoController extends Controller
             'url.audio' => 'required|url',
             'url.video_720p' => 'required|url',
             'url.video_1080p' => 'required|url',
-            'category_id' => 'required|integer|exists:video_categories,id'
+            'category_id' => 'required|integer|exists:video_categories,id',
+            'description' => 'required'
         ]);
         $validator->setAttributenames([
             'url.audio' => '音频链接',
             'url.video_720p' => '720P视频链接',
             'url.video_1080p' => '1080P视频链接',
             'category_id' => '分类',
+            'description' => '内容'
         ]);
         return $validator;
     }

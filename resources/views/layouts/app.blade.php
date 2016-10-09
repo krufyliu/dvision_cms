@@ -10,7 +10,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', '量子视觉') }}</title>
+    <title>量子视觉{{ '-' . $title }}</title>
+    <meta name="keywords" content="量子视觉科技有限公司,量子视觉,VR视频,全景,VR服务,DKvision,vision">
+    <meta name="description" content="DKvision致力于打造下一代虚拟现实的完整解决方案">
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">

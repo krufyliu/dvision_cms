@@ -11,23 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/service', function () {
-    return view('service');
-});
-
-Route::get('/team', function () {
-    return view('team');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
 Route::get('/', 'StaticController@home');
+
+Route::get('/service', 'StaticController@service');
+
+Route::get('/team', 'StaticController@team');
+
+Route::get('/contact', 'StaticController@contact');
 
 Route::get('/video', 'StaticController@video');
 Route::get('/video/{id}', 'StaticController@videoShow');
