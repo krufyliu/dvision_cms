@@ -5,7 +5,7 @@
         <div class="row margin-middle">
             <h1 class="text-center">{{ $post->title }}</h1>
             <div class="text-center text-muted">
-                <span>{{ $post->created_at }}</span>&nbsp;|&nbsp;<span>{{ $post->creator->name }}</span>
+                <span>{{ $post->created_at }}</span>
             </div>
         </div>
         <div class="row margin-middle">

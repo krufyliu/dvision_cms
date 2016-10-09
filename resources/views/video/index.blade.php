@@ -8,17 +8,24 @@
                 走进虚拟世界
             </p>
             <p>
-                OZO独特的交互式监控功能，可捕捉360°球形视频和360x360全方位环绕音频
+                DKVISION 让虚拟变成现实颠覆传统影视观影体验
             </p>
         </div>
     </div>
     <div class="row margin-middle">
         <div class="col-md-12">
-            <div class="btn-group">
-                <a href="/video" class="btn btn-primary">全部</a>
-                @foreach(App\Models\VideoCategory::all() as $category)
-                    <a href="{{ url('video?category_id=').$category->id }}" class="btn btn-default">{{$category->title}}</a>
-                @endforeach
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    选择类别
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    @foreach(App\Models\VideoCategory::all() as $category)
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="{{ url('video?category_id=').$category->id }}">{{$category->title}}</a>
+                        </li>
+                    @endforeach
+                </ul>
             </div>
         </div>
     </div>
