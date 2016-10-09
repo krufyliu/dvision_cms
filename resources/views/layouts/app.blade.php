@@ -74,6 +74,7 @@
                 </div>
 
                 <div class="col-sm-12 col-lg-6 col-lg-offset-3">
+                    <br>
                     <p class="small text-center text-muted">Copyright©2016 量子视觉科技有限公司 保留所有权利</p> 
                     <p class="small text-center text-muted"><a href="http://www.miibeian.gov.cn/">粤ICP备16006475号-1</a></p>
                 </div>

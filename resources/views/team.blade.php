@@ -41,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div class="row team margin-middle">
+    <div class="row team">
         <div class="col-xs-12 col-sm-6 col-md-4 team-item">
             <img src="/image/tem03.jpg" class="img-responsive" alt="Responsive image"/>
             <div>
@@ -115,15 +115,6 @@
             </div>
         </div>
     </div>
-    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="/image/tem08.jpg" class="img-responsive" width="100%" alt="协作">
-                <div class="carousel-caption">
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container-fluid team-timeline">
         <div class="row margin-middle">
             <div class="col-md-12 text-center">
@@ -169,6 +160,15 @@
                     <li><span class="h4">06</span>&nbsp;&nbsp;&nbsp;&nbsp;地产宣传片 《天峦湖》《万科云城》</li>
                     <li><span class="h4">07</span>&nbsp;&nbsp;&nbsp;&nbsp;华为校招影片</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="/image/tem08.jpg" class="img-responsive" width="100%" alt="协作">
+                <div class="carousel-caption">
+                </div>
             </div>
         </div>
     </div>
