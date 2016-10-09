@@ -38,10 +38,10 @@
         @endforeach
     </div>
     <div class="row">
-        <div class="col-md-12 margin-middle">
-            <p class="h3 text-lighter text-center">
-                招聘邮箱：hr@visiondk.com
-            </p>
+        <div class="col-md-12 margin-middle text-center">
+            <a href="mailto:hr@visiondk.com" class="h2 text-lighter">
+                <i class="fa fa-envelope-o"></i>&nbsp;hr@visiondk.com
+            </a>
         </div>
     </div>
     <div id="carousel-generic" class="carousel slide" data-ride="carousel">

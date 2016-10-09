@@ -37,7 +37,7 @@
                     {{ error_block($errors, 'category_id') }}
                 </div>
                 <div class="form-group {{ has_error_class($errors, 'cover_image') }}">
-                    {!! Form::label('cover_image', '视频封面(尺寸必须为 1024*480)', ['class' => 'control-label']) !!}
+                    {!! Form::label('cover_image', '视频封面(尺寸必须为 1024*500)', ['class' => 'control-label']) !!}
                     <label class="control-label"></label>
                     <div id="fileuploader">Upload</div>
                     {!! Form::hidden('cover_image', null, ['class' => 'form-control']) !!}
