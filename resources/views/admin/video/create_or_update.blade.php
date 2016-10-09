@@ -23,7 +23,7 @@
                     {!! Form::text('title', null, ['class' => 'form-control']) !!}
                     {{ error_block($errors, 'title') }}
                 </div>
-                <div class="form-group">
+                <div class="form-group {{ has_error_class($errors, 'category_id') }}">
                     {!! Form::label('category_id', '分类', ['class' => 'control-label']) !!}
                     <div class="row">
                         <div class="col-md-5">
@@ -58,7 +58,7 @@
                     {!! Form::text('url[video_1080p]', null, ['class' => 'form-control']) !!}
                     {{ error_block($errors, 'url.video_1080p') }}
                 </div>
-                <div class="form-group {{ old('description') }}">
+                <div class="form-group {{ has_error_class($errors, 'description') }}">
                     {!! Form::label('description', '内容', ['class' => 'control-label']) !!}
                     {!! Form::textarea('description', null, ['class' => 'form-control', 'id' => 'summernote']) !!}
                     {{ error_block($errors, 'description') }}

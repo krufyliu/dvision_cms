@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Dkvision 后台') }}</title>
+    <title>量子视觉-后台管理</title>
 
     <!-- Styles -->
     <link href="/css/admin.css" rel="stylesheet">
@@ -67,6 +67,9 @@
                             <a href="{{ url('/admin') }}"><i class="fa fa-dashboard fa-fw"></i> 控制台</a>
                         </li>
                         <li>
+                            <a href="{{ url('/admin/admins') }}"><i class="fa fa-users fa-fw"></i> 用户</a>
+                        </li>
+                        <li>
                             <a href="{{ url('/admin/posts') }}"><i class="fa fa-edit fa-fw"></i> 文章</a>
                         </li>
                         <li>
@@ -77,10 +80,10 @@
                         </li>
                         <!-- <li>
                             <a href="#"><i class="fa fa-user fa-fw"></i> 账户</a>
-                        </li> -->
+                        </li>
                         <li>
                             <a href="{{ url('/admin/config') }}"><i class="fa fa-cogs fa-fw"></i> 配置</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
