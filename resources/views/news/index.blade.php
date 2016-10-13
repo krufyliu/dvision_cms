@@ -27,7 +27,7 @@
                                 <p class="text-muted">
                                     {{ str_limit($post->created_at, 10, '') }}
                                 </p>
-                                <a href="#">
+                                <a href="{{ url('/news') . '/' . $post->id }}">
                                 <h4>{{ $post->title }}</h4>
                                 </a>
                             </div>
