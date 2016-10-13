@@ -30,7 +30,7 @@
     &nbsp; &nbsp; &nbsp; &nbsp;视频标题：不超过20字为宜
 </p>
 <p>
-    &nbsp; &nbsp; &nbsp; &nbsp;视频封面：尺寸必须为 1024*480 图片大小不超过1Mb
+    &nbsp; &nbsp; &nbsp; &nbsp;视频封面：尺寸必须为 1024*550 图片大小不超过1Mb
 </p>
 <p>
     &nbsp; &nbsp; &nbsp; &nbsp;音频文件：必须为m4a格式，（上传至七牛云存储，在后台导入地址即可）
