@@ -343,17 +343,26 @@ footer {
   .contact-body {
     height: 490px;
   }
+  #pano {
+    height: 520px;
+  }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1279px) {
   .contact-body {
-    height: 680px;
+    height: 600px;
+  }
+  #pano {
+    height: 600px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .contact-body {
     height: 750px;
+  }
+  #pano {
+    height: 680px;
   }
 }
 
