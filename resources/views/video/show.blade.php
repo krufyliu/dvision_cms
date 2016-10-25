@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container margin-middle">
     <div id="pano" style="width:100%;">
         <noscript>
         <table style="width:100%;height:100%;">
@@ -27,6 +28,7 @@
             </div>
         </div>
     </div>
+</div>
 @endsection
 
 @section('script')
