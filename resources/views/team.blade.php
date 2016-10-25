@@ -18,16 +18,16 @@
                 </p>
                 <br>
                 <p>
-                    DKvision致力于打造下一代虚拟现实的完整解决方案。
+                    量子视觉(DKvision)致力于打造下一代虚拟现实的完整解决方案。
                 </p>
                 <p>
-                    公司采用最先进的计算机视觉技术，将软件、硬件以及工业设计进行高效整合，为用户打造电影级别的虚拟现实体验。
+                    公司基于最先进的计算机视觉技术以及最专业硬件开发团队，将软件、硬件以及工业设计进行高效整合，为用户打造电影级别的虚拟现实体验。
                 </p>
                 <p>
-                    DKvision的全景拍摄设备可以实时的捕捉和重建三维场景，通过高效的视频传输技术，将虚拟现实内容实时的传输提供给用户，
+                    DKvision AURA 全景拍摄设备是目前唯一可量产8K 3D VR相机，可以实时的捕捉和重建三维场景，通过最先进的公开SaaS云拼接平台，低成本、高效率帮助内容生产者生成最高质量VR视频。
                 </p>
                 <p>
-                    用户使用DKVision拥有独立知识产权的VR眼镜和VR播放器，即可享受到无与伦比的沉浸式娱乐体验。
+                    用户使用DKvision VR播放器及SDK服务，可集成至任意平台，通过视频传输技术，将虚拟现实内容实时的传输提供给用户，即可享受到无与伦比的沉浸式娱乐体验。
                 </p>
             </div>
         </div>
@@ -136,7 +136,7 @@
             </div>
             <div class="col-md-6">
                 <ul>
-                    <li><span class="h4">12</span>&nbsp;&nbsp;&nbsp;&nbsp;公司成立</li>
+                    <li><span class="h4">09</span>&nbsp;&nbsp;&nbsp;&nbsp;DK Editor全景3D拼接软件推出</li>
                 </ul>
             </div>
         </div>
@@ -153,12 +153,17 @@
             </div>
             <div class="col-md-6">
                 <ul>
-                    <li><span class="h4">02</span>&nbsp;&nbsp;&nbsp;&nbsp;全球首部VR功夫电影《寅虎》</li>
-                    <li><span class="h4">03</span>&nbsp;&nbsp;&nbsp;&nbsp;黄晓明第一支VR宣传片《新万水千山总是情》</li>
-                    <li><span class="h4">04</span>&nbsp;&nbsp;&nbsp;&nbsp;张楚VR MV 《晃动一下》</li>
-                    <li><span class="h4">05</span>&nbsp;&nbsp;&nbsp;&nbsp;吴奇隆工作室《色戒》</li>
-                    <li><span class="h4">06</span>&nbsp;&nbsp;&nbsp;&nbsp;地产宣传片 《天峦湖》《万科云城》</li>
-                    <li><span class="h4">07</span>&nbsp;&nbsp;&nbsp;&nbsp;华为校招影片</li>
+                    <li><span class="h4">02</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        VisionGo相机推出 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        代表作：黄晓明《新万水千山总是情》</li>
+                    <li><span class="h4">04</span>&nbsp;&nbsp;&nbsp;&nbsp;DK PLAYER可交互、3D VR视频播放器及SDK推出</li>
+                    <li><span class="h4">06</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        VisionBMP相机推出<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        代表作：张楚《晃动一下》</li>
+                    <li><span class="h4">09</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        DKVISION AURA相机推出<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        市场上唯一可量产8K 3D VR相机</li>
+                    <li><span class="h4">10</span>&nbsp;&nbsp;&nbsp;&nbsp;DKVISION AURA服务中国网球公开赛，直播、录播</li>
                 </ul>
             </div>
         </div>

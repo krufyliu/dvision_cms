@@ -22,7 +22,7 @@
     <div class="row">
         @foreach($careerjobs as $careerjob)
             <div class="col-sm-12 col-md-8 col-lg-4 col-md-offset-2 col-lg-offset-4 margin-middle">
-                <p class="h3 text-lighter text-center">
+                <p class="h3 text-center">
                     {{ $careerjob->title }}
                 </p>
                 <div class="col-md-6 margin-middle">

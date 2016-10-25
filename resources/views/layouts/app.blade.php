@@ -44,6 +44,8 @@
                     <li><a href="{{ url('/video') }}">VR视频</a></li>
                     <!-- <li><a href="#">产品</a></li> -->
                     <li><a href="{{ url('/service') }}">服务</a></li>
+                    <li><a href="{{ url('/team') }}">团队</a></li>
+                    <li><a href="{{ url('/news') }}">新闻</a></li>
                     <!-- <li><a href="#">下载</a></li> -->
                 </ul>
             </div>
