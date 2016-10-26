@@ -1,20 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
-    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="/image/join01.jpg" class="img-responsive" width="100%" alt="...">
-                <div class="carousel-caption">
-                </div>
-                <div class="carousel-join text-right hidden-xs hidden-sm">
-                    <p class="h1 text-lighter">
-                        一个好玩的公司
-                    </p>
-                    <p>
-                        我们是一个，青春向上，欢乐的团队，各种坚持以互联网的思维来创新发展，<br>
-                         用眼看世界、用芯走未来，为智慧城市、智慧生活贡献力量。我们期待您的加入
-                    </p>
+    <div class="join_video">
+        <video id="video" class="video hidden-xs hidden-sm" loop="loop" preload="none" muted width="100%" poster="/image/1920-736_100.jpg">
+            <source src="/vendor/1920-736.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+        </video>
+        <img src="/image/1920-736_100.jpg" alt="video" class="visible-xs visible-sm">
+        <div class="content">
+            <div class="container hidden-xs hidden-sm">
+                <div class="row text-right margin-middle">
+                    <div class="col-md-12 margin-middle">
+                        <p class="h1 text-lighter">
+                            一个好玩的公司
+                        </p>
+                        <p>
+                            我们是一个，青春向上，欢乐的团队，各种坚持以互联网的思维来创新发展，<br>
+                             用眼看世界、用芯走未来，为智慧城市、智慧生活贡献力量。我们期待您的加入
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,19 +48,39 @@
             </a>
         </div>
     </div>
-    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="/image/join02.jpg" class="img-responsive" width="100%" alt="...">
-                <div class="carousel-caption">
-                    <!-- 快来加入我们吧！来啊！来啊！ -->
-                </div>
-                <div class="carousel-come text-right hidden-xs hidden-sm">
-                    <p class="h1 text-lighter">
-                        快来加入我们吧！来啊！来啊！
-                    </p>
+
+
+    <div class="row">
+        <div class="join_video">
+            <video id="video2" class="video hidden-xs hidden-sm" loop="loop" preload="none" muted width="100%" poster="/image/1920-518_10.jpg">
+                <source src="/vendor/1920-518.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+            </video>
+            <img src="/image/1920-518_10.jpg" alt="video" class="visible-xs visible-sm">
+            <div class="content">
+                <div class="container hidden-xs hidden-sm">
+                    <div class="row text-right margin-middle"  style="position: absolute; bottom: 50px; left: 50%; margin-left: -248px;">
+                        <div class="col-md-12 margin-middle">
+                            <p class="h1 text-lighter">
+                                快来加入我们吧！来啊！来啊！
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+    <script type="text/javascript">
+    $(document).ready(function() {
+        if(document.documentElement.clientWidth > 768) {
+            var video = document.getElementById('video');
+            var video2 = document.getElementById('video2');
+            video.play();
+            video2.play();
+        }
+    });
+    </script>
 @endsection
