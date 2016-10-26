@@ -68,7 +68,7 @@
 
                 },
                 onSuccess:function(files,data,xhr,pd) {
-                    $("input[name='cover_image']").val(JSON.parse(data)[0])
+                    $("input[name='cover_image']").val(JSON.parse(data)[0]);
                 },
             });
         })
