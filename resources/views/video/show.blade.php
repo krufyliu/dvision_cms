@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container margin-middle">
     <div id="pano" style="width:100%;">
         <noscript>
         <table style="width:100%;height:100%;">
@@ -16,9 +17,9 @@
         </noscript>
     </div>
     <div class="container">
-        <div class="row margin-middle">
+        <div class="row">
             <div class="col-md-8">
-                <p class="h3 text-lighter">
+                <p class="h3">
                     {{ $video->title }}
                 </p>
                 <p>
@@ -27,6 +28,7 @@
             </div>
         </div>
     </div>
+</div>
 @endsection
 
 @section('script')
@@ -48,7 +50,7 @@
         if (!document.domain ||
               (navigator.userAgent.indexOf("Android") >= 0 && navigator.userAgent.indexOf("QQ") >= 0) ||
               (navigator.userAgent.indexOf("Mac OS X") >= 0 && navigator.userAgent.indexOf("OS 10_0_2") >= 0)) {
-            $("#pano").append('<div class="text-center"><h2>抱歉</h2><p>您的当前浏览器内核暂不支持VR视频播放</p><p>请使用支持WebGL的浏览器体验VR服务</p><p>推荐使用 <strong>Chrome</strong> 浏览器</p></div>');
+            $("#pano").append('<div class="text-center"><br><br><h2>提示</h2><p>为保证给您带来良好的视觉体验</p><p>请使用PC观看VR视频</p><p>推荐使用 <strong>Chrome</strong> 浏览器</p></div>');
         } else {
             embedpano({
                 vars: settings,
