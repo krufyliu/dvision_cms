@@ -129,7 +129,7 @@ main {
 }
 
 .team-timeline {
-    background-color: #e2f0f7;
+    background-color: #e5e5e5;
     ul {
         list-style: none;
         li {
@@ -221,33 +221,29 @@ footer {
     border-left: 10px solid transparent;
 }
 
-.contact {
-    margin: 0;
-    // display: flex;
-
-    background-color: #65c5d5;
-    [class^=col-] {
-        padding: 0;
-    }
-}
-
 .contact-body {
-    display: flex;
-
-    color: #fff;
-
-    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.contact-box {
+    display:flex;
+    justify-content:center;
     align-items: center;
+    color: #fff;
+    height: 100%;
+    ul {
+        padding: 0px;
+    }
     span {
-        margin-right: 20px;
+        margin-right: 10px;
     }
     .text {
         list-style: none;
         span {
             font-size: 18px;
-        }
-        label {
-            margin-right: 20px;
         }
     }
 }
