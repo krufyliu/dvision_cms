@@ -115,6 +115,15 @@
             </div>
         </div>
     </div>
+    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="/image/tem08.jpg" class="img-responsive" width="100%" alt="协作">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid team-timeline">
         <div class="row margin-middle">
             <div class="col-md-12 text-center">
@@ -123,13 +132,33 @@
                 </p>
             </div>
         </div>
-        <div class="row margin-middle">
-            <div class="col-md-4 col-md-offset-1 text-right hidden-xs hidden-sm ">
+        <div class="row margin-middle hidden-xs hidden-sm">
+            <img src="/image/tem11.jpg" class="img-responsive" width="100%" alt="timeline">
+        </div>
+        <div class="row margin-middle visible-xs visible-sm">
+            <div class="col-md-4 col-md-offset-1 text-left">
                 <p class="h3" style="margin-top: 0px;">
-                    2015
+                    2016
                 </p>
             </div>
-            <div class="col-md-4 col-md-offset-1 text-left visible-xs visible-sm">
+            <div class="col-md-6">
+                <ul>
+                    <li><span class="h4">10</span>&nbsp;&nbsp;&nbsp;&nbsp;DKVISION AURA服务中国网球公开赛，直播、录播</li>
+                    <li><span class="h4">09</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        DKVISION AURA相机推出<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        市场上唯一可量产8K 3D VR相机</li>
+                    <li><span class="h4">06</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        VisionBMP相机推出<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        代表作：张楚《晃动一下》</li>
+                    <li><span class="h4">04</span>&nbsp;&nbsp;&nbsp;&nbsp;DK PLAYER可交互、3D VR视频播放器及SDK推出</li>
+                    <li><span class="h4">02</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        VisionGo相机推出 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        代表作：黄晓明《新万水千山总是情》</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row margin-middle visible-xs visible-sm">
+            <div class="col-md-4 col-md-offset-1 text-left">
                 <p class="h3" style="margin-top: 0px;">
                     2015
                 </p>
@@ -138,42 +167,6 @@
                 <ul>
                     <li><span class="h4">09</span>&nbsp;&nbsp;&nbsp;&nbsp;DK Editor全景3D拼接软件推出</li>
                 </ul>
-            </div>
-        </div>
-        <div class="row margin-middle">
-            <div class="col-md-4 col-md-offset-1 text-right hidden-xs hidden-sm ">
-                <p class="h3" style="margin-top: 0px;">
-                    2016
-                </p>
-            </div>
-            <div class="col-md-4 col-md-offset-1 text-left visible-xs visible-sm">
-                <p class="h3" style="margin-top: 0px;">
-                    2016
-                </p>
-            </div>
-            <div class="col-md-6">
-                <ul>
-                    <li><span class="h4">02</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                        VisionGo相机推出 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        代表作：黄晓明《新万水千山总是情》</li>
-                    <li><span class="h4">04</span>&nbsp;&nbsp;&nbsp;&nbsp;DK PLAYER可交互、3D VR视频播放器及SDK推出</li>
-                    <li><span class="h4">06</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                        VisionBMP相机推出<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        代表作：张楚《晃动一下》</li>
-                    <li><span class="h4">09</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                        DKVISION AURA相机推出<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        市场上唯一可量产8K 3D VR相机</li>
-                    <li><span class="h4">10</span>&nbsp;&nbsp;&nbsp;&nbsp;DKVISION AURA服务中国网球公开赛，直播、录播</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="/image/tem08.jpg" class="img-responsive" width="100%" alt="协作">
-                <div class="carousel-caption">
-                </div>
             </div>
         </div>
     </div>
