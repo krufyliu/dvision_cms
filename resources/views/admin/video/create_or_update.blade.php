@@ -44,19 +44,24 @@
                     {{ error_block($errors, 'cover_image') }}
                 </div>
                 <div class="form-group {{ has_error_class($errors, 'url.audio') }}">
-                    {!! Form::label('url[audio]', '音频地址(仅支持m4a, 地址勿加后缀)', ['class' => 'control-label']) !!}
+                    {!! Form::label('url[audio]', '音频地址', ['class' => 'control-label']) !!}
                     {!! Form::text('url[audio]', null, ['class' => 'form-control']) !!}
                     {{ error_block($errors, 'url.audio') }}
                 </div>
                 <div class="form-group {{ has_error_class($errors, 'url.video_720p') }}">
-                    {!! Form::label('url[video_720p]', '720P视频地址(仅支持mp4, 地址勿加后缀)', ['class' => 'control-label']) !!}
+                    {!! Form::label('url[video_720p]', '720P视频地址', ['class' => 'control-label']) !!}
                     {!! Form::text('url[video_720p]', null, ['class' => 'form-control']) !!}
                     {{ error_block($errors, 'url.video_720p') }}
                 </div>
                 <div class="form-group {{ has_error_class($errors, 'url.video_1080p') }}">
-                    {!! Form::label('url[video_1080p]', '1080P视频地址(仅支持mp4, 地址勿加后缀)', ['class' => 'control-label']) !!}
+                    {!! Form::label('url[video_1080p]', '1080P视频地址', ['class' => 'control-label']) !!}
                     {!! Form::text('url[video_1080p]', null, ['class' => 'form-control']) !!}
                     {{ error_block($errors, 'url.video_1080p') }}
+                </div>
+                <div class="form-group {{ has_error_class($errors, 'url.mobile') }}">
+                    {!! Form::label('url[mobile]', '移动端地址(填写移动端站点地址)', ['class' => 'control-label']) !!}
+                    {!! Form::text('url[mobile]', null, ['class' => 'form-control']) !!}
+                    {{ error_block($errors, 'url.mobile') }}
                 </div>
                 <div class="form-group {{ has_error_class($errors, 'description') }}">
                     {!! Form::label('description', '内容', ['class' => 'control-label']) !!}
