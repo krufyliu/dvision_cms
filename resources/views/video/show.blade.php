@@ -47,10 +47,8 @@
         if(isiOS){
             settings["soundurl"] = "{{ $video->url['audio'] }}";
         }
-        if (!document.domain ||
-              (navigator.userAgent.indexOf("Android") >= 0 && navigator.userAgent.indexOf("QQ") >= 0) ||
-              (navigator.userAgent.indexOf("Mac OS X") >= 0 && navigator.userAgent.indexOf("OS 10_0_2") >= 0)) {
-            $("#pano").append('<div class="text-center"><br><br><h2>提示</h2><p>为保证给您带来良好的视觉体验</p><p>请使用PC观看VR视频</p><p>推荐使用 <strong>Chrome</strong> 浏览器</p></div>');
+        if (true) {
+            $("#pano").append('<div class="text-center"><h2>提示</h2><p>为保证给您带来良好的视觉体验</p><p>建议在PC使用 <strong>Chrome</strong> 浏览器观看VR视频</p><p><a href="{{ $video->url['mobile'] }}" class="btn btn-primary" role="button">点击播放</a></p></div>');
         } else {
             embedpano({
                 vars: settings,
@@ -68,56 +66,6 @@
                     stencil: false
                 }
             });
-        }
-        function selecthtml5usage() {
-            if (navigator.userAgent.indexOf("Android") >= 0 && navigator.userAgent.indexOf("QQ") >= 0) {
-                return "auto+css3d"
-            } else {
-                return "prefer";
-            }
-        }
-        // console.log(isiOS);
-        if (isAndroid || isiOS) {
-            var winWidth = $(window).width();
-            var winHeight = $(window).height();
-            if (winWidth > winHeight) {
-                $("#krpanoSWFObject").css({
-                    'position':'fixed',
-                    'top':0,
-                    'bottom':0,
-                    'left':0,
-                    'right':0
-                })
-            } else {
-                $("#krpanoSWFObject").css({
-                    'position':'relative',
-                    'top':'auto',
-                    'bottom':'auto',
-                    'left':'auto',
-                    'right':'auto'
-                })
-            }
-            $(window).resize(function () {
-                var winWidth = $(window).width();
-                var winHeight = $(window).height();
-                if (winWidth > winHeight) {
-                    $("#krpanoSWFObject").css({
-                        'position':'fixed',
-                        'top':0,
-                        'bottom':0,
-                        'left':0,
-                        'right':0
-                    })
-                } else {
-                    $("#krpanoSWFObject").css({
-                        'position':'relative',
-                        'top':'auto',
-                        'bottom':'auto',
-                        'left':'auto',
-                        'right':'auto'
-                    })
-                }
-            })
         }
 
         if(document.documentElement.clientWidth > 768) {
