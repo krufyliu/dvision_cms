@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class CareerJob extends Model
 {
-    protected $fillable = ['title', 'description', 'location', 'department', 'status', 'creator_id'];
+    protected $fillable = ['title', 'description', 'location', 'department', 'cover_image', 'status', 'creator_id'];
 
     public function creator()
     {

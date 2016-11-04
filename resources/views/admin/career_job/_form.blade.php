@@ -21,6 +21,14 @@
     {{ error_block($errors, 'location') }}
 </div>
 
+<div class="form-group {{ has_error_class($errors, 'cover_image') }}">
+    {!! Form::label('cover_image', '封面图片(尺寸必须为 360*280)', ['class' => 'control-label']) !!}
+    <label class="control-label"></label>
+    <div id="fileuploader">Upload</div>
+    {!! Form::hidden('cover_image', null, ['class' => 'form-control']) !!}
+    {{ error_block($errors, 'cover_image') }}
+</div>
+
 <div class="form-group {{ has_error_class($errors, 'description') }}">
     {!! Form::label('description', '内容', ['class' => 'control-label']) !!}
     {!! Form::textarea('description', null, ['class' => 'form-control', 'id' => 'summernote']) !!}
