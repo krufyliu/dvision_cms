@@ -49,7 +49,7 @@
         }
         if (!document.domain ||
                 (navigator.userAgent.indexOf("Android") >= 0 && navigator.userAgent.indexOf("QQ") >= 0) ||
-                (navigator.userAgent.indexOf("Mac OS X") >= 0 && navigator.userAgent.indexOf("OS 10_0_2") >= 0)) {
+                navigator.userAgent.indexOf("Mac OS X") >= 0) {
             $("#pano").append('<div class="text-center"><h2>提示</h2><p>为保证给您带来良好的视觉体验</p><p>建议在PC使用 <strong>Chrome</strong> 浏览器观看VR视频</p><p><a href="{{ $video->url['mobile'] }}" class="btn btn-primary" role="button">点击播放</a></p></div>');
         } else {
             embedpano({
