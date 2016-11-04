@@ -23,24 +23,53 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        @foreach($careerjobs as $careerjob)
-            <div class="col-sm-12 col-md-8 col-lg-4 col-md-offset-2 col-lg-offset-4 margin-middle">
-                <p class="h3 text-center">
-                    {{ $careerjob->title }}
-                </p>
-                <div class="col-md-6 margin-middle">
-                    部门: {{ $careerjob->department }}
+    <div class="container">
+        <div class="row">
+            @foreach($careerjobs as $careerjob)
+                <div class="col-md-6" style="margin-top: 30px;">
+                    <a href="#jobs_{{ $careerjob->id }}" data-toggle="modal">
+                        <div class="item" style="display: table; background-color: #fff;">
+                            <div class="col-md-4 col-sm-3 col-xs-12" style="padding: 0px;">
+                                <img src="{{ '/storage/' . $careerjob->cover_image }}" class="img-responsive" style="margin: 0 auto;" alt="">
+                            </div>
+                            <div class="col-md-8 col-sm-9 col-xs-12">
+                                <h3 style="color: #000;">{{ $careerjob->title }}</h3>
+                                <p class="h5 text-lighter" style="max-width: 240px;"><span>部门-{{ $careerjob->department }}</span><span class="pull-right">地点-{{ $careerjob->location }}</span></p>
+                                <br>
+                                <p class="h6">{!! str_limit(strip_tags($careerjob->description), $limit = 70, $end = '...') !!}</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal fade" id="jobs_{{ $careerjob->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border-bottom: 0px;">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="h3 text-center">
+                                        {{ $careerjob->title }}
+                                    </p>
+                                    <p class="col-md-6 margin-middle" style="padding: 0px">
+                                        部门: {{ $careerjob->department }}
+                                    </p>
+                                    <p class="col-md-6 margin-middle" style="padding: 0px;">
+                                        工作地点: {{ $careerjob->location }}
+                                    </p>
+
+                                    {!! $careerjob->description !!}
+                                </div>
+                                <div class="modal-footer" style="border-top: 0px;">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 margin-middle">
-                    工作地点: {{ $careerjob->location }}
-                </div>
-                <div class="col-md-12">
-                    {!! $careerjob->description !!}
-                </div>
-            </div>
-        @endforeach
+            @endforeach
+        </div>
     </div>
+
     <div class="row">
         <div class="col-md-12 margin-middle text-center">
             <a href="mailto:hr@visiondk.com" class="h2 text-lighter">
@@ -75,6 +104,7 @@
 @section('script')
     <script type="text/javascript">
     $(document).ready(function() {
+        $("main").css("background-color","#eee");
         if(document.documentElement.clientWidth > 768) {
             var video = document.getElementById('video');
             var video2 = document.getElementById('video2');
