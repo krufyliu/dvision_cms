@@ -11,12 +11,18 @@
         </div>
     </div>
 </div>
-<div style="position: absolute; width: 100%; top: 20%; left: 0px; color: #fff; opacity: 0.9;">
+<div style="position: absolute; width: 100%; top: 10%; left: 0px; color: #fff; opacity: 0.9;">
     <div class="container-fluid">
         <div class="row contact">
             <div class="col-md-6 col-md-offset-3">
                 <form class="form-horizontal" role="form" method="post" action="{{ url('/contact')  }}">
                     {{ csrf_field() }}
+                    <div class="form-group">
+                        <div class="col-sm-12 text-center">
+                            <h2>联系我们</h2>
+                            <p>如果您想要更深入的了解我们的产品和服务<br>请填写下面的表格，我们将很快与您取得联系</p>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label for="" class="col-sm-2 control-label"><span style="color: red;">*</span>&nbsp;公司或个人名称</label>
                         <div class="col-sm-8">
