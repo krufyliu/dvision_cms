@@ -34,7 +34,6 @@
 @section('script')
     <script type="text/javascript" src="/vrplay/krpano.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
         var u = navigator.userAgent;
         var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
         var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
@@ -69,14 +68,5 @@
                 }
             });
         }
-
-        if(document.documentElement.clientWidth > 768) {
-            $('.video > .video-item ').each(function() {
-                $(this).hoverdir({
-                    hoverDelay: 75
-                });
-            });
-        }
-    });
     </script>
 @endsection
