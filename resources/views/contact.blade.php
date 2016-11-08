@@ -1,18 +1,65 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="row contact">
-    <div class="col-md-12">
-        <img src="/image/contactus_high.jpg" class="hidden-xs hidden-sm" alt="contact" width="100%">
-        <img src="/image/contactus_low.jpg" class="visible-xs visible-sm" alt="contact" width="100%">
-        <div class="contact-body">
-            <div class="contact-box">
-                <ul class="text">
-                    <li class="margin-middle" style="padding-bottom: 15px;"><span class="fa fa-phone"></span><label style="font-weight: 300;">总机电话:  0755-26657982</label></li>
-                    <li class="margin-middle" style="padding-bottom: 15px;"><span class="fa fa-envelope"></span><label style="font-weight: 300;">产品邮箱:  zwzeng@visiondk.com</label></li>
-                    <li class=""><span class="fa fa-map-marker"></span><label style="font-weight: 300;">深圳市南山区铜鼓路39号 <i class="hidden-xs hidden-sm">大冲国际中心5号楼902</i></label></li>
-                    <li class="visible-xs visible-sm"><span class="fa"></span><label style="font-weight: 300;">&nbsp;&nbsp;&nbsp;大冲国际中心5号楼902</i></label></li>
-                </ul>
+<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="/image/contactus_high.jpg" class="hidden-xs hidden-sm" alt="contact" width="100%">
+            <img src="/image/contactus_low.jpg" class="visible-xs visible-sm" alt="contact" width="100%">
+            <div class="carousel-caption">
+            </div>
+        </div>
+    </div>
+</div>
+<div style="position: absolute; width: 100%; top: 20%; left: 0px; color: #fff; opacity: 0.9;">
+    <div class="container-fluid">
+        <div class="row contact">
+            <div class="col-md-6 col-md-offset-3">
+                <form class="form-horizontal" role="form" method="post" action="http://192.168.10.17:8000/contact">
+                    {{ csrf_field() }}
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label"><span style="color: red;">*</span>&nbsp;公司名称</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="company" class="form-control" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label"><span style="color: red;">*</span>&nbsp;个人名称</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="name" class="form-control" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label"><span style="color: red;">*</span>&nbsp;联系电话</label>
+                        <div class="col-sm-8">
+                            <input type="phone" name="phone" class="form-control" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label"><span style="color: red;">*</span>&nbsp;联系邮箱</label>
+                        <div class="col-sm-8">
+                            <input type="email" name="email" class="form-control" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label"><span style="color: red;">*</span>&nbsp;留言内容</label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control" name="content" rows="8" required=""></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">留言</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <a href="tel:075526657982" style="color: #fff;" class="col-sm-offset-2 col-sm-8 text-center">总机电话:  0755-26657982</a>
+                    </div>
+                    <div class="form-group">
+                        <a href="http://j.map.baidu.com/AhgTH" style="color: #fff;" target="_blank" class="col-sm-offset-2 col-sm-8 text-center">深圳市南山区铜鼓路39号 大冲国际中心5号楼902</a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

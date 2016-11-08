@@ -18,6 +18,7 @@ Route::get('/service', 'StaticController@service');
 Route::get('/team', 'StaticController@team');
 
 Route::get('/contact', 'StaticController@contact');
+Route::post('/contact', 'StaticController@contactSubmit');
 
 Route::get('/video', 'StaticController@video');
 Route::get('/video/{id}', 'StaticController@videoShow');

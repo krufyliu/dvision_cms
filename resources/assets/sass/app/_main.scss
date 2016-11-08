@@ -358,9 +358,9 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-    .contact-body {
-        height: 490px;
-    }
+    //.contact-body {
+    //    height: 490px;
+    //}
     #pano {
         height: 520px;
     }
@@ -370,18 +370,18 @@ footer {
 }
 
 @media screen and (min-width: 1279px) {
-    .contact-body {
-        height: 600px;
-    }
+    //.contact-body {
+    //    height: 600px;
+    //}
     #pano {
         height: 560px;
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .contact-body {
-        height: 750px;
-    }
+    //.contact-body {
+    //    height: 750px;
+    //}
     #pano {
         height: 600px;
     }
@@ -389,7 +389,7 @@ footer {
 
 
 @media screen and (min-width: 2560px) {
-    .contact-body {
-        height: 1024px;
-    }
+    //.contact-body {
+    //    height: 1024px;
+    //}
 }
