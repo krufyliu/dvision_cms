@@ -4,8 +4,8 @@
 <div id="carousel-generic" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="/image/contactus_high.jpg" class="hidden-xs hidden-sm" alt="contact" width="100%">
-            <img src="/image/contactus_low.jpg" class="visible-xs visible-sm" alt="contact" width="100%">
+            <img src="/image/contactus_high_01.jpg" class="hidden-xs hidden-sm" alt="contact" width="100%">
+            <img src="/image/contactus_low_01.jpg" class="visible-xs visible-sm" alt="contact" width="100%">
             <div class="carousel-caption">
             </div>
         </div>
@@ -15,16 +15,10 @@
     <div class="container-fluid">
         <div class="row contact">
             <div class="col-md-6 col-md-offset-3">
-                <form class="form-horizontal" role="form" method="post" action="http://192.168.10.17:8000/contact">
+                <form class="form-horizontal" role="form" method="post" action="{{ url('/contact')  }}">
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <label for="" class="col-sm-2 control-label"><span style="color: red;">*</span>&nbsp;公司名称</label>
-                        <div class="col-sm-8">
-                            <input type="text" name="company" class="form-control" required="">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label"><span style="color: red;">*</span>&nbsp;个人名称</label>
+                        <label for="" class="col-sm-2 control-label"><span style="color: red;">*</span>&nbsp;公司或个人名称</label>
                         <div class="col-sm-8">
                             <input type="text" name="name" class="form-control" required="">
                         </div>
@@ -47,6 +41,13 @@
                             <textarea class="form-control" name="content" rows="8" required=""></textarea>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-8">
+                            {!! Geetest::render() !!}
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-8">
                             <button type="submit" class="btn btn-primary" style="width: 100%;">留言</button>

@@ -14,8 +14,7 @@
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                 <tr>
-                                    <th>姓名</th>
-                                    <th>公司</th>
+                                    <th>名称</th>
                                     <th>邮箱</th>
                                     <th>电话</th>
                                     <th>留言时间</th>
@@ -26,7 +25,6 @@
                                 @foreach($feedbacks as $feedback)
                                     <tr class="{{ $loop->iteration % 2 == 0 ? 'even' : 'odd' }}">
                                         <td>{{ $feedback->name }}</td>
-                                        <td>{{ $feedback->company }}</td>
                                         <td>{{ $feedback->email }}</td>
                                         <td>{{ $feedback->phone }}</td>
                                         <td>{{ $feedback->created_at }}</td>
@@ -35,6 +33,7 @@
                                             <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#feedback_{{ $feedback->id }}">
                                                 查看详情
                                             </button>
+                                            <button class="btn btn-danger btn-xs delete" data-target="{{ url('/admin/feedbacks', [$feedback->id]) }}">删除</button>
 
                                             <!-- Modal -->
                                             <div class="modal fade" id="feedback_{{ $feedback->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -48,12 +47,8 @@
                                                             <table class="table table-bordered">
                                                                 <tbody>
                                                                 <tr>
-                                                                    <td class="text-right">姓名</td>
+                                                                    <td class="text-right">名称</td>
                                                                     <td>{{ $feedback->name }}</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td class="text-right">公司</td>
-                                                                    <td>{{ $feedback->company }}</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td class="text-right">邮箱</td>
@@ -104,4 +99,33 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+    <script>
+        $(document).ready(function () {
+            $('button.delete').on('click', function () {
+                if(confirm("确定要删除数据吗？"))
+                {
+                    var url = $(this).data('target');
+                    $.ajax({
+                        url: url,
+                        type: 'DELETE',
+                        dataType: 'json',
+                        data: {
+                            _method: 'delete'
+                        },
+                        success: function(data) {
+                            if(data.err_code == '0') {
+                                window.location.reload();
+                            } else {
+                                alert("糟糕", data.err_msg, "error");
+                            }
+                        }
+                    });
+                }
+
+            });
+        });
+    </script>
 @endsection

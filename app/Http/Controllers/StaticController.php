@@ -35,25 +35,28 @@ class StaticController extends Controller
         return view('contact', ['title' => '联系']);
     }
 
+    public function suceess()
+    {
+        return view('suceess', ['title' => '留言']);
+    }
+
     public function contactSubmit(Request $request)
     {
         $this->contactValidator($request)->validate();
         Feedback::create([
                 'name' => $request->input('name'),
-                'company' => $request->input('company'),
                 'phone' => $request->input('phone'),
                 'email' => $request->input('email'),
                 'content' => $request->input('content'),
             ]
         );
-        return redirect()->action('StaticController@home');
+        return redirect()->action('StaticController@suceess');
     }
 
     protected  function contactValidator(Request $request)
     {
         return Validator::make($request->all(), [
             'name' => 'required',
-            'company' => 'required',
             'phone' => 'required',
             'email' => 'required',
             'content' => 'required'
