@@ -46,6 +46,8 @@
                     <li><a href="{{ url('/service') }}">服务</a></li>
                     <li><a href="{{ url('/team') }}">团队</a></li>
                     <li><a href="{{ url('/news') }}">新闻</a></li>
+                    <li><a href="{{ url('/join') }}">加入</a></li>
+                    <li><a href="{{ url('/contact') }}">联系</a></li>
                     <!-- <li><a href="#">下载</a></li> -->
                 </ul>
             </div>
