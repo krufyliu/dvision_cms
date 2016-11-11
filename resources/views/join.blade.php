@@ -36,7 +36,7 @@
                                 <h3 style="color: #000;">{{ $careerjob->title }}</h3>
                                 <p class="h5" style="max-width: 240px; font-weight: 300;"><span>部门-{{ $careerjob->department }}</span><span class="pull-right">地点-{{ $careerjob->location }}</span></p>
                                 <br>
-                                <p class="h5" style="font-weight: 300;">{!! str_limit(strip_tags($careerjob->description), $limit = 70, $end = '...') !!}</p>
+                                <p class="h5" style="font-weight: 300; line-height: 21px;">{!! str_limit(strip_tags($careerjob->description), $limit = 70, $end = '...') !!}</p>
                             </div>
                         </div>
                     </a>
