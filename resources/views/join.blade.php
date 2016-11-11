@@ -34,9 +34,9 @@
                             </div>
                             <div class="col-md-8 col-sm-9 col-xs-12">
                                 <h3 style="color: #000;">{{ $careerjob->title }}</h3>
-                                <p class="h5 text-lighter" style="max-width: 240px;"><span>部门-{{ $careerjob->department }}</span><span class="pull-right">地点-{{ $careerjob->location }}</span></p>
+                                <p class="h5" style="max-width: 240px; font-weight: 300;"><span>部门-{{ $careerjob->department }}</span><span class="pull-right">地点-{{ $careerjob->location }}</span></p>
                                 <br>
-                                <p class="h6">{!! str_limit(strip_tags($careerjob->description), $limit = 70, $end = '...') !!}</p>
+                                <p class="h5" style="font-weight: 300;">{!! str_limit(strip_tags($careerjob->description), $limit = 70, $end = '...') !!}</p>
                             </div>
                         </div>
                     </a>
