@@ -60,6 +60,7 @@
                                     {!! $careerjob->description !!}
                                 </div>
                                 <div class="modal-footer" style="border-top: 0px;">
+                                    <a href="mailto:hr@visiondk.com" class="btn btn-primary">发送简历</a>
                                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                                 </div>
                             </div>

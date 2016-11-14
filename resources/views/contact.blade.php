@@ -17,13 +17,22 @@
             <div class="col-md-6 col-md-offset-3">
                 <form class="form-horizontal" role="form" method="post" action="{{ url('/contact')  }}">
                     {{ csrf_field() }}
+
                     <div class="form-group">
                         <div class="col-sm-12 text-center">
-                            <h2>联系我们</h2>
-                            <p>如果您想要更深入的了解我们的产品和服务<br>请填写下面的表格，我们将很快与您取得联系</p>
+                            <h2 style="font-weight: 300;">联系我们</h2>
+                            <!-- <p>如果您想要更深入的了解我们的产品和服务<br>请填写下面的表格，我们将很快与您取得联系</p> -->
                         </div>
                     </div>
+
                     <div class="form-group">
+                        <a href="tel:075526657982" style="color: #fff;" class="col-sm-offset-2 col-sm-8 text-center h2"><i class="fa fa-phone"></i> 0755-26657982</a>
+                    </div>
+                    <div class="form-group">
+                        <a href="http://j.map.baidu.com/AhgTH" style="color: #fff; font-weight: 300; line-height: 35px;" target="_blank" class="col-sm-offset-2 col-sm-8 text-center h5">深圳市南山区铜鼓路39号大冲国际中心5号楼902</a>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 60px;">
                         <label for="" class="col-sm-2 control-label"><span style="color: red;">*</span>&nbsp;公司或个人名称</label>
                         <div class="col-sm-8">
                             <input type="text" name="name" class="form-control" required="">
@@ -58,13 +67,6 @@
                         <div class="col-sm-offset-2 col-sm-8">
                             <button type="submit" class="btn btn-primary" style="width: 100%;">留言</button>
                         </div>
-                    </div>
-
-                    <div class="form-group">
-                        <a href="tel:075526657982" style="color: #fff;" class="col-sm-offset-2 col-sm-8 text-center">总机电话:  0755-26657982</a>
-                    </div>
-                    <div class="form-group">
-                        <a href="http://j.map.baidu.com/AhgTH" style="color: #fff;" target="_blank" class="col-sm-offset-2 col-sm-8 text-center">深圳市南山区铜鼓路39号 大冲国际中心5号楼902</a>
                     </div>
                 </form>
             </div>
