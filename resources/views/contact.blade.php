@@ -26,13 +26,20 @@
                     </div>
 
                     <div class="form-group">
-                        <a href="tel:075526657982" style="color: #fff;" class="col-sm-offset-2 col-sm-8 text-center h2"><i class="fa fa-phone"></i> 0755-26657982</a>
+                        <div class="col-sm-offset-2 col-sm-8 text-center h2">
+                            <a href="tel:075526657982" style="color: #fff;"><i class="fa fa-phone"></i> 0755-26657982</a>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <a href="http://j.map.baidu.com/AhgTH" style="color: #fff; font-weight: 300; line-height: 35px;" target="_blank" class="col-sm-offset-2 col-sm-8 text-center h5">深圳市南山区铜鼓路39号大冲国际中心5号楼902</a>
+                        <div class="col-sm-offset-2 col-sm-8 text-center h5 hidden-xs hidden-sm">
+                            <a href="http://j.map.baidu.com/AhgTH" style="color: #fff; font-weight: 300; line-height: 35px;" target="_blank" >深圳市南山区铜鼓路39号大冲国际中心5号楼902</a>
+                        </div>
+                        <div class="col-sm-offset-2 col-sm-8 text-center h5 visible-xs visible-sm">
+                            <a href="http://j.map.baidu.com/AhgTH" style="color: #fff; font-weight: 300; line-height: 35px;" target="_blank" >深圳市南山区铜鼓路39号<br>大冲国际中心5号楼902</a>
+                        </div>
                     </div>
 
-                    <div class="form-group" style="margin-top: 60px;">
+                    <div class="form-group" style="margin-top: 40px;">
                         <label for="" class="col-sm-2 control-label"><span style="color: red;">*</span>&nbsp;公司或个人名称</label>
                         <div class="col-sm-8">
                             <input type="text" name="name" class="form-control" required="">
