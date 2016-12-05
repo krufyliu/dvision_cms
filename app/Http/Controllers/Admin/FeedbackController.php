@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Models\Feedback;
+use Excel;
 
 class FeedbackController extends Controller
 {
@@ -21,6 +22,35 @@ class FeedbackController extends Controller
         return $this->successJsonResponse();
     }
 
+    public function exportExcel()
+    {
+        Excel::create('用户留言', function($excel) {
+            $excel->setTitle('量子视觉官网用户留言');
+            $excel->setCreator('');
+            $excel->setDescription('量子视觉官网用户留言Excel导出');
+            $excel->sheet('First sheet', function($sheet) {
+                $data = $this->prepareExcelData();
+                $sheet->rows($data);
+            });
+        })->export('xls');
+    }
+
+    protected function prepareExcelData() {
+        $headers = [
+            'name' => '公司或个人名称',
+            'phone' => '联系电话',
+            'email' => '联系邮箱',
+            'content' => '留言内容',
+            'created_at' => '留言时间'
+        ];
+        $data = Feedback::all()->map(function($f, $k) {
+            return [
+                $f->name, $f->phone, $f->email, $f->content, $f->created_at
+            ];
+        })->all();
+        array_unshift($data, array_values($headers));
+        return $data;
+    }
 
     protected function successJsonResponse(array $extra = null) {
         $ret = ['err_code' => '0', 'err_msg' => 'SUCCESS'];
