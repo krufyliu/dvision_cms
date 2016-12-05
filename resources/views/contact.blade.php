@@ -66,7 +66,9 @@
                     <div class="form-group">
                         <label for="" class="col-sm-2 control-label"></label>
                         <div class="col-sm-8">
-                            {!! Geetest::render() !!}
+                            @if(app()->environment() === 'production')
+                                {!! Geetest::render() !!}
+                            @endif
                         </div>
                     </div>
 

@@ -5,6 +5,7 @@
         <div class="col-sm-10 col-sm-offset-1">
             <h1 class="title text-lighter">
                 留言
+                <a href="{{ url('/admin/feedbacks/export') }}" class="btn btn-default btn-lg" target="_blank">导出Excel</a>
             </h1>
             <hr>
             <div class="well">
