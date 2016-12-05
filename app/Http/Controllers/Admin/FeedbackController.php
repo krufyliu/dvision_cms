@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Models\Feedback;
-use Excel;
+use Maatwebsite\Excel\Facades\Excel;
 
 class FeedbackController extends Controller
 {
@@ -31,6 +31,14 @@ class FeedbackController extends Controller
             $excel->sheet('First sheet', function($sheet) {
                 $data = $this->prepareExcelData();
                 $sheet->rows($data);
+                $endLine = count($data)+1;
+                for($i = 1; $i <= $endLine; $i++) {
+                    $sheet->setSize("A{$i}", 30, 30);
+                    $sheet->setSize("B{$i}", 30, 30);
+                    $sheet->setSize("C{$i}", 30, 30);
+                    $sheet->setSize("D{$i}", 30, 30);
+                    $sheet->setSize("E{$i}", 30, 30);
+                }
             });
         })->export('xls');
     }
