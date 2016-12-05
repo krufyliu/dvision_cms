@@ -36,8 +36,6 @@
             </div>
         @endforeach
     </div>
-    <br>
-    <br>
 @endsection
 
 @section('script')

@@ -21,6 +21,8 @@
 
 @section('script')
     <script type="text/javascript" src="/vendor/summernote/summernote.min.js"></script>
+    <script type="text/javascript" src="/vendor/jquery-upload-file/jquery.form.min.js"></script>
+    <script type="text/javascript" src="/vendor/jquery-upload-file/jquery.uploadfile.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#summernote').summernote({
@@ -47,6 +49,28 @@
                     }
                 });
             }
+
+            $("#fileuploader").uploadFile({
+                url: "/admin/upload/file",
+                fileName: "myfile",
+                multiple: false,
+                maxFileCount: 1,
+                acceptFiles: "image/*",
+                showPreview: true,
+                showDelete: true,
+                deleteCallback: function (data, pd) {
+                    var data = JSON.parse(data);
+                    for (var i = 0; i < data.length; i++) {
+                        $.post("/admin/upload/delete", {op: "delete",name: data[i]});
+                    }
+                    $("input[name='cover_image']").val('');
+                    pd.statusbar.hide(); //You choice.
+
+                },
+                onSuccess:function(files,data,xhr,pd) {
+                    $("input[name='cover_image']").val(JSON.parse(data)[0]);
+                },
+            });
         });
     </script>
 @endsection

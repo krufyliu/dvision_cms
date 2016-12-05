@@ -23,6 +23,15 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7f4e8b613b72d886b4445c4a9075837f";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
 </head>
 <body>
     <header class="navbar navbar-default navbar-fixed-top">
@@ -46,6 +55,8 @@
                     <li><a href="{{ url('/service') }}">服务</a></li>
                     <li><a href="{{ url('/team') }}">团队</a></li>
                     <li><a href="{{ url('/news') }}">新闻</a></li>
+                    <li><a href="{{ url('/join') }}">加入</a></li>
+                    <li><a href="{{ url('/contact') }}">联系</a></li>
                     <!-- <li><a href="#">下载</a></li> -->
                 </ul>
             </div>

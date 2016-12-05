@@ -33,25 +33,17 @@
                     <div class="caption">
                         <h4>专业设备租赁</h4>
                         <p class="text-muted">
-                            自主研发的全景影视级拍摄设备“ AURA ”的租赁,买卖
+                            自主研发的全景影视级拍摄设备“ AURA ”的销售，租赁
                         </p>
                     </div>
                 </div>
+
                 <div class="col-xs-12 col-sm-6 col-md-4 text-center margin-middle">
-                    <img src="/image/serve03.png" alt="..." width="120" height="120">
+                    <img src="/image/serve05.png" alt="..." width="120" height="120">
                     <div class="caption">
-                        <h4>后期剪辑 字幕</h4>
+                        <h4>云平台</h4>
                         <p class="text-muted">
-                            全景视频拼接、剪辑、调色、字幕等一体化服务
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 text-center margin-middle">
-                    <img src="/image/serve02.png" alt="..." width="120" height="120">
-                    <div class="caption">
-                        <h4>团队拍摄</h4>
-                        <p class="text-muted">
-                            业内顶尖的VR拍摄团队，国际知名 VR导演，艺术指导
+                            全球领先的VR制作及三维重建SaaS云平台
                         </p>
                     </div>
                 </div>
@@ -65,20 +57,29 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 text-center margin-middle">
-                    <img src="/image/serve05.png" alt="..." width="120" height="120">
+                    <img src="/image/serve06.png" alt="..." width="120" height="120">
                     <div class="caption">
-                        <h4>视觉特效</h4>
+                        <h4>VR直播</h4>
                         <p class="text-muted">
-                            VR视觉特效以及整体包装
+                            多范围场景直播，视频清晰流畅，低延时、真3D
                         </p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 text-center margin-middle">
-                    <img src="/image/serve06.png" alt="..." width="120" height="120">
+                    <img src="/image/serve03.png" alt="..." width="120" height="120">
                     <div class="caption">
-                        <h4>直播</h4>
+                        <h4>影视级VR制作</h4>
                         <p class="text-muted">
-                            多范围场景直播，视频清晰流畅，无延时、无卡顿
+                            全景视频拼接、剪辑、调色、特效等一体化服务
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center margin-middle">
+                    <img src="/image/serve02.png" alt="..." width="120" height="120">
+                    <div class="caption">
+                        <h4>团队拍摄</h4>
+                        <p class="text-muted">
+                            业内顶尖的VR拍摄团队，国际知名 VR导演，艺术指导
                         </p>
                     </div>
                 </div>

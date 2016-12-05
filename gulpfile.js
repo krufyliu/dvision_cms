@@ -24,7 +24,4 @@ elixir(mix => {
     mix.copy('./node_modules/bootstrap-sass/assets/fonts', 'public/fonts');
     mix.copy('./resources/assets/vendor/summernote/font', 'public/fonts');
     mix.copy('./node_modules/font-awesome/fonts', 'public/fonts');
-    mix.browserSync({
-        proxy: '0.0.0.0:8000'
-    });
 });

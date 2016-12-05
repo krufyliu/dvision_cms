@@ -18,6 +18,8 @@ Route::get('/service', 'StaticController@service');
 Route::get('/team', 'StaticController@team');
 
 Route::get('/contact', 'StaticController@contact');
+Route::get('/suceess', 'StaticController@suceess');
+Route::post('/contact', 'StaticController@contactSubmit');
 
 Route::get('/video', 'StaticController@video');
 Route::get('/video/{id}', 'StaticController@videoShow');
@@ -26,3 +28,5 @@ Route::get('/join', 'StaticController@join');
 
 Route::get('/news', 'StaticController@news');
 Route::get('/news/{id}', 'StaticController@newsShow');
+
+Route::get('/auth/geetest', 'AuthController@getGeetest');
