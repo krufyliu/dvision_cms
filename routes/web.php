@@ -30,3 +30,7 @@ Route::get('/news', 'StaticController@news');
 Route::get('/news/{id}', 'StaticController@newsShow');
 
 Route::get('/auth/geetest', 'AuthController@getGeetest');
+
+Route::get('/h5', function () {
+  return view('exhibition');
+});
