@@ -97,4 +97,8 @@ class StaticController extends Controller
         return view('video.show', ['video' => $video, 'title' => '视频']);
     }
 
+    public function zshuang() {
+        return view('zshuang');    
+    }
+
 }

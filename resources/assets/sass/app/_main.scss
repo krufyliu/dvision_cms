@@ -297,6 +297,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .container.newsShow img {
+        width: 80%!important;
+        height: auto!important;
+    }
     .video {
         .video-item {
             overflow: hidden;

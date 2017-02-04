@@ -28,6 +28,8 @@ Route::get('/join', 'StaticController@join');
 
 Route::get('/news', 'StaticController@news');
 Route::get('/news/{id}', 'StaticController@newsShow');
+// zshuang
+Route::get('zshuang', 'StaticController@zshuang');
 
 Route::get('/auth/geetest', 'AuthController@getGeetest');
 
