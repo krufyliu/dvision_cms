@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', 'StaticController@home');
+Route::get('/', 'HomeController@home');
+
+
+Route::get('/aura', 'HomeController@aura');
 
 Route::get('/service', 'StaticController@service');
 

@@ -50,12 +50,12 @@
 
             <div class="collapse navbar-collapse" id="navbar-collapse-1"  role="navigation">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{ url('/video') }}">VR视频</a></li>
+                    <li><a href="{{ url('/aura') }}">AURA</a></li>
                     <!-- <li><a href="#">产品</a></li> -->
                     <li><a href="{{ url('/service') }}">服务</a></li>
-                    <li><a href="{{ url('/team') }}">团队</a></li>
+                    <li><a href="{{ url('/team') }}">内容</a></li>
                     <li><a href="{{ url('/news') }}">新闻</a></li>
-                    <li><a href="{{ url('/join') }}">加入</a></li>
+                    <li><a href="{{ url('/join') }}">关于我们</a></li>
                     <li><a href="{{ url('/contact') }}">联系</a></li>
                     <!-- <li><a href="#">下载</a></li> -->
                 </ul>
@@ -79,9 +79,10 @@
                 </div> -->
                 <div class="col-sm-12 col-lg-6 col-lg-offset-3">
                     <ul class="footer-links text-center">
-                        <li><a href="{{ url('/team') }}">团队</a></li>
+                        <li><a href="{{ url('/service') }}">服务</a></li>
+                        <li><a href="{{ url('/video') }}">内容</a></li>
                         <li><a href="{{ url('/news') }}">新闻</a></li>
-                        <li><a href="{{ url('/join') }}">加入</a></li>
+                        <li><a href="{{ url('/team') }}">关于我们</a></li>
                         <li><a href="{{ url('/contact') }}">联系</a></li>
                     </ul>
                 </div>
