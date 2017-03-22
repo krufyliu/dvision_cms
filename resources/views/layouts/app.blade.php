@@ -53,9 +53,9 @@
                     <li><a href="{{ url('/aura') }}">AURA</a></li>
                     <!-- <li><a href="#">产品</a></li> -->
                     <li><a href="{{ url('/service') }}">服务</a></li>
-                    <li><a href="{{ url('/team') }}">内容</a></li>
+                    <li><a href="{{ url('/video') }}">内容</a></li>
                     <li><a href="{{ url('/news') }}">新闻</a></li>
-                    <li><a href="{{ url('/join') }}">关于我们</a></li>
+                    <li><a href="{{ url('/team') }}">关于我们</a></li>
                     <li><a href="{{ url('/contact') }}">联系</a></li>
                     <!-- <li><a href="#">下载</a></li> -->
                 </ul>
