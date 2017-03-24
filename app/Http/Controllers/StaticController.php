@@ -19,6 +19,11 @@ class StaticController extends Controller
         return view('home', ['videos' => $videos, 'title' => '首页']);
     }
 
+    public function aura()
+    {
+        return view('aura', ['title' => 'AURA 专业级VR拍摄设备']);
+    }
+
     public function join()
     {
         $careerjobs = CareerJob::orderBy('created_at', 'desc')->get();
