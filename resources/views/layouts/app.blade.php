@@ -150,7 +150,7 @@
               </label>
               <ul class="list">
                 <li class="item">
-                  <a href="/aura" class="link">AURA VR相机</a>
+                  <a href="/aura" class="link">AURA</a>
                 </li>
                 <li class="item">
                   <a href="#" class="link">AURA Studio</a>
