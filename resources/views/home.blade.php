@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="main">
+    <div class="main home">
         <article class="gallery-container">
             <div class="apple-banner">
                 <div class="swiper-container">

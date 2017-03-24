@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="main">
+    <div class="main dkaura">
         <div class="aura section-01">
             <div class="container">
                 <div class="content">
