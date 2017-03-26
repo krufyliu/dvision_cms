@@ -34,6 +34,21 @@ class StaticController extends Controller
         return view('aura_studio', ['title' => 'AURA STUDIO - AURA 专用 VR 制作软件']);
     }
 
+    public function service()
+    {
+        return view('service', ['title' => '服务']);
+    }
+
+    public function about()
+    {
+        return view('about', ['title' => '关于我们']);
+    }
+
+    public function download()
+    {
+        return view('download', ['title' => '软件下载']);
+    }
+
     public function join()
     {
         $careerjobs = CareerJob::orderBy('created_at', 'desc')->get();
@@ -76,16 +91,6 @@ class StaticController extends Controller
             'email' => 'required',
             'content' => 'required'
         ]);
-    }
-
-    public function service()
-    {
-        return view('service', ['title' => '服务']);
-    }
-
-    public function about()
-    {
-        return view('about', ['title' => '关于我们']);
     }
 
     public function news()

@@ -17,6 +17,10 @@ Route::get('/aurawork', 'StaticController@aurawork');
 Route::get('/aurastudio', 'StaticController@aurastudio');
 Route::get('/service', 'StaticController@service');
 Route::get('/about', 'StaticController@about');
+Route::get('/download', 'StaticController@download');
+
+
+
 Route::get('/team', 'StaticController@team');
 Route::get('/contact', 'StaticController@contact');
 Route::get('/suceess', 'StaticController@suceess');

@@ -21,7 +21,7 @@
                     <div class="text_panel">
                         <span class="title">流畅剪辑， <br>云端精剪的专业体验。</span>
                         <div class="divider"></div>
-                        <p class="txt">AURA studio可以协助内容创作者对一体机素材进行统一拷贝，<br>并对拷贝的素材进行简单地拼接和剪辑，剪辑好的素材同时<br>同步到量子云服务器，进行精细拼接，体验更专业更流畅的<br>专业剪辑体验。</p>
+                        <p class="txt">AURA Studio可以协助内容创作者对一体机素材进行统一拷贝，<br>并对拷贝的素材进行简单地拼接和剪辑，剪辑好的素材同时<br>同步到量子云服务器，进行精细拼接，体验更专业更流畅的<br>专业剪辑体验。</p>
                     </div>
                 </div>
             </div>

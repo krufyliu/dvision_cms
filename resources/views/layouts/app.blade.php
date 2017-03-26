@@ -198,7 +198,7 @@
                   <a href="#" class="link">常见问题</a>
                 </li-->
                 <li class="item">
-                  <a href="/contact" class="link">软件下载</a>
+                  <a href="/download" class="link">软件下载</a>
                 </li>
               </ul>
             </div>
