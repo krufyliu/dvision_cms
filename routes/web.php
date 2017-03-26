@@ -14,6 +14,7 @@
 Route::get('/', 'StaticController@home');
 Route::get('/aura', 'StaticController@aura');
 Route::get('/service', 'StaticController@service');
+Route::get('/about', 'StaticController@about');
 Route::get('/team', 'StaticController@team');
 Route::get('/contact', 'StaticController@contact');
 Route::get('/suceess', 'StaticController@suceess');

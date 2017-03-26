@@ -10,7 +10,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ $title . '-' }}量子视觉科技官网</title>
+    <title>{{ isset($title) ? $title . '-' : '' }}量子视觉科技官网</title>
     <meta name="keywords" content="量子视觉科技有限公司,量子视觉,VR视频,全景,VR服务,DKVISION, AURA, 专业级VR拍摄设备">
     <meta name="description" content="DKVISION致力于打造下一代虚拟现实的完整解决方案。AURA 专业级VR拍摄设备">
 
@@ -97,7 +97,7 @@
 
                     <li><a href="/news">新闻</a></li>
 
-                    <li><a href="/team">关于我们</a></li>
+                    <li><a href="/about">关于我们</a></li>
 
                     <li><a href="/contact" class="btn btn-default">立即订购</a></li>
                 </ul>
@@ -210,7 +210,7 @@
               </label>
               <ul class="list">
                 <li class="item">
-                  <a href="/team" class="link">公司介绍</a>
+                  <a href="/about" class="link">公司介绍</a>
                 </li>
                 <li class="item">
                   <a href="/join" class="link">人才招聘</a>

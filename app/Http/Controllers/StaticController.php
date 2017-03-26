@@ -73,6 +73,10 @@ class StaticController extends Controller
         return view('service', ['title' => '服务']);
     }
 
+    public function about()
+    {
+        return view('about', ['title' => '关于我们']);
+    }
 
     public function news()
     {
