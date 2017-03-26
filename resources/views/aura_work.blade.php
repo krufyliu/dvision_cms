@@ -42,7 +42,7 @@
                     <div class="text_panel">
                         <span class="title">购买即送，<br>诚意配套呈现。</span>
                         <div class="divider"></div>
-                        <p class="txt">为了提高AURA一体机的创作拍摄效率，购买AURA一体机的用户<br>将会免费获赠一套由DKVISION团队研发的AURA work和AURA studio软件。<br>诚意帮助每一个内容创作者更加有效率创作拍摄。</p>
+                        <p class="txt">为了提高AURA一体机的创作拍摄效率，购买AURA一体机的用户<br>将会免费获赠一套由DKVISION团队研发的AURA Work和AURA Studio软件。<br>诚意帮助每一个内容创作者更加有效率创作拍摄。</p>
                     </div>
                 </div>
             </div>

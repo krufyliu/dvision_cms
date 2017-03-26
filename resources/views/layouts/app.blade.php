@@ -153,10 +153,10 @@
                   <a href="/aura" class="link">AURA</a>
                 </li>
                 <li class="item">
-                  <a href="/aurastudio" class="link">AURA Studio</a>
+                  <a href="/aurawork" class="link">AURA Work</a>
                 </li>
                 <li class="item">
-                  <a href="/aurawork" class="link">AURA Work</a>
+                  <a href="/aurastudio" class="link">AURA Studio</a>
                 </li>
                 <!--<li class="item">
                   <a href="#" class="link">VR直播</a>
