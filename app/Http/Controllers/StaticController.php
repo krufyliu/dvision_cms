@@ -24,6 +24,16 @@ class StaticController extends Controller
         return view('aura', ['title' => 'AURA 专业级VR拍摄设备']);
     }
 
+    public function aurawork()
+    {
+        return view('aura_work', ['title' => 'AURA WORK - AURA 专用监看、控制软件']);
+    }
+
+    public function aurastudio()
+    {
+        return view('aura_studio', ['title' => 'AURA STUDIO - AURA 专用 VR 制作软件']);
+    }
+
     public function join()
     {
         $careerjobs = CareerJob::orderBy('created_at', 'desc')->get();

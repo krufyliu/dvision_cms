@@ -85,8 +85,8 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
                     <ul class="dropdown-menu dropdown-menu-left">
                         <li><a href="{{ url('/aura') }}">AURA</a></li>
-                        <li><a href="#">AURA Work</a></li>
-                        <li><a href="#">AURA Studio</a></li>
+                        <li><a href="{{ url('/aurawork') }}">AURA Work</a></li>
+                        <li><a href="{{ url('/aurastudio') }}">AURA Studio</a></li>
                     </ul>
                     </li>
                     <!--<li><a href="/aura">AURA</a></li>-->
@@ -153,10 +153,10 @@
                   <a href="/aura" class="link">AURA</a>
                 </li>
                 <li class="item">
-                  <a href="#" class="link">AURA Studio</a>
+                  <a href="/aurastudio" class="link">AURA Studio</a>
                 </li>
                 <li class="item">
-                  <a href="#" class="link">AURA Work</a>
+                  <a href="/aurawork" class="link">AURA Work</a>
                 </li>
                 <!--<li class="item">
                   <a href="#" class="link">VR直播</a>
