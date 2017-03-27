@@ -96,7 +96,7 @@ class StaticController extends Controller
     public function news()
     {
         $posts = Post::orderBy('created_at', 'desc')->get();
-        return view('news.index', ['posts' => $posts, 'title' => '文章']);
+        return view('news', ['posts' => $posts, 'title' => '新闻']);
     }
 
     public function newsShow($id)

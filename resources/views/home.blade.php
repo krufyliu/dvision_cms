@@ -5,8 +5,8 @@
         <article class="gallery-container">
             <div class="apple-banner">
                 <div class="swiper-container">
-                    <a class="arrow-left" href="#"><span></span></a>
-                    <a class="arrow-right" href="#"><span></span></a>
+                    <a class="arrow-left" href="#" rel="nofollow"><span></span></a>
+                    <a class="arrow-right" href="#" rel="nofollow"><span></span></a>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide1">
                             <div class="title txt">
@@ -41,22 +41,22 @@
     <div class="promos promos-row">
         <ul>
             <li class="promo-position promo-postion-0">
-                <a href="http://t.cn/RiYtAK3" target="_blank" class="promo">
+                <a href="http://t.cn/RiYtAK3" target="_blank" class="promo" rel="nofollow">
                     <div class="image"></div>
                 </a>
             </li>
             <li class="promo-position promo-postion-1">
-                <a href="http://cloud.youku.com/services/sharev?vid=XMjY0NTgxNzQ3Ng==" target="_blank" class="promo">
+                <a href="http://cloud.youku.com/services/sharev?vid=XMjY0NTgxNzQ3Ng==" target="_blank" class="promo" rel="nofollow">
                     <div class="image"></div>
                 </a>
             </li>
             <li class="promo-position promo-postion-2">
-                <a href="/news" target="_blank" class="promo">
+                <a href="/news" target="_blank" class="promo" rel="nofollow">
                     <div class="image"></div>
                 </a>
             </li>
             <li class="promo-position promo-postion-3">
-                <a href="/video" target="_blank" class="promo">
+                <a href="/video" target="_blank" class="promo" rel="nofollow">
                     <div class="image"></div>
                 </a>
             </li>

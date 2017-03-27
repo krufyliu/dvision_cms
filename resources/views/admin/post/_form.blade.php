@@ -17,11 +17,16 @@
     {{ error_block($errors, 'cover_image') }}
 </div>
 
-<div class="form-group {{ has_error_class($errors, 'content') }}">
+<div class="form-group {{ has_error_class($errors, 'link') }}">
+    {!! Form::label('link', '链接地址', ['class' => 'control-label']) !!}
+    {!! Form::text('link', null, ['class' => 'form-control']) !!}
+    {{ error_block($errors, 'link') }}
+</div>
+{{-- <div class="form-group {{ has_error_class($errors, 'content') }}">
     {!! Form::label('content', '内容', ['class' => 'control-label']) !!}
     {!! Form::textarea('content', null, ['class' => 'form-control', 'id' => 'summernote']) !!}
     {{ error_block($errors, 'content') }}
-</div>
+</div> --}}
 
 <div class="buttons text-right">
     <a class="btn btn-default" href="/admin/posts">取消</a>
