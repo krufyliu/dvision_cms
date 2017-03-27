@@ -62,12 +62,12 @@ class StaticController extends Controller
 
     public function contact()
     {
-        return view('contact', ['title' => '联系']);
+        return view('contact', ['title' => '联系我们']);
     }
 
     public function suceess()
     {
-        return view('suceess', ['title' => '留言']);
+        return view('suceess', ['title' => '提交成功']);
     }
 
     public function contactSubmit(Request $request)

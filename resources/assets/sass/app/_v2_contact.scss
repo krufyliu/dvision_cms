@@ -1,5 +1,5 @@
-.main.download {
-    .dld {
+.main.contact {
+    .cont {
         width: 100%;
         overflow: hidden;
         z-index: 1;
@@ -12,7 +12,7 @@
     .section-01 {
         height: 880px;
         background-color: #f2f2f2;
-        background-image: url(../img/download_sec01_01.jpg);
+        background-image: url(../img/contact_sec01_01.jpg);
         background-position: center center;
         background-size: cover;
         .content {
@@ -39,26 +39,8 @@
         }
         .text_panel2 {
             position: absolute;
-            left: 67px;
+            left: 297px;
             top: 300px;
-            .title {
-                color: #fff;
-                font-weight: 300;
-                letter-spacing: 0.1em;
-                font-size: 36px;
-            }
-            p.txt {
-                color: #f0f0f0;
-                font-size: 13px;
-                font-weight: 300;
-                letter-spacing: 0.1em;
-                margin-bottom: 20px;
-                margin-top: 20px; 
-            }
-            p.txt.small {
-              margin-top: 30px;
-              font-size: 13px;
-            }
             .figs {
                 padding-top: 20px;
                 list-style: none;
@@ -69,31 +51,44 @@
                 .fig {
                     position: relative;
                     text-align: left;
-                    width: 500px;
+                    width: 600px;
                     height: 480px;
                     float: left;
                     background-color: rgba(252, 252, 252, 0.1);
                     padding: 20px 30px;
-                    .icons {
-                      margin-top: 46px;
-                      margin-bottom: 20px;
+                    .input-bace {
+                        input {
+                          height: 40px;
+                        }
+                        input,
+                        textarea {
+                            background-color: rgba(0, 0, 0, 0.3);
+                            border: 0px;
+                            border-radius: 0px;
+                            resize: none;
+                            color: #fff;
+                            letter-spacing: 0.01em;
+                        }
+                        input::-ms-input-placeholder,
+                        textarea::-ms-input-placeholder {
+                            text-align: center;
+                        }
+                        input::-webkit-input-placeholder,
+                        textarea::-webkit-input-placeholder {
+                            text-align: center;
+                        }
+                        button.btn {
+                          border-radius: 0px;
+                          height: 40px;
+                        }
+                        .gt_holder.gt_float {
+                          margin: 0px auto;
+                        }
                     }
                 }
                 .fig.right {
                     margin-left: 60px;
                 }
-            }
-            .links {
-              margin-top: 30px;
-            }
-            .link {
-                color: #f0f0f0;
-                letter-spacing: 0.1em;
-                border-bottom: 1px solid #3399cc;
-                padding: 10px;
-                text-decoration: none;
-                margin-right: 20px;
-                margin-top: 30px;
             }
         }
     }
