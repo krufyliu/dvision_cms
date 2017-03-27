@@ -23,8 +23,8 @@
                                     <div class="icons" style="background-image: url({{ '/storage/' . $post->cover_image }})">
                                     </div>
                                     <div class="intro">
-                                      <p class="txt">2017-03-21</p>
-                                        <a href="{{ $post->link }}" target="_blank" rel="nofollow" title="{{ $post->title }}">
+                                      <p class="txt">{{ str_limit($post->created_at, 10, '') }}</p>
+                                        <a href="{{ !empty($post->link) ? $post->link : '#' }}" target="{{ !empty($post->link) ? '_blank' : '' }}" rel="nofollow" title="{{ $post->title }}">
                                             <span class="title">{{ $post->title }}</span>
                                         </a>
                                     </div>
