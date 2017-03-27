@@ -80,7 +80,7 @@ class StaticController extends Controller
                 'content' => $request->input('content'),
             ]
         );
-        return redirect()->action('StaticController@suceess');
+        return redirect()->action('StaticController@success');
     }
 
     protected  function contactValidator(Request $request)
