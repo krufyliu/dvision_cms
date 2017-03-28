@@ -112,13 +112,13 @@ class StaticController extends Controller
             $resource = $resource->where('category_id', $request->input('category_id'));
         }
         $videos = $resource->orderBy('created_at', 'desc')->get();
-        return view('video.index', ['videos' => $videos, 'title' => '视频']);
+        return view('video', ['videos' => $videos, 'title' => '内容']);
     }
 
     public function videoShow($id)
     {
         $video = Video::find($id);
-        return view('video.show', ['video' => $video, 'title' => '视频']);
+        return view('video.show', ['video' => $video, 'title' => $video->title . ' 内容']);
     }
 
     public function zshuang() {

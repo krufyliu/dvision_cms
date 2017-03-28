@@ -27,7 +27,7 @@ elixir(mix => {
     mix.sass('admin.scss')
        .webpack('admin.js');
     mix.copy('resources/assets/img', 'public/img');
-    // mix.copy('resources/assets/vrplay', 'public/vrplay');
+    mix.copy('resources/assets/vrplay', 'public/vrplay');
     mix.copy('resources/assets/vendor', 'public/vendor');
     // mix.copy('./node_modules/bootstrap-sass/assets/fonts', 'public/fonts');
     mix.copy('./resources/assets/vendor/summernote/font', 'public/fonts');

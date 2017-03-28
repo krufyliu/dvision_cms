@@ -1,39 +1,48 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container margin-middle">
-    <div id="pano" style="width:100%;">
-        <noscript>
-        <table style="width:100%;height:100%;">
-        <tr style="vertical-align:middle;text-align:center;">
-            <td>
-                ERROR:<br>
-                <br>
-                Javascript not activated<br>
-                <br>
-            </td>
-        </tr>
-        </table>
-        </noscript>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <p class="h3">
-                    {{ $video->title }}
-                </p>
-                <p>
-                    {!! $video->description !!}
-                </p>
+    <div class="mian videoshow">
+        <div class="vdosw section-01">
+            <div class="content">
+                <div id="pano" style="width:100%;">
+                    <noscript>
+                    <table style="width:100%;height:100%;">
+                    <tr style="vertical-align:middle;text-align:center;">
+                        <td>
+                            ERROR:<br>
+                            <br>
+                            Javascript not activated<br>
+                            <br>
+                        </td>
+                    </tr>
+                    </table>
+                    </noscript>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="h3">
+                            {{ $video->title }}
+                        </p>
+                        <p>
+                            {!! $video->description !!}
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 </div>
 @endsection
 
 @section('script')
     <script type="text/javascript" src="/vrplay/krpano.js"></script>
     <script type="text/javascript">
+    $(document).ready(function() {
+        $('#pano').height($('#pano').width()*(6.8/16));
+        window.onresize = function() {
+            $('#pano').height($('#pano').width()*(6.8/16));
+        }
         var u = navigator.userAgent;
         var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
         var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
@@ -68,5 +77,6 @@
                 }
             });
         }
+    });
     </script>
 @endsection
