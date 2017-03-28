@@ -1,0 +1,173 @@
+.main.join {
+    .jon {
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        .content {
+            position: relative;
+            width: 100%;
+        }
+    }
+    .section-01 {
+        height: 480px;
+        background-color: #fff;
+        background-image: url(../img/join_sec01_01.jpg);
+        background-position: top center;
+        background-size: cover;
+        .content {
+            height: 480px;
+        }
+        .text_panel {
+            position: absolute;
+            left: 327px;
+            top: 175px;
+            text-align: center;
+            .title {
+                color: #fff;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 72px;
+            }
+            p.txt {
+                line-height: 1.9393;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+            }
+            p.txt2 {
+                font-size: 14px;
+            }
+        }
+    }
+    .section-02 {
+        height: 560px;
+        background-color: #f2f2f2;
+        background-position: center center;
+        background-size: cover;
+        .content {
+            height: 560px;
+        }
+        .join_sec02_01 {
+          position: absolute;
+          top: 200px;
+          left: 47;
+        }
+        .text_panel {
+            position: absolute;
+            left: 439px;
+            top: 40px;
+            text-align: center;
+            .title {
+                color: #000;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 36px;
+            }
+            p.txt {
+                padding-top: 20px;
+                color: #000;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .section-03 {
+        height: 160px;
+        background-color: #f2f2f2;
+        .content {
+            height: 160px;
+        }
+        .text_panel {
+            position: absolute;
+            left: 439px;
+            top: 40px;
+            text-align: center;
+            .title {
+                color: #000;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 36px;
+            }
+            p.txt {
+                padding-top: 20px;
+                color: #000;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .section-04 {
+        background-color: #f2f2f2;
+        .content {
+            height: auto;
+        }
+        .text_panel {
+            position: relative;
+            text-align: left;
+            .figs {
+                list-style: none;
+                color: #000;
+                font-weight: 400;
+                position: relative;
+                margin-top: 1px;
+                display: table;
+                .fig {
+                    position: relative;
+                    text-align: left;
+                    width: 230px;
+                    float: left;
+                    overflow: hidden;
+                    margin-right: 4px;
+                    margin-left: 4px;
+                    margin-bottom: 8px;
+                    .fig_value {
+                        font-size: 26px;
+                        font-weight: 300;
+                    }
+                    .icons {
+                      width: 230px;
+                      height: 348px;
+                      background-position: top center;
+                      background-size: cover;
+                    }
+                    .intro {
+                        transition: all .3s ease-out;
+                        width: 230px;
+                        height: 100px;
+                        position: absolute;
+                        bottom: 0px;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        color: #f5f5f5;
+                        padding: 15px 20px;
+                        text-align: center;
+                        .txt {
+                            margin-top: 5px;
+                            letter-spacing: 0.005em;
+                            font-size: 13px;
+                            font-weight: 300;
+                            margin-bottom: 5px;
+                        }
+                        .title {
+                            color: #fff;
+                            font-size: 18px;
+                            font-weight: 300;
+                        }
+                        a {
+                          color: #3aafd6;
+                          font-size: 13px;
+                          font-weight: 300;
+                          cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

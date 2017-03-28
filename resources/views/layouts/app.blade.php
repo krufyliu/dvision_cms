@@ -75,7 +75,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="img/logo.png" alt="logo" width="120">
+                    <img src="/img/logo.png" alt="logo" width="120">
                 </a>
                 </div>
 
@@ -247,7 +247,7 @@
       <div class="container">
         <div class="gf-footer">
           <div class="gf-footer-logo">
-            <img src="img/logo2.png" alt="logo2" width="120">
+            <img src="/img/logo2.png" alt="logo2" width="120">
           </div>
           <div class="gf-footer-legal">
             <div class="gf-footer-legal-copyright">量子视觉科技有限公司©Copyright  版权所有 <a href="http://www.miibeian.gov.cn/">粤ICP备16006475号-1</a></div>

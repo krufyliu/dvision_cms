@@ -52,7 +52,7 @@ class StaticController extends Controller
     public function join()
     {
         $careerjobs = CareerJob::orderBy('created_at', 'desc')->get();
-        return view('join', ['careerjobs' => $careerjobs, 'title' => '加入']);
+        return view('join', ['careerjobs' => $careerjobs, 'title' => '人才招聘']);
     }
 
     public function team()
