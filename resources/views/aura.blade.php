@@ -31,7 +31,7 @@
                 <div class="content">
                     <img src="img/aura_sec03_01.jpg" width="660" alt="aura_sec03_01" class="aura_sec03_01" draggable="false">
                     <div class="text_panel">
-                        <span class="title">量子视觉，<br>电影级虚拟现实体验。</span>
+                        <span class="title">量子视觉，<br>专业级虚拟现实体验。</span>
                         <div class="divider"></div>
                         <p class="txt">AURA全景拍摄设备是目前唯一可量产的10K、3D、VR拍摄设备，可以实时<br>的捕捉和重建三维场景，通过最先进公开SaaS云计算平台，低成本，高效率<br>的帮助内容生产者生成最高质量的VR视频。</p>
                         <ul class="figs">
@@ -74,7 +74,7 @@
                     图像传感阵列
                     </span>
                                 <p class="fig_value">
-                                    20个高清镜头
+                                    20个4K模组
                                 </p>
                             </li>
                             <li class="fig">
@@ -96,7 +96,7 @@
                     <div class="text_panel">
                         <span class="title">无缝图像阵列，<br>视线覆盖看得见和看不见的全部。</span>
                         <div class="divider"></div>
-                        <p class="txt">AURA搭载20个完全同步的1200万像素的高清图像传感器阵列，图像覆盖达到<br>360x180度无缝衔接。覆盖之广全面拍摄你看得见的和看不见的范围，高清质<br>量轻松拍摄丝丝入扣的细节，完美还原环境。</p>
+                        <p class="txt">AURA搭载20个完全同步的1200万像素的高清图像传感器阵列，图像覆盖达到<br>360x180度无缝衔接。覆盖之广，全面拍摄你看得见的和看不见的范围，高清质<br>量轻松拍摄丝丝入扣的细节，完美还原环境。</p>
 
                     </div>
                     <div class="text_panel2">
@@ -266,7 +266,6 @@
                 </div>
             </div>
         </div>
-
         <div class="aura section-09">
             <div class="container">
                 <div class="content">
@@ -279,7 +278,6 @@
                 </div>
             </div>
         </div>
-
         <div class="aura section-10">
             <div class="container">
                 <div class="content">
@@ -291,6 +289,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container bar">
+        <div class="content">
+            <a href="/order" title="立即订购">立即订购</a>
         </div>
     </div>
     <div id="video_dlg" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">

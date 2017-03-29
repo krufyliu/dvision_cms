@@ -44,21 +44,6 @@
                             </li>
                             <li class="fig">
                                 <div class="icons">
-                                    <img src="img/service_sec02_03.png" alt="service_sec02_03" width="128"  draggable="false">
-                                </div>
-                                
-                                <p class="fig_value">
-                                    软件
-                                </p>
-                                <span class="fig_title">
-                                    独立知识产权的可交互式VR播放器
-                                </span>
-                            </li>
-                            
-                        </ul>
-                        <ul class="figs">
-                            <li class="fig">
-                                <div class="icons">
                                     <img src="img/service_sec02_04.png" alt="service_sec02_04" width="128"  draggable="false">
                                 </div>
                                 
@@ -67,6 +52,20 @@
                                 </p>
                                 <span class="fig_title">
                                     多范围场景直播，视频清晰流畅，低延时、真3D
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="figs">
+                            <li class="fig">
+                                <div class="icons">
+                                    <img src="img/service_sec02_03.png" alt="service_sec02_03" width="128"  draggable="false">
+                                </div>
+                                
+                                <p class="fig_value">
+                                    软件
+                                </p>
+                                <span class="fig_title">
+                                    独立知识产权的可交互式VR播放器
                                 </span>
                             </li>
                             <li class="fig">

@@ -99,7 +99,7 @@
 
                     <li><a href="/about">关于我们</a></li>
 
-                    <li><a href="/contact" class="btn btn-default">立即订购</a></li>
+                    <li><a href="/order" class="btn btn-default">立即订购</a></li>
                 </ul>
                 </div>
             </div>
@@ -170,12 +170,12 @@
                 <h3 class="title">服务</h3>
               </label>
               <ul class="list">
-                <li class="item">
+                {{-- <li class="item">
                   <a href="/service" class="link">影视级VR制作</a>
                 </li>
                 <li class="item">
                   <a href="/service" class="link">云渲染</a>
-                </li>
+                </li> --}}
                 <li class="item">
                   <a href="/service" class="link">VR直播</a>
                 </li>
@@ -215,13 +215,13 @@
                 <li class="item">
                   <a href="/join" class="link">人才招聘</a>
                 </li>
-                <li class="item">
+                {{-- <li class="item">
                   <a href="/contact" class="link">联系方式</a>
-                </li>
+                </li> --}}
               </ul>
             </div>
           </div>
-          <div class="column">
+          {{-- <div class="column">
             <div class="section">
               <label for="">
                 <h3 class="title">报道</h3>
@@ -235,7 +235,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> --}}
         </nav>
         <div class="secondary">
           <div class="content">

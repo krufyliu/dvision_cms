@@ -65,6 +65,11 @@ class StaticController extends Controller
         return view('contact', ['title' => '联系我们']);
     }
 
+    public function contact_order()
+    {
+        return view('contact_order', ['title' => '订购']);
+    }
+
     public function success()
     {
         return view('success', ['title' => '提交成功']);

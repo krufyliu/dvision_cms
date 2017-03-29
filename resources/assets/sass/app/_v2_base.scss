@@ -2,6 +2,19 @@
     min-width: 1224px!important;
 }
 
+.container.bar {
+    text-align: center;
+    .content {
+        height: 160px;
+        padding: 20px;
+        a {
+            line-height: 80px;
+            font-size: 32px;
+            color: #3aafd6;
+        }
+    }
+}
+
 .footer {
     font-size: 13px;
     line-height: 1.45455;

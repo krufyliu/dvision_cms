@@ -20,7 +20,7 @@
                         <span class="title">加入量子视觉吧！</span>
                         <p class="txt">JOIN IN DKVISION</p>
                     </div>
-                    <img src="img/join_sec02_01.png" width="1100" alt="join_sec02_01" class="join_sec02_01" draggable="false">
+                    <img src="img/join_sec02_01.jpg" width="1100" alt="join_sec02_01" class="join_sec02_01" draggable="false">
                 </div>
             </div>
         </div>

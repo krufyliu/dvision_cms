@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="mian videoshow">
+    <div class="main videoshow">
         <div class="vdosw section-01">
             <div class="content">
                 <div id="pano" style="width:100%;">

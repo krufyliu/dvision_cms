@@ -12,7 +12,7 @@
 
 公司基于最先进的计算机视觉技术以及最专业硬件开发团队，将软件、硬件以及工业设计进行高效整合，为用户打造电影级别的虚拟现实体验。<br>
 
-DKVISION AURA 全景拍摄设备是目前唯一可量产8K 3D VR相机，可以实时的捕捉和重建三维场景，通过最先进的公开SaaS云拼接平台，低成本、高效率帮助内容生产者<br>生成最高质量VR视频。用户使用DKVISION VR播放器及SDK服务，可集成至任意平台，通过视频传输技术，<br>将虚拟现实内容实时的传输提供给用户，即可享受到无与伦比的沉浸式娱乐体验。</p>
+DKVISION AURA 全景拍摄设备是目前唯一可量产10K 3D VR相机，可以实时的捕捉和重建三维场景，通过最先进的公开SaaS云拼接平台，低成本、高效率帮助内容生产者<br>生成最高质量VR视频。用户使用DKVISION VR播放器及SDK服务，可集成至任意平台，通过视频传输技术，<br>将虚拟现实内容实时的传输提供给用户，即可享受到无与伦比的沉浸式娱乐体验。</p>
                     </div>
                 </div>
             </div>
@@ -20,8 +20,8 @@ DKVISION AURA 全景拍摄设备是目前唯一可量产8K 3D VR相机，可以�
         <div class="abt section-02">
             <div class="container">
                 <div class="content">
-                    <img src="img/about_sec02_01.png" width="1194" alt="about_sec02_01" class="about_sec02_01" draggable="false">
-                    <hr>
+                    {{-- <img src="img/about_sec02_01.png" width="1194" alt="about_sec02_01" class="about_sec02_01" draggable="false"> --}}
+                    {{-- <hr> --}}
                     <div class="text_panel">
                         <span class="title">主创人员</span>
                         <p class="txt">CREATIVE STAFF</p>

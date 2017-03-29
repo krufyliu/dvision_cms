@@ -23,6 +23,7 @@ Route::get('/download', 'StaticController@download');
 
 Route::get('/team', 'StaticController@team');
 Route::get('/contact', 'StaticController@contact');
+Route::get('/order', 'StaticController@contact_order');
 Route::get('/success', 'StaticController@success');
 Route::post('/contact', 'StaticController@contactSubmit');
 
