@@ -244,12 +244,12 @@
                     <div class="text_panel3">
                         <img src="img/aura_sec06_03.png" width="238" alt="aura_sec06_03" class="aura_sec06_03" draggable="false">
                         <p class="txt">AURA 专用监看、控制软件</p>
-                        <a href="/contact" class="link">了解更多</a>
+                        <a href="/aurawork" class="link">了解更多</a>
                     </div>
                     <div class="text_panel4">
                         <img src="img/aura_sec06_04.png" width="200" alt="aura_sec06_04" class="aura_sec06_04" draggable="false">
                         <p class="txt">AURA 专用 VR 制作软件</p>
-                        <a href="/contact" class="link">了解更多</a>
+                        <a href="/aurastudio" class="link">了解更多</a>
                     </div>
                 </div>
             </div>

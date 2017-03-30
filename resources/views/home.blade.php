@@ -13,7 +13,7 @@
                                 <h1>DK AURA</h1>
                                 <span>全球首款 10K 360度 3D 专业VR摄影机</span>
                                 <h2>天圆地方，尽收一隅</h2>
-                                <a href="{{ url('/aura') }}">了解更多</a>
+                                <a href="{{ url('/aura') }}" title="了解更多">了解更多</a>
                             </div>
                         </div>
                         <div class="swiper-slide slide2">
@@ -41,22 +41,22 @@
     <div class="promos promos-row">
         <ul>
             <li class="promo-position promo-postion-0">
-                <a href="http://t.cn/RiYtAK3" target="_blank" class="promo" rel="nofollow">
+                <a href="http://t.cn/RiYtAK3" target="_blank" class="promo" rel="nofollow" title="量子视觉AURA发布会回顾">
                     <div class="image"></div>
                 </a>
             </li>
             <li class="promo-position promo-postion-1">
-                <a href="http://cloud.youku.com/services/sharev?vid=XMjY0NTgxNzQ3Ng==" target="_blank" class="promo" rel="nofollow">
+                <a href="http://cloud.youku.com/services/sharev?vid=XMjY0NTgxNzQ3Ng==" target="_blank" class="promo" rel="nofollow" title="AURA宣传视频">
                     <div class="image"></div>
                 </a>
             </li>
             <li class="promo-position promo-postion-2">
-                <a href="/news" target="_blank" class="promo" rel="nofollow">
+                <a href="/news" target="_blank" class="promo" title="新闻">
                     <div class="image"></div>
                 </a>
             </li>
             <li class="promo-position promo-postion-3">
-                <a href="/video" target="_blank" class="promo" rel="nofollow">
+                <a href="/video" target="_blank" class="promo" title="内容">
                     <div class="image"></div>
                 </a>
             </li>

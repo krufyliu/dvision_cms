@@ -51,13 +51,13 @@
             <div class="collapse navbar-collapse" id="navbar-collapse-1"  role="navigation">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{ url('/aura') }}">AURA</a></li>
-                    <!-- <li><a href="#">产品</a></li> -->
+                    <li><a href="#">产品</a></li>
                     <li><a href="{{ url('/service') }}">服务</a></li>
                     <li><a href="{{ url('/video') }}">内容</a></li>
                     <li><a href="{{ url('/news') }}">新闻</a></li>
                     <li><a href="{{ url('/team') }}">关于我们</a></li>
                     <li><a href="{{ url('/contact') }}">联系</a></li>
-                    <!-- <li><a href="#">下载</a></li> -->
+                    <li><a href="#">下载</a></li>
                 </ul>
             </div>
         </div>Ï
@@ -84,22 +84,22 @@
                     <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
                     <ul class="dropdown-menu dropdown-menu-left">
-                        <li><a href="{{ url('/aura') }}">AURA</a></li>
-                        <li><a href="{{ url('/aurawork') }}">AURA Work</a></li>
-                        <li><a href="{{ url('/aurastudio') }}">AURA Studio</a></li>
+                        <li><a href="{{ url('/aura') }}" title="AURA">AURA</a></li>
+                        <li><a href="{{ url('/aurawork') }}" title="AURA Work">AURA Work</a></li>
+                        <li><a href="{{ url('/aurastudio') }}" title="AURA Studio">AURA Studio</a></li>
                     </ul>
                     </li>
-                    <!--<li><a href="/aura">AURA</a></li>-->
+                    {{-- <li><a href="/aura">AURA</a></li> --}}
 
-                    <li><a href="/service">服务</a></li>
+                    <li><a href="/service" title="服务">服务</a></li>
 
-                    <li><a href="/video">内容</a></li>
+                    <li><a href="/video" title="内容">内容</a></li>
 
-                    <li><a href="/news">新闻</a></li>
+                    <li><a href="/news" title="新闻">新闻</a></li>
 
-                    <li><a href="/about">关于我们</a></li>
+                    <li><a href="/about" title="关于我们">关于我们</a></li>
 
-                    <li><a href="/order" class="btn btn-default">立即订购</a></li>
+                    <li><a href="/order" class="btn btn-default" title="立即订购">立即订购</a></li>
                 </ul>
                 </div>
             </div>
@@ -115,12 +115,12 @@
         <div class="container">
             <hr>
             <div class="row">
-                <!-- <div class="col-sm-12 col-lg-6 col-lg-offset-3">
+                <div class="col-sm-12 col-lg-6 col-lg-offset-3">
                     <h4 class="text-center">
                     <img src="qcode.png">
                     </h4>
                     <p class="small text-center text-muted">关注公众号订阅最新信息<br><br></p>
-                </div> -->
+                </div>
                 <div class="col-sm-12 col-lg-6 col-lg-offset-3">
                     <ul class="footer-links text-center">
                         <li><a href="{{ url('/service') }}">服务</a></li>
@@ -150,13 +150,13 @@
               </label>
               <ul class="list">
                 <li class="item">
-                  <a href="/aura" class="link">AURA</a>
+                  <a href="/aura" class="link" title="AURA">AURA</a>
                 </li>
                 <li class="item">
-                  <a href="/aurawork" class="link">AURA Work</a>
+                  <a href="/aurawork" class="link" title="AURA Work">AURA Work</a>
                 </li>
                 <li class="item">
-                  <a href="/aurastudio" class="link">AURA Studio</a>
+                  <a href="/aurastudio" class="link" title="AURA Studio">AURA Studio</a>
                 </li>
               </ul>
             </div>
@@ -168,16 +168,16 @@
               </label>
               <ul class="list">
                 {{-- <li class="item">
-                  <a href="/service" class="link">影视级VR制作</a>
+                  <a href="/service" class="link">专业级VR制作</a>
                 </li>
                 <li class="item">
                   <a href="/service" class="link">云渲染</a>
                 </li> --}}
                 <li class="item">
-                  <a href="/service" class="link">VR直播</a>
+                  <a href="/service" class="link" title="VR直播">VR直播</a>
                 </li>
                 <li class="item">
-                  <a href="/service" class="link">设备租赁</a>
+                  <a href="/service" class="link" title="设备租赁">设备租赁</a>
                 </li>
               </ul>
             </div>
@@ -189,10 +189,10 @@
               </label>
               <ul class="list">
                 <li class="item">
-                  <a href="/download" class="link">软件下载</a>
+                  <a href="/download" class="link" title="软件下载">软件下载</a>
                 </li>
                 <li class="item">
-                  <a href="#" class="link">固件下载</a>
+                  <a href="#" class="link" title="固件下载">固件下载</a>
                 </li>
               </ul>
             </div>
@@ -204,16 +204,16 @@
               </label>
               <ul class="list">
                 <li class="item">
-                  <a href="/about" class="link">公司介绍</a>
+                  <a href="/about" class="link" title="关于我们">关于我们</a>
                 </li>
                 <li class="item">
-                  <a href="/join" class="link">人才招聘</a>
+                  <a href="/join" class="link" title="人才招聘">人才招聘</a>
                 </li>
                 <li class="item">
-                  <a href="/news" class="link">新闻报道</a>
+                  <a href="/news" class="link" title="新闻报道">新闻报道</a>
                 </li>
                 <li class="item">
-                  <a href="/contact" class="link">联系我们</a>
+                  <a href="/contact" class="link" title="联系我们">联系我们</a>
                 </li>
               </ul>
             </div>
@@ -247,7 +247,7 @@
             <img src="/img/logo2.png" alt="logo2" width="120">
           </div>
           <div class="gf-footer-legal">
-            <div class="gf-footer-legal-copyright">量子视觉科技有限公司©Copyright  版权所有 <a href="http://www.miibeian.gov.cn/">粤ICP备16006475号-1</a></div>
+            <div class="gf-footer-legal-copyright">量子视觉科技有限公司©Copyright  版权所有 <a href="http://www.miibeian.gov.cn/" rel="nofollow">粤ICP备16006475号-1</a></div>
           </div>
         </div>
       </div>

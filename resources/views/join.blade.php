@@ -78,10 +78,12 @@
                                     </div>
                                 </li>
                             @endforeach
+                            @if(count($careerjobs)%5!=0)
                                 <li class="fig">
                                     <div class="icons" style="background-image: url({{ '/img/join_sec04_06.jpg' }})">
                                     </div>
                                 </li>
+                            @endif
                         </ul>
                     </div>
                 </div>
