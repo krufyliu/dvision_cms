@@ -32,6 +32,8 @@
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
+    <script src="/js/app.js"></script>
+    <script src="/js/index.js"></script>
 </head>
 <body>
     {{-- <header class="navbar navbar-default navbar-fixed-top">
@@ -254,8 +256,6 @@
   </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
-    <script src="/js/index.js"></script>
     @yield('script')
 </body>
 </html>

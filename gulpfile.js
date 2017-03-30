@@ -2,7 +2,10 @@ const elixir = require('laravel-elixir');
 // const gulp = require('gulp');
 // const livereload = require('gulp-livereload');
 require('laravel-elixir-livereload');
+require('laravel-elixir-imagemin');
 // elixir.config.js.uglify.options.compace = false;
+const gulp = require('gulp');
+const  imagemin = require('gulp-imagemin');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -26,7 +29,8 @@ elixir(mix => {
     mix.version(['public/js/app.js', 'public/js/index.js'])
     mix.sass('admin.scss')
        .webpack('admin.js');
-    mix.copy('resources/assets/img', 'public/img');
+    // mix.copy('resources/assets/img', 'public/img');
+    // mix.imagemin("resources/assets/img", "public/img");
     mix.copy('resources/assets/vrplay', 'public/vrplay');
     mix.copy('resources/assets/vendor', 'public/vendor');
     // mix.copy('./node_modules/bootstrap-sass/assets/fonts', 'public/fonts');
@@ -44,3 +48,9 @@ elixir(mix => {
 //     livereload.listen();
 //     gulp.watch('resources/views/**/*.blade.php', ['laravel-views']);
 // });
+
+gulp.task('image', () => {
+  gulp.src(['resources/assets/img/**/*.*'])
+    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+    .pipe(gulp.dest('public/img'));
+});
