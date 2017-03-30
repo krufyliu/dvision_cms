@@ -35,7 +35,7 @@ elixir(mix => {
     mix.copy('resources/assets/vendor', 'public/vendor');
     // mix.copy('./node_modules/bootstrap-sass/assets/fonts', 'public/fonts');
     mix.copy('./resources/assets/vendor/summernote/font', 'public/fonts');
-    // mix.copy('./node_modules/font-awesome/fonts', 'public/fonts');
+    mix.copy('./node_modules/font-awesome/fonts', 'public/fonts');
     mix.livereload();
 });
 
