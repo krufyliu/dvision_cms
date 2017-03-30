@@ -193,9 +193,9 @@
                 <li class="item">
                   <a href="/download" class="link" title="软件下载">软件下载</a>
                 </li>
-                <li class="item">
+                {{-- <li class="item">
                   <a href="#" class="link" title="固件下载">固件下载</a>
-                </li>
+                </li> --}}
               </ul>
             </div>
           </div>

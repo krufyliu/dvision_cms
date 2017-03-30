@@ -140,7 +140,7 @@
                     镜片材料
                     </span>
                                 <p class="fig_value">
-                                    玻璃
+                                    全玻璃
                                 </p>
                             </li>
                         </ul>
