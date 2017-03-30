@@ -75,6 +75,54 @@
                 margin-bottom: 20px;
             }
         }
+        .text_panel2 {
+            position: absolute;
+            left: 0px;
+            top: 240px;
+            .figs {
+                position: relative;
+                list-style: none;
+                display: table;
+                font-weight: 300;
+                .fig {
+                    position: relative;
+                    float: left;
+                    width: 392px;
+                    // padding: 20px;
+                    height: 180px;
+                    border-right: 1px solid #aaa;
+                    .icon {
+                        font-size: 48px;
+                        position: absolute;
+                        left: 92px;
+                        top: -20px;
+                        font-weight: 400;
+                    }
+                    .title {
+                        position: absolute;
+                        left: 170px;
+                        top: -11px;
+                        font-size: 18px;
+                    }
+                    .ctt {
+                        position: absolute;
+                        top: 60px;
+                        width: 230px;
+                        left: 92px;
+                        font-size: 16px;
+                        .divider {
+                            height: 2px;
+                            width: 80px;
+                            margin-bottom: 20px;
+                            border-bottom: 2px solid #3399cc;
+                        }
+                    }
+                }
+                .fig.right {
+                    border-right: 0px;
+                }
+            }
+        }
     }
     .section-03 {
         height: 160px;

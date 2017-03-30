@@ -2,15 +2,53 @@
     min-width: 1224px!important;
 }
 
-.container.bar {
-    text-align: center;
-    .content {
-        height: 160px;
-        padding: 20px;
-        a {
-            line-height: 80px;
-            font-size: 32px;
-            color: #3aafd6;
+.bfooter {
+    background-color: #fff;
+    .container.bar {
+        text-align: center;
+        .content {
+            height: 260px;
+            padding: 20px;
+            position: relative;
+            .text_panel {
+                position: absolute;
+                right: 280px;
+                top: 88px;
+                a {
+                    line-height: 34px;
+                    font-size: 24px;
+                    color: #fff;
+                    border-radius: 0px;
+                    width: 140px;
+                    font-weight: 300;
+                }
+            }
+            .text_panel2 {
+                position: absolute;
+                left: 280px;
+                top: 34px;
+                text-align: left;
+                .title {
+                    color: #333;
+                    font-weight: 300;
+                    letter-spacing: 0.1em;
+                    font-size: 36px;
+                }
+                .divider {
+                    height: 2px;
+                    width: 200px;
+                    margin-top: 20px;
+                    border-bottom: 2px solid #3399cc;
+                }
+                .txt {
+                    padding-top: 20px;
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 300;
+                    letter-spacing: 0.005em;
+                    margin-bottom: 40px;
+                }
+            }
         }
     }
 }
@@ -88,6 +126,11 @@
     .with-5-columns {
         .column {
             width: 20%;
+        }
+    }
+    .with-4-columns {
+        .column {
+            width: 25%;
         }
     }
     .secondary {

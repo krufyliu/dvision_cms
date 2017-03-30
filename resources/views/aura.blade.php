@@ -291,9 +291,18 @@
             </div>
         </div>
     </div>
-    <div class="container bar">
-        <div class="content">
-            <a href="/order" title="立即订购">立即订购</a>
+    <div class="bfooter">
+        <div class="container bar">
+            <div class="content">
+                <div class="text_panel">
+                    <a href="/order" class="btn btn-primary" title="订购">订 购</a>
+                </div>
+                <div class="text_panel2">
+                   <span class="title">即刻订购AURA<br>开启VR拍摄新体验</span>
+                   <div class="divider"></div>
+                   <p class="txt">点击右侧按钮，开始预订！</p>
+                </div>
+            </div>
         </div>
     </div>
     <div id="video_dlg" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">

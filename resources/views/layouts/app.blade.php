@@ -142,11 +142,11 @@
 
     <div class="footer">
       <div class="container">
-        <nav class="columns with-5-columns">
+        <nav class="columns with-4-columns">
           <div class="column">
             <div class="section">
               <label for="">
-                <h3 class="title">产品</h3>
+                <h3 class="title">网站导航</h3>
               </label>
               <ul class="list">
                 <li class="item">
@@ -158,9 +158,6 @@
                 <li class="item">
                   <a href="/aurastudio" class="link">AURA Studio</a>
                 </li>
-                <!--<li class="item">
-                  <a href="#" class="link">VR直播</a>
-                </li>-->
               </ul>
             </div>
           </div>
@@ -191,14 +188,11 @@
                 <h3 class="title">支持</h3>
               </label>
               <ul class="list">
-                <!--li class="item">
-                  <a href="#" class="link">社区论坛</a>
-                </li>
-                <li class="item">
-                  <a href="#" class="link">常见问题</a>
-                </li-->
                 <li class="item">
                   <a href="/download" class="link">软件下载</a>
+                </li>
+                <li class="item">
+                  <a href="#" class="link">固件下载</a>
                 </li>
               </ul>
             </div>
@@ -215,9 +209,12 @@
                 <li class="item">
                   <a href="/join" class="link">人才招聘</a>
                 </li>
-                {{-- <li class="item">
-                  <a href="/contact" class="link">联系方式</a>
-                </li> --}}
+                <li class="item">
+                  <a href="/news" class="link">新闻报道</a>
+                </li>
+                <li class="item">
+                  <a href="/contact" class="link">联系我们</a>
+                </li>
               </ul>
             </div>
           </div>

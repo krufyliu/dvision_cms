@@ -20,7 +20,35 @@
                         <span class="title">加入量子视觉吧！</span>
                         <p class="txt">JOIN IN DKVISION</p>
                     </div>
-                    <img src="img/join_sec02_01.jpg" width="1100" alt="join_sec02_01" class="join_sec02_01" draggable="false">
+                    <div class="text_panel2">
+                        <ul class="figs">
+                            <li class="fig">
+                                <span class="icon">01/</span>
+                                <span class="title">这是一个<br>实现自我的公司</span>
+                                <div class="ctt">
+                                    <div class="divider"></div>
+                                    <p class="txt">量子视觉是一家积极向上的创业型公司，创业的氛围让每个人都积极创新，为做出美好的事情而努力。这是一个每个人都可以找到实现个人价值的美好空间。</p>
+                                </div>
+                            </li>
+                            <li class="fig">
+                                <span class="icon">02/</span>
+                                <span class="title">一起创造<br>让人激动的产品</span>
+                                <div class="ctt">
+                                    <div class="divider"></div>
+                                    <p class="txt">量子视觉坚持创新，利用前沿的科技眼界，让每个人都能享受科技的乐趣。让我们一起，把量子视觉变成VR一体化解决方案的最好品牌。</p>
+                                </div>
+                            </li>
+                            <li class="fig right">
+                                <span class="icon">03/</span>
+                                <span class="title">工作伙伴<br>都是一流人才</span>
+                                <div class="ctt">
+                                    <div class="divider"></div>
+                                    <p class="txt">量子视觉自诞生起初已经有着一流的科技人才基因，初创人员均是科技领域博士，创业团队成员是来自各大国际企业的顶尖人才，加入量子视觉，与一流人才工作。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    {{-- <img src="img/join_sec02_01.jpg" width="1100" alt="join_sec02_01" class="join_sec02_01" draggable="false"> --}}
                 </div>
             </div>
         </div>

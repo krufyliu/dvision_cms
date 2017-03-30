@@ -109,4 +109,18 @@
             </div>
         </div>
     </div>
+    <div class="bfooter">
+        <div class="container bar">
+            <div class="content">
+                <div class="text_panel">
+                    <a href="/contact" class="btn btn-primary" title="联系">联 系</a>
+                </div>
+                <div class="text_panel2">
+                   <span class="title">专业VR服务<br>即刻获取</span>
+                   <div class="divider"></div>
+                   <p class="txt">点击右侧按钮，前往联系！</p>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

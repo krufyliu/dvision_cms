@@ -48,4 +48,18 @@
             </div>
         </div>
     </div>
+    <div class="bfooter">
+        <div class="container bar">
+            <div class="content">
+                <div class="text_panel">
+                    <a href="/download" class="btn btn-primary" title="下载">下 载</a>
+                </div>
+                <div class="text_panel2">
+                   <span class="title">AURA Work<br>即刻体验</span>
+                   <div class="divider"></div>
+                   <p class="txt">点击右侧按钮，前往下载！</p>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
