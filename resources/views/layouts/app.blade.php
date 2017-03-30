@@ -97,7 +97,7 @@
 
                     <li><a href="/video" title="内容">内容</a></li>
 
-                    <li><a href="/news" title="新闻">新闻</a></li>
+                    <li><a href="/download" title="软件下载">软件下载</a></li>
 
                     <li><a href="/about" title="关于我们">关于我们</a></li>
 

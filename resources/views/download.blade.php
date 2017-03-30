@@ -13,7 +13,7 @@
                     <div class="text_panel2">
                         <ul class="figs">
                             <li class="fig">
-                                <div class="icons" style="margin-top: 60px; margin-bottom: 25px;">
+                                <div class="icons" style="margin-top: 48px; margin-bottom: 25px;">
                                     <img src="img/aura_sec06_04.png" alt="aura_sec06_04" width="238">
                                 </div>
                                 <span class="title">流畅剪辑，<br>云端精剪的专业体验。</span>
