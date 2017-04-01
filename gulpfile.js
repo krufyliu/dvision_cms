@@ -37,6 +37,10 @@ elixir(mix => {
     mix.copy('./resources/assets/vendor/summernote/font', 'public/fonts');
     mix.copy('./node_modules/font-awesome/fonts', 'public/fonts');
     mix.livereload();
+
+    gulp.src(['resources/assets/img/**/*.*'])
+        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+        .pipe(gulp.dest('public/img'));
 });
 
 // gulp.task('laravel-views', function() {
