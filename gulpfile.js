@@ -26,7 +26,6 @@ elixir(mix => {
             'v2/v2_scrollreveal.js',
             'v2/v2_index.js'
         ], 'public/js/index.js');
-    mix.version(['public/js/app.js', 'public/js/index.js'])
     mix.sass('admin.scss')
        .webpack('admin.js');
     // mix.copy('resources/assets/img', 'public/img');
@@ -36,6 +35,7 @@ elixir(mix => {
     // mix.copy('./node_modules/bootstrap-sass/assets/fonts', 'public/fonts');
     mix.copy('./resources/assets/vendor/summernote/font', 'public/fonts');
     mix.copy('./node_modules/font-awesome/fonts', 'public/fonts');
+    mix.version(['public/js/app.js', 'public/js/index.js', 'public/css/app.css']);
     mix.livereload();
 
     // gulp.src(['resources/assets/img/**/*.*'])
