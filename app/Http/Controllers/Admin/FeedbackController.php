@@ -70,7 +70,7 @@ class FeedbackController extends Controller
             'content' => '留言内容',
             'created_at' => '留言时间'
         ];
-        $data = Feedback::all()->map(function($f, $k) {
+        $data = Feedback::orderBy('created_at', 'desc')->get()->map(function($f, $k) {
             $sub_content = $this->utf8_str_split($f->content, 50);
             $new_content = join("\n", $sub_content);
             return [
