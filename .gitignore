@@ -5,7 +5,9 @@
 /public/fonts
 /public/image
 /public/css
+/public/img
 /public/js
+/public/build
 /public/upload
 /vendor
 /.idea
@@ -17,3 +19,4 @@ Homestead.yaml
 *.swo
 *.mp4
 *.m4a
+*.log

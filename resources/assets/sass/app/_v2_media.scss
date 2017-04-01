@@ -1,0 +1,61 @@
+@media (max-width: 767px) {
+    .header {
+        .dropdown {
+            .dropdown-menu {
+                background-color: inherit;
+                a {
+                    color: #fff!important;
+                    font-size: 13px;
+                    letter-spacing: 0.005em;
+                    line-height: 1.37373;
+                    font-weight: 400;
+                    &:hover {
+                        background-color: inherit;
+                        color: #3399cc!important;
+                    }
+                }
+            }
+        }
+    }
+    .promos {
+        ul {
+            height: 202px!important;
+        }
+        .image {
+            height: 200px!important;
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    .promos {
+        ul {
+            height: 182px!important;
+        }
+        .image {
+            height: 180px!important;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .promos {
+        ul {
+            height: 202px!important;
+        }
+        .image {
+            height: 200px!important;
+        }
+    }
+}
+
+@media (min-width: 2550px) {
+    .promos {
+        ul {
+            height: 382px!important;
+        }
+        .image {
+            height: 380px!important;
+        }
+    }
+}

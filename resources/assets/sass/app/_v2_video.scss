@@ -1,0 +1,144 @@
+.main.video {
+    .vdo {
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        .content {
+            position: relative;
+            width: 100%;
+        }
+    }
+    .section-01 {
+        height: 480px;
+        background-color: #f2f2f2;
+        background-image: url(../img/video_sec01_01.jpg);
+        background-position: center center;
+        background-size: cover;
+        .content {
+            height: 480px;
+        }
+        .text_panel {
+            position: absolute;
+            left: 418px;
+            top: 175px;
+            text-align: center;
+            .title {
+                color: #fff;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 72px;
+            }
+            p.txt {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .section-02 {
+        height: 440px;
+        background-color: #fff;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        .blur {
+            height: calc(100% + 60px);
+            width: calc(100% + 60px);
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            z-index: 1;
+            background-image: url(../img/video_sec02_01.jpg);
+            background-position: center center;
+            background-size: cover;
+            filter: blur(16px);
+            display: block;
+            -ms-filter: "progid: DXImageTransform.Microsoft.Blur(PixelRadius=15, MakeShadow=false)";
+        }
+        .content {
+            height: 440px;
+            z-index: 2;
+        }
+        .icon {
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            height: 299px;
+            width: 400px;
+            right: 40px;
+            top: 76px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all .2s linear;
+            &:hover {
+              box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            }
+            .icon-play {
+              position: absolute;
+              left: 162px;
+              top: 111px;
+            }
+            cursor: pointer;
+        }
+        .text_panel {
+            position: absolute;
+            top: 120px;
+            width: 520px;
+            .title {
+                color: #fff;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 36px;
+            }
+            p.txt {
+                padding-top: 20px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+            }
+        }
+        .content.right {
+            .text_panel {
+                text-align: right;
+                right: 40px;
+            }
+            .icon {
+                left: 40px;
+            }
+        }
+        .content.left {
+            .text_panel {
+                text-align: left;
+                left: 40px;
+            }
+            .icon {
+                right: 40px;
+            }
+        }
+    }
+}
+
+.main.videoshow {
+    .vdosw {
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        .content {
+            position: relative;
+            width: 100%;
+            min-height: 300px;
+        }
+    }
+    section {
+        display: block;
+    }
+    .section-01 {
+        position: relative;
+
+    }
+}

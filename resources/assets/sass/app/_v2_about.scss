@@ -1,0 +1,184 @@
+.main.about {
+    .abt {
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        .content {
+            position: relative;
+            width: 100%;
+        }
+    }
+    .section-01 {
+        height: 480px;
+        background-color: #fff;
+        background-image: url(../img/about_sec01_01.jpg);
+        background-position: top center;
+        background-size: cover;
+        .content {
+            height: 480px;
+        }
+        .text_panel {
+            position: absolute;
+            left: 15px;
+            top: 175px;
+            text-align: center;
+            .title {
+                color: #000;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 72px;
+            }
+            p.txt {
+                line-height: 1.9393;
+                color: #000;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .section-02 {
+        height: 220px;
+        background-color: #fff;
+        background-position: center center;
+        background-size: cover;
+        .content {
+            height: 220px;
+        }
+        .about_sec02_01 {
+            position: absolute;
+            left: 0px;
+            top: 80px;
+        }
+        hr {
+            position: absolute;
+            bottom: 190px;
+            left: 0px;
+            width: 100%;
+            color: #f5f5f5;
+            border-top: 2px solid #eeeeee;
+        }
+        .text_panel {
+            position: absolute;
+            left: 496px;
+            bottom: 40px;
+            text-align: center;
+            .title {
+                color: #000;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 36px;
+            }
+            p.txt {
+                padding-top: 20px;
+                color: #000;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .section-03 {
+        height: 600px;
+        background-color: #fff;
+        .content {
+            height: 600px;
+        }
+        .text_panel {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            text-align: left;
+            .figs {
+                list-style: none;
+                color: #000;
+                font-weight: 400;
+                position: relative;
+                .fig {
+                    position: relative;
+                    text-align: center;
+                    width: 398px;
+                    float: left;
+                    overflow: hidden;
+                    cursor: pointer;
+                    .fig_value {
+                        font-size: 26px;
+                        font-weight: 300;
+                    }
+                    &:hover {
+                        .intro {
+                            bottom: 0px;
+                        }
+                    }
+                    .intro {
+                        transition: all .3s ease-out;
+                        width: 398px;
+                        height: 248px;
+                        position: absolute;
+                        // top: 0px;
+                        bottom: -200px;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        color: #f5f5f5;
+                        padding: 15px 20px;
+                        .txt {
+                            margin-top: 15px;
+                            text-align: left;
+                            line-height: 1.573737;
+                            letter-spacing: 0.005em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-04 {
+        height: 680px;
+        background-color: #fff;
+        background-position: center center;
+        background-size: cover;
+        .content {
+            height: 680px;
+        }
+        .about_sec04_01 {
+            position: absolute;
+            left: 0px;
+            top: 150px;
+        }
+        .text_panel {
+            position: absolute;
+            left: 517px;
+            top: 0px;
+            text-align: left;
+            .title {
+                color: #000;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 36px;
+            }
+            p.txt {
+                padding-top: 20px;
+                color: #000;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+            }
+        }
+        .text_panel2 {
+            position: absolute;
+            left: 630px;
+            top: 170px;
+            text-align: left;
+            .tag {
+                color: #9d9d9d;
+            }
+            .txt, .txt > a {
+                font-size: 18px;
+                color: #000;
+            }
+        }
+    }
+}

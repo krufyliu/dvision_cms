@@ -1,0 +1,104 @@
+.main.download {
+    .dld {
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        .content {
+            position: relative;
+            width: 100%;
+        }
+    }
+    .section-01 {
+        height:1410px;
+        background-color: #f2f2f2;
+        background-image: url(../img/download_sec01_01.jpg);
+        background-position: center center;
+        background-size: cover;
+        .content {
+            height: 1410px;
+        }
+        .text_panel {
+            position: absolute;
+            left: 398px;
+            top: 140px;
+            text-align: center;
+            .title {
+                color: #fff;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 64px;
+            }
+            p.txt {
+                color: #f0f0f0;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+            }
+        }
+        .text_panel2 {
+            position: absolute;
+            left: 67px;
+            top: 300px;
+            .title {
+                color: #fff;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 36px;
+            }
+            p.txt {
+                color: #f0f0f0;
+                font-size: 13px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+                margin-top: 20px; 
+            }
+            p.txt.small {
+              margin-top: 30px;
+              font-size: 13px;
+            }
+            .figs {
+                padding-top: 20px;
+                list-style: none;
+                color: #f0f0f0;
+                font-weight: 300;
+                position: relative;
+                height: 80px;
+                .fig {
+                    position: relative;
+                    text-align: left;
+                    width: 500px;
+                    height: 480px;
+                    float: left;
+                    background-color: rgba(252, 252, 252, 0.1);
+                    padding: 20px 30px;
+                    margin-bottom: 60px;
+                    .icons {
+                      margin-top: 25px;
+                      margin-bottom: 20px;
+                    }
+                    .ics {
+                        margin-bottom: 4px;
+                    }
+                }
+                .fig.right {
+                    margin-left: 60px;
+                }
+            }
+            .links {
+              margin-top: 30px;
+            }
+            .link {
+                color: #f0f0f0;
+                letter-spacing: 0.1em;
+                border-bottom: 1px solid #3399cc;
+                padding: 10px;
+                text-decoration: none;
+                margin-right: 20px;
+                margin-top: 30px;
+            }
+        }
+    }
+}

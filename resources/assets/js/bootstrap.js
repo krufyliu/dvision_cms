@@ -13,4 +13,4 @@ window.jQuery.ajaxSetup({
         'X-CSRF-TOKEN': Laravel.csrfToken
     }
 });
-require('bootstrap-sass');
+window._ = require('bootstrap-sass');

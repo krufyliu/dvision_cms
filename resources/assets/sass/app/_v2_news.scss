@@ -1,0 +1,107 @@
+.main.news {
+    .new {
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        .content {
+            position: relative;
+            width: 100%;
+        }
+    }
+    .section-01 {
+        height: 480px;
+        background-color: #fff;
+        background-image: url(../img/news_sec01_01.jpg);
+        background-position: top center;
+        background-size: cover;
+        .content {
+            height: 480px;
+        }
+        .text_panel {
+            position: absolute;
+            left: 484px;
+            top: 150px;
+            text-align: center;
+            .title {
+                color: #fff;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 72px;
+            }
+            p.txt {
+                line-height: 1.9393;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .section-02 {
+        background-color: #f2f2f2;
+        .content {
+            height: auto;
+        }
+        .text_panel {
+            position: relative;
+            text-align: left;
+            .figs {
+                list-style: none;
+                color: #000;
+                font-weight: 400;
+                position: relative;
+                margin-top: 1px;
+                display: table;
+                .fig {
+                    position: relative;
+                    text-align: left;
+                    width: 396px;
+                    float: left;
+                    overflow: hidden;
+                    margin: 1px;
+                    .fig_value {
+                        font-size: 26px;
+                        font-weight: 300;
+                    }
+                    .icons {
+                      width: 396px;
+                      height: 308px;
+                      background-position: top center;
+                      background-size: cover;
+                    }
+                    // &:hover {
+                    //     .intro {
+                    //         bottom: 0px;
+                    //     }
+                    // }
+                    .intro {
+                        transition: all .3s ease-out;
+                        width: 396px;
+                        height: 100px;
+                        position: absolute;
+                        bottom: 0px;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        color: #f5f5f5;
+                        padding: 15px 20px;
+                        .txt {
+                            margin-top: 15px;
+                            text-align: left;
+                            line-height: 1.573737;
+                            letter-spacing: 0.005em;
+                        }
+                        p.txt {
+                          margin-top: 0px!important;
+                          font-size: 13px;
+                          color: #9d9d9d;
+                        }
+                        a {
+                          color: #f5f5f5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

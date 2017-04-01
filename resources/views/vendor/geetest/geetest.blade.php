@@ -1,4 +1,4 @@
-<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+{{-- <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script> --}}
 <script src="https://static.geetest.com/static/tools/gt.js"></script>
 <div id="geetest-captcha"></div>
 <p id="wait" class="show">正在加载验证码...</p>

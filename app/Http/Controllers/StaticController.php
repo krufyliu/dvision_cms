@@ -19,10 +19,40 @@ class StaticController extends Controller
         return view('home', ['videos' => $videos, 'title' => '首页']);
     }
 
+    public function aura()
+    {
+        return view('aura', ['title' => 'AURA 专业级VR拍摄设备']);
+    }
+
+    public function aurawork()
+    {
+        return view('aura_work', ['title' => 'AURA WORK - AURA 专用监看、控制软件']);
+    }
+
+    public function aurastudio()
+    {
+        return view('aura_studio', ['title' => 'AURA STUDIO - AURA 专用 VR 制作软件']);
+    }
+
+    public function service()
+    {
+        return view('service', ['title' => '服务']);
+    }
+
+    public function about()
+    {
+        return view('about', ['title' => '关于我们']);
+    }
+
+    public function download()
+    {
+        return view('download', ['title' => '软件下载']);
+    }
+
     public function join()
     {
         $careerjobs = CareerJob::orderBy('created_at', 'desc')->get();
-        return view('join', ['careerjobs' => $careerjobs, 'title' => '加入']);
+        return view('join', ['careerjobs' => $careerjobs, 'title' => '人才招聘']);
     }
 
     public function team()
@@ -32,12 +62,17 @@ class StaticController extends Controller
 
     public function contact()
     {
-        return view('contact', ['title' => '联系']);
+        return view('contact', ['title' => '联系我们']);
     }
 
-    public function suceess()
+    public function contact_order()
     {
-        return view('suceess', ['title' => '留言']);
+        return view('contact_order', ['title' => '订购']);
+    }
+
+    public function success()
+    {
+        return view('success', ['title' => '提交成功']);
     }
 
     public function contactSubmit(Request $request)
@@ -50,7 +85,7 @@ class StaticController extends Controller
                 'content' => $request->input('content'),
             ]
         );
-        return redirect()->action('StaticController@suceess');
+        return redirect()->action('StaticController@success');
     }
 
     protected  function contactValidator(Request $request)
@@ -63,16 +98,10 @@ class StaticController extends Controller
         ]);
     }
 
-    public function service()
-    {
-        return view('service', ['title' => '服务']);
-    }
-
-
     public function news()
     {
         $posts = Post::orderBy('created_at', 'desc')->get();
-        return view('news.index', ['posts' => $posts, 'title' => '文章']);
+        return view('news', ['posts' => $posts, 'title' => '新闻']);
     }
 
     public function newsShow($id)
@@ -88,13 +117,17 @@ class StaticController extends Controller
             $resource = $resource->where('category_id', $request->input('category_id'));
         }
         $videos = $resource->orderBy('created_at', 'desc')->get();
-        return view('video.index', ['videos' => $videos, 'title' => '视频']);
+        return view('video', ['videos' => $videos, 'title' => '内容']);
     }
 
     public function videoShow($id)
     {
         $video = Video::find($id);
-        return view('video.show', ['video' => $video, 'title' => '视频']);
+        return view('video.show', ['video' => $video, 'title' => $video->title . ' 内容']);
+    }
+
+    public function zshuang() {
+        return view('zshuang');    
     }
 
 }
