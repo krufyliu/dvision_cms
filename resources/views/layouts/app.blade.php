@@ -98,8 +98,16 @@
                     <li><a href="/video" title="内容">内容</a></li>
 
                     <li><a href="/download" title="软件下载">软件下载</a></li>
-
-                    <li><a href="/about" title="关于我们">关于我们</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">公司 <span class="caret"></span></a>
+                      <ul class="dropdown-menu dropdown-menu-left">
+                          <li><a href="/about" class="link" title="关于我们">关于我们</a></li>
+                          <li><a href="/join" class="link" title="人才招聘">人才招聘</a></li>
+                          <li><a href="/news" class="link" title="新闻报道">新闻报道</a></li>
+                          <li><a href="/contact" class="link" title="联系我们">联系我们</a></li>
+                      </ul>
+                    </li>
+                    {{-- <li><a href="/about" title="关于我们">关于我们</a></li> --}}
 
                     <li><a href="/order" class="btn btn-default" title="立即订购">立即订购</a></li>
                 </ul>
@@ -193,9 +201,9 @@
                 <li class="item">
                   <a href="/download" class="link" title="软件下载">软件下载</a>
                 </li>
-                {{-- <li class="item">
+                <li class="item">
                   <a href="#" class="link" title="固件下载">固件下载</a>
-                </li> --}}
+                </li>
               </ul>
             </div>
           </div>

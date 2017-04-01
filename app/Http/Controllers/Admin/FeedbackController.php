@@ -24,7 +24,7 @@ class FeedbackController extends Controller
 
     public function exportExcel()
     {
-        Excel::create('用户留言', function($excel) {
+        Excel::create(date('YmdHi') . '用户留言', function($excel) {
             $excel->setTitle('量子视觉官网用户留言');
             $excel->setCreator('');
             $excel->setDescription('量子视觉官网用户留言Excel导出');
@@ -32,15 +32,34 @@ class FeedbackController extends Controller
                 $data = $this->prepareExcelData();
                 $sheet->rows($data);
                 $endLine = count($data)+1;
+                $sheet->cells("A1:E1", function($cells) {
+                    $cells->setBackground('#3aafd6');
+                });
+                $sheet->setFontFamily('MicrosoftYahei');
+                $sheet->setAutoSize(true);
                 for($i = 1; $i <= $endLine; $i++) {
-                    $sheet->setSize("A{$i}", 30, 30);
-                    $sheet->setSize("B{$i}", 30, 30);
-                    $sheet->setSize("C{$i}", 30, 30);
-                    $sheet->setSize("D{$i}", 30, 30);
-                    $sheet->setSize("E{$i}", 30, 30);
+                    $sheet->setWidth("D", 94);
+                    $sheet->cells("A{$i}:E{$i}", function($cells) {
+                        $cells->setAlignment('left');
+                        $cells->setValignment('top');
+
+                    });
                 }
             });
         })->export('xls');
+    }
+
+    public function utf8_str_split($str, $split_len = 1) {
+        if (!preg_match('/^[0-9]+$/', $split_len) || $split_len < 1)
+            return FALSE;
+    
+        $len = mb_strlen($str, 'UTF-8');
+        if ($len <= $split_len)
+            return array($str);
+    
+        preg_match_all('/.{'.$split_len.'}|[^\x00]{1,'.$split_len.'}$/us', $str, $ar);
+    
+        return $ar[0];
     }
 
     protected function prepareExcelData() {
@@ -52,8 +71,10 @@ class FeedbackController extends Controller
             'created_at' => '留言时间'
         ];
         $data = Feedback::all()->map(function($f, $k) {
+            $sub_content = $this->utf8_str_split($f->content, 50);
+            $new_content = join("\n", $sub_content);
             return [
-                $f->name, $f->phone, $f->email, $f->content, $f->created_at
+                $f->name, $f->phone, $f->email, $new_content, $f->created_at
             ];
         })->all();
         array_unshift($data, array_values($headers));

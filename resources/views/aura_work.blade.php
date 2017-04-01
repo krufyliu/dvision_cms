@@ -19,7 +19,7 @@
                 <div class="content">
                     <img src="img/aurawork_sec02_01.png" width="760" alt="aurawork_sec02_01" class="aurawork_sec02_01" draggable="false">
                     <div class="text_panel">
-                        <span class="title">实时监控<br>所以镜头  随时操控</span>
+                        <span class="title">实时监控<br>所有镜头  实时操控</span>
                         <div class="divider"></div>
                         <p class="txt">AURA Work是DKVISION团队为AURA摄影机独立<br>开发的实时监看软件。可以帮助内容创作者实时监<br>看拍摄画面，并且可以对多个相机模组进行统一或<br>者独立的参数遥控调整。</p>
                         <ul class="figs">

@@ -10,13 +10,13 @@
         }
     }
     .section-01 {
-        height: 880px;
+        height:1410px;
         background-color: #f2f2f2;
         background-image: url(../img/download_sec01_01.jpg);
         background-position: center center;
         background-size: cover;
         .content {
-            height: 880px;
+            height: 1410px;
         }
         .text_panel {
             position: absolute;
@@ -74,9 +74,13 @@
                     float: left;
                     background-color: rgba(252, 252, 252, 0.1);
                     padding: 20px 30px;
+                    margin-bottom: 60px;
                     .icons {
                       margin-top: 46px;
                       margin-bottom: 20px;
+                    }
+                    .ics {
+                        margin-bottom: 4px;
                     }
                 }
                 .fig.right {
