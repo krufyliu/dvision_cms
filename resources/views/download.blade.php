@@ -23,7 +23,7 @@
                                   <a href="/contact" class="link" rel="nofollow"><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
                                   <a href="/contact" class="link" rel="nofollow">使用必读</a>
                                 </div>
-                                <p class="txt small">2017.03.31 已更新至 v2.0.2 &nbsp;  大小: 50M</p>
+                                <p class="txt small">2017.03.31 已更新至 v2.0.2</p>
                                 {{-- <p class="txt">未开放下载</p> --}}
                             </li>
                             <li class="fig right">
@@ -37,20 +37,35 @@
                                   <a href="/contact" class="link" rel="nofollow"><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
                                   <a href="/contact" class="link" rel="nofollow">使用必读</a>
                                 </div>
-                                <p class="txt small">2017.03.31 已更新至 v2.0.2 &nbsp;  大小: 50M</p>
+                                <p class="txt small">2017.03.31 已更新至 v2.0.2</p>
                                 {{-- <p class="txt">未开放下载</p> --}}
                             </li>
                             <li class="fig">
-                                <div class="icons" style="margin-top: 48px; margin-bottom: 25px;">
-                                    <img src="img/aura_sec06_04.png" alt="aura_sec06_04" width="238" draggable="false">
+                                <div class="icons" style="margin-top: 27px; margin-bottom: 25px;">
+                                    <img src="img/download_sec01_03.png" alt="download_sec01_03" width="278" draggable="false">
                                 </div>
-                                <span class="title">Aura固件</span>
-                                <p class="txt">AURA Studio可以协助内容创作者对一体机素材进行统一拷贝，并对<br>拷贝的素材进行简单地拼接和剪辑，剪辑好的素材同时同步到量子<br>云服务器，进行精细拼接，体验更专业更流畅的专业剪辑体验。</p>
+                                <span class="title">固件下载</span>
+                                <p class="txt">我们会不断完善AURA的功能体验，您可以下载后<br>使用AURA WORK对AURA相机进行升级。</p>
                                 <div class="links">
-                                  <a href="/contact" class="link" rel="nofollow">&nbsp;AURA</a>
+                                  <a href="/contact" class="link" rel="nofollow">&nbsp;立即下载</a>
                                   <a href="/contact" class="link" rel="nofollow">使用必读</a>
                                 </div>
-                                <p class="txt small">2017.03.31 已更新至 v2.0.2 &nbsp;  大小: 50M</p>
+                                <p class="txt small">2017.04.01 已更新至 v1.2.1 &nbsp;  大小: 1M</p>
+                            </li>
+
+                            <li class="fig right">
+                                <div class="icons">
+                                    <img src="img/download_sec01_04.png" alt="download_sec01_04" width="200" draggable="false">
+                                </div>
+                                <span class="title">敬请期待</span>
+                                <p class="txt">只需要搭配一台服务器，您就可以使用AURA进行4K VR直播，<br>将奇幻的场景分享到世界的每一个角落。</p>
+                                {{-- <div class="links">
+                                  <a href="/contact" class="link" rel="nofollow"><img src="/img/icon-win.png" width="17" class="ics" draggable="false">&nbsp;Win10</a>
+                                  <a href="/contact" class="link" rel="nofollow"><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
+                                  <a href="/contact" class="link" rel="nofollow">使用必读</a>
+                                </div> --}}
+                                <p class="txt small">&nbsp;</p>
+                                <p class="txt"></p>
                             </li>
                         </ul>
                     </div>
