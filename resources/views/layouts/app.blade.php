@@ -210,6 +210,9 @@
                 <li class="item">
                   <a href="/download" class="link" title="固件下载">固件下载</a>
                 </li>
+                <li class="item">
+                  <a href="https://cdn.visiondk.com/download/aura/pdf/aura_guide.pdf?attname=" class="link" target="_blank" title="固件下载" rel="nofollow">AURA快速指南</a>
+                </li>
               </ul>
             </div>
           </div>
