@@ -11,8 +11,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ isset($title) ? $title . '-' : '' }}量子视觉科技官网</title>
-    <meta name="keywords" content="量子视觉科技有限公司,量子视觉,VR视频,全景,VR服务,DKVISION, AURA, 专业级VR拍摄设备">
-    <meta name="description" content="DKVISION致力于打造下一代虚拟现实的完整解决方案。AURA 专业级VR拍摄设备">
+    <meta name="keywords" content="量子视觉科技有限公司,量子视觉,VR视频,全景,VR服务,DKVISION, AURA, 专业级VR摄影机">
+    <meta name="description" content="DKVISION致力于打造下一代虚拟现实的完整解决方案。AURA 专业级VR摄影机">
 
     <!--[if lt IE 9]>
         <script type="text/javascript">
@@ -211,7 +211,7 @@
                   <a href="/download" class="link" title="固件下载">固件下载</a>
                 </li>
                 <li class="item">
-                  <a href="https://cdn.visiondk.com/download/aura/pdf/aura_guide.pdf?attname=" class="link" target="_blank" title="固件下载" rel="nofollow">AURA快速指南</a>
+                  <a href="https://cdn.visiondk.com/download/aura/pdf/aura_guide.pdf?attname=" class="link" target="_blank" title="AURA快速指南" rel="nofollow">AURA快速指南</a>
                 </li>
               </ul>
             </div>

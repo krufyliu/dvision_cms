@@ -19,8 +19,8 @@
                                 <span class="title">流畅剪辑<br>云端精拼的专业体验</span>
                                 <p class="txt">推荐配置要求：<br>第五代智能英特尔酷睿i5处理器以上<br>8G内存、7200转机械硬盘或SSD固态硬盘<br>Windows10或MacOS 10.12+操作系统<br> NVIDIA GeForce系列 GTX 960以上(Windows)<br>最佳使用分辨率2560x1600(全屏)</p>
                                 <div class="links">
-                                  <a href="https://cdn.visiondk.com/download/aura/studio/aura_studio_v0.8.2_win.zip" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-win.png" width="17" class="ics" draggable="false">&nbsp;Win10</a>
-                                  <a href="https://cdn.visiondk.com/download/aura/studio/aura_studio_v0.8.2_mac.dmg" class="link" target="_blank" rel="nofollow"><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
+                                  <a href="https://cdn.visiondk.com/download/aura/studio/aura_studio_v0.8.2_win.zip" title="aura_studio_v0.8.2_win.zip" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-win.png" width="17" class="ics" draggable="false">&nbsp;Win10</a>
+                                  <a href="https://cdn.visiondk.com/download/aura/studio/aura_studio_v0.8.2_mac.dmg" title="aura_studio_v0.8.2_mac.dmg" class="link" target="_blank" rel="nofollow"><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
                                   {{-- <a href="/contact" class="link" rel="nofollow">使用必读</a> --}}
                                 </div>
                                 <p class="txt small">2017.04.01 已更新至 v0.8.2</p>
@@ -33,8 +33,8 @@
                                 <span class="title">实时监控<br>所有镜头  实时操控</span>
                                 <p class="txt">推荐配置要求：<br>第五代智能英特尔酷睿i5处理器以上<br>8G内存、7200转机械硬盘或SSD固态硬盘<br>Windows10或MacOS 10.12+操作系统<br> NVIDIA GeForce系列 GTX 960以上(Windows)<br>最佳使用分辨率2560x1600(全屏)</p>
                                 <div class="links">
-                                  <a href="https://cdn.visiondk.com/download/aura/work/aura_work_v1.2.7_win.zip" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-win.png" width="17" class="ics" draggable="false">&nbsp;Win10</a>
-                                  <a href="https://cdn.visiondk.com/download/aura/work/aura_work_v1.2.7_mac.dmg" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
+                                  <a href="https://cdn.visiondk.com/download/aura/work/aura_work_v1.2.7_win.zip" title="aura_work_v1.2.7_win.zip" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-win.png" width="17" class="ics" draggable="false">&nbsp;Win10</a>
+                                  <a href="https://cdn.visiondk.com/download/aura/work/aura_work_v1.2.7_mac.dmg" title="aura_work_v1.2.7_mac.dmg" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
                                   {{-- <a href="/contact" class="link"  target="_blank" rel="nofollow">使用必读</a> --}}
                                 </div>
                                 <p class="txt small">2017.04.01 已更新至 v1.2.7</p>
@@ -47,7 +47,7 @@
                                 <span class="title">固件下载</span>
                                 <p class="txt">我们会不断完善AURA的功能体验，您可以下载后<br>使用AURA WORK对AURA相机进行升级。</p>
                                 <div class="links">
-                                  <a href="https://cdn.visiondk.com/download/aura/firmware/aura_firmware_v1.2.1.bin" class="link"  target="_blank" rel="nofollow">&nbsp;立即下载</a>
+                                  <a href="https://cdn.visiondk.com/download/aura/firmware/aura_firmware_v1.2.1.bin" title="aura_firmware_v1.2.1.bin" class="link"  target="_blank" rel="nofollow">&nbsp;立即下载</a>
                                   {{-- <a href="/contact" class="link"  target="_blank" rel="nofollow">使用必读</a> --}}
                                 </div>
                                 <p class="txt small">2017.04.01 已更新至 v1.2.1 &nbsp;  大小: 1M</p>

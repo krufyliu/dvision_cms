@@ -41,7 +41,7 @@
     <div class="promos promos-row">
         <ul>
             <li class="promo-position promo-postion-0">
-                <a href="http://t.cn/RiYtAK3" target="_blank" class="promo" rel="nofollow" title="量子视觉AURA发布会回顾">
+                <a href="http://www.geekpark.net/topics/218305" target="_blank" class="promo" rel="nofollow" title="量子视觉AURA发布会回顾">
                     <div class="image"></div>
                 </a>
             </li>

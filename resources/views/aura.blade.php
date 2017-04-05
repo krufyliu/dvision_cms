@@ -9,7 +9,7 @@
                     <img src="img/aura_sec01_02.png" width="720" alt="aura_sec01_02" class="aura_sec01_02" draggable="false">
                     <div class="text_panel">
                         <span class="title">AURA</span>
-                        <p class="txt">专业级VR拍摄设备</p>
+                        <p class="txt">专业级VR摄影机</p>
                         <!--a href="#" class="link">宣传视频</a-->
                     </div>
                 </div>

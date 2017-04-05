@@ -26,7 +26,7 @@
                         </a>
                       <div class="text_panel">
                             <span class="title">{{ $video->title }}</span>
-                            <p class="txt">{!! str_limit(strip_tags($video->description), $limit = 70, $end = '...') !!}</p>
+                            <p class="txt">{!! str_limit(strip_tags($video->description), $limit = 140, $end = '...') !!}</p>
                         </div>
                     </div>
                 </div>

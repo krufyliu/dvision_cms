@@ -42,7 +42,7 @@
         <div class="container bar">
             <div class="content">
                 <div class="text_panel">
-                    <a href="/download" class="btn btn-primary" title="下载">下 载</a>
+                    <a href="/download" class="btn btn-primary" title="前往下载">前往下载</a>
                 </div>
                 <div class="text_panel2">
                    <span class="title">AURA Studio<br>即刻体验</span>
