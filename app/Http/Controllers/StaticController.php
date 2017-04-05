@@ -51,7 +51,7 @@ class StaticController extends Controller
 
     public function join()
     {
-        $careerjobs = CareerJob::orderBy('created_at', 'desc')->get();
+        $careerjobs = CareerJob::orderBy('created_at', 'asc')->get();
         return view('join', ['careerjobs' => $careerjobs, 'title' => '人才招聘']);
     }
 
