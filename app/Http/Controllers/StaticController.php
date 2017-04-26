@@ -134,8 +134,9 @@ class StaticController extends Controller
     {
         if ($request->input('id')) {
             $id = $request->input('id');
+            $ip = $request->getClientIp();
             $countfile = fopen(storage_path() . '/logs/countfile.log', 'a');
-            fwrite($countfile, "[" . date('Y-m-d H:i:s') . "] production.INFO: POST id: " . $id . " \n");
+            fwrite($countfile, "[" . date('Y-m-d H:i:s') . "] production.INFO: " . $ip . " POST id: " . $id . " \n");
             fclose($countfile);
             $json = ['err_msg'=> 'success', 'verification' => 'true'];
         } else {
