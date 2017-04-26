@@ -10,6 +10,7 @@ use App\Models\Post;
 use App\Models\Video;
 use App\Models\Feedback;
 use Validator;
+use File;
 
 class StaticController extends Controller
 {
@@ -135,9 +136,10 @@ class StaticController extends Controller
         if ($request->input('id')) {
             $id = $request->input('id');
             $ip = $request->getClientIp();
-            $countfile = fopen(storage_path() . '/logs/countfile.log', 'a');
-            fwrite($countfile, "[" . date('Y-m-d H:i:s') . "] production.INFO: " . $ip . " POST id: " . $id . " \n");
-            fclose($countfile);
+            // $countfile = fopen(storage_path() . '/logs/countfile.log', 'a');
+            // fwrite($countfile, "[" . date('Y-m-d H:i:s') . "] production.INFO: " . $ip . " POST id: " . $id . " \n");
+            // fclose($countfile);
+            File::append(storage_path() . '/logs/countfile.log', "[" . date('Y-m-d H:i:s') . "] production.INFO: ['method': 'POST', 'ip':'" . $ip . "', 'id':'" . $id . "']\n");
             $json = ['err_msg'=> 'success', 'verification' => 'true'];
         } else {
             $json = ['err_msg'=> 'success', 'verification' => 'false'];
