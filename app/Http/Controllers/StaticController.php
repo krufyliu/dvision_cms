@@ -133,6 +133,10 @@ class StaticController extends Controller
     public function verification(Request $request)
     {
         if ($request->input('id')) {
+            $id = $request->input('id');
+            $countfile = fopen(storage_path() . '/logs/countfile.log', 'a');
+            fwrite($countfile, "[" . date('Y-m-d H:i:s') . "] production.INFO: POST id: " . $id . " \n");
+            fclose($countfile);
             $json = ['err_msg'=> 'success', 'verification' => 'true'];
         } else {
             $json = ['err_msg'=> 'success', 'verification' => 'false'];
