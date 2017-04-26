@@ -130,4 +130,14 @@ class StaticController extends Controller
         return view('zshuang');    
     }
 
+    public function verification(Request $request)
+    {
+        if ($request->input('id')) {
+            $json = ['err_msg'=> 'success', 'verification' => 'true'];
+        } else {
+            $json = ['err_msg'=> 'success', 'verification' => 'false'];
+        }
+        return response()->json($json);
+    }
+
 }

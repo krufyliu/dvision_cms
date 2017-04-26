@@ -20,3 +20,4 @@ Homestead.yaml
 *.mp4
 *.m4a
 *.log
+.vscode/
