@@ -147,4 +147,27 @@ class StaticController extends Controller
         return response()->json($json);
     }
 
+    public function getvideos()
+    {
+        $path = storage_path() . '/logs/videos.json';
+        if(File::exists($path)) {
+            $json = File::getRequire($path);
+        } else {
+            $json =  ["err_msg" => "faild", "data" => []];
+        }
+        return response()->json($json);
+    }
+
+
+    public function getlives()
+    {
+        $path = storage_path() . '/logs/lives.json';
+        if(File::exists($path)) {
+            $json = File::getRequire($path);
+        } else {
+            $json =  ["err_msg" => "faild", "data" => []];
+        }
+        return response()->json($json);
+    }
+
 }

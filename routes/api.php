@@ -19,3 +19,7 @@ Route::get('/user', function (Request $request) {
 
 
 Route::post('/verification', 'StaticController@verification');
+
+
+Route::get('/getvideos', 'StaticController@getvideos');
+Route::get('/getlives', 'StaticController@getlives');
