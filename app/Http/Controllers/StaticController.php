@@ -151,7 +151,7 @@ class StaticController extends Controller
     {
         $path = storage_path() . '/logs/videos.json';
         if(File::exists($path)) {
-            $json = File::getRequire($path);
+            $json = json_decode(File::get($path), true);
         } else {
             $json =  ["err_msg" => "faild", "data" => []];
         }
@@ -163,7 +163,8 @@ class StaticController extends Controller
     {
         $path = storage_path() . '/logs/lives.json';
         if(File::exists($path)) {
-            $json = File::getRequire($path);
+            $json = json_decode(File::get($path), true);
+            info($json);
         } else {
             $json =  ["err_msg" => "faild", "data" => []];
         }
