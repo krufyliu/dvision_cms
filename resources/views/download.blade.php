@@ -33,11 +33,11 @@
                                 <span class="title">实时监控<br>所有镜头  实时操控</span>
                                 <p class="txt">推荐配置要求：<br>第五代智能英特尔酷睿i5处理器以上<br>8G内存、7200转机械硬盘或SSD固态硬盘<br>Windows10或MacOS 10.12+操作系统<br> NVIDIA GeForce系列 GTX 960以上(Windows)<br>最佳使用分辨率2560x1600(全屏)</p>
                                 <div class="links">
-                                  <a href="https://cdn.visiondk.com/download/aura/work/aura_work_v1.2.8_win.zip" title="aura_work_v1.2.8_win.zip" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-win.png" width="17" class="ics" draggable="false">&nbsp;Win10</a>
-                                  <a href="https://cdn.visiondk.com/download/aura/work/aura_work_v1.2.7_mac.dmg" title="aura_work_v1.2.7_mac.dmg" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
+                                  <a href="https://cdn.visiondk.com/download/aura/work/aura_work_v1.2.9_win.zip" title="aura_work_v1.2.9_win.zip" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-win.png" width="17" class="ics" draggable="false">&nbsp;Win10</a>
+                                  <a href="https://cdn.visiondk.com/download/aura/work/aura_work_v1.2.9_mac.dmg" title="aura_work_v1.2.9_mac.dmg" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
                                   {{-- <a href="/contact" class="link"  target="_blank" rel="nofollow">使用必读</a> --}}
                                 </div>
-                                <p class="txt small">2017.04.24 Win更新至 v1.2.8 &nbsp;&nbsp; Mac更新至 v1.2.7</p>
+                                <p class="txt small">2017.05.05 Win更新至 v1.2.9 &nbsp;&nbsp; Mac更新至 v1.2.9</p>
                                 {{-- <p class="txt">未开放下载</p> --}}
                             </li>
                             <li class="fig">
