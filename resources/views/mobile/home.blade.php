@@ -1,65 +1,45 @@
 @extends('layouts.mobile')
 
 @section('content')
-    {{-- <div class="main home">
+    <div class="main home">
         <article class="gallery-container">
             <div class="apple-banner">
                 <div class="swiper-container">
                     <a class="arrow-left" href="#" rel="nofollow"><span></span></a>
                     <a class="arrow-right" href="#" rel="nofollow"><span></span></a>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide slide1">
+                        <div class="swiper-slide slide1" onclick="javascript:window.location.href='/mobile/aura';">
                             <div class="title txt">
-                                <h1>DK AURA</h1>
-                                <span>全球首款 10K 360度 3D 专业VR摄影机</span>
-                                <h2>天圆地方，尽收一隅</h2>
-                                <a href="{{ url('/aura') }}" title="了解更多">了解更多</a>
+                                <img src="/img/mobile_auratm.png" alt="mobile_auratm.png" width="120" draggable="false">
+                            </div>
+                            <div class="title2">
+                                <h2>唯一可量产的专业级VR摄影机</h2>
                             </div>
                         </div>
-                        <div class="swiper-slide slide2">
-
-                            <!--h2 class="homepage-headline txt">Series 2 新登场。</h2-->
+                        <div class="swiper-slide slide2" onclick="javascript:window.location.href='/mobile/aurawork';">
+                            <div class="title txt">
+                                <img src="/img/mobile_auratmwork.png" alt="mobile_auratmwork.png" width="200" draggable="false">
+                            </div>
+                            <div class="title2">
+                                <h2>AURA专属全镜头监视工具。</h2>
+                            </div>
                         </div>
-                        <!--div class="swiper-slide slide3">
-                <div class="title txt">
-                    <img src="img/logo_macbookpro_large.png">
-                    <p>
-                    一身才华，一触即发
-                    </p>
-                </div>
-                </div-->
+                        <div class="swiper-slide slide3" onclick="javascript:window.location.href='/mobile/aurastudio';">
+                            <div class="title txt">
+                                <img src="/img/mobile_auratmstudio.png" alt="mobile_auratmstudio.png" width="220" draggable="false">
+                            </div>
+                            <div class="title2">
+                                <h2>配合AURA的快速轻剪辑工具。</h2>
+                            </div>
+                        </div>
                     </div>
                     <ul class="pagination autoplay">
                         <li><span><i></i></span></li>
                         <li><span><i></i></span></li>
-                        <!--li><span><i></i></span></li-->
+                        <li><span><i></i></span></li>
                     </ul>
                 </div>
             </div>
         </article>
     </div>
-    <div class="promos promos-row">
-        <ul>
-            <li class="promo-position promo-postion-0">
-                <a href="http://www.geekpark.net/topics/218305" target="_blank" class="promo" rel="nofollow" title="量子视觉AURA发布会回顾">
-                    <div class="image"></div>
-                </a>
-            </li>
-            <li class="promo-position promo-postion-1">
-                <a href="http://cloud.youku.com/services/sharev?vid=XMjY0NTgxNzQ3Ng==" target="_blank" class="promo" rel="nofollow" title="AURA宣传视频">
-                    <div class="image"></div>
-                </a>
-            </li>
-            <li class="promo-position promo-postion-2">
-                <a href="/news" target="_blank" class="promo" title="新闻">
-                    <div class="image"></div>
-                </a>
-            </li>
-            <li class="promo-position promo-postion-3">
-                <a href="/video" target="_blank" class="promo" title="内容">
-                    <div class="image"></div>
-                </a>
-            </li>
-        </ul>
-    </div> --}}
 @endsection

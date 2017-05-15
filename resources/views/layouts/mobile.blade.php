@@ -55,7 +55,7 @@
                   <a class="navbar-brand nav-logo" href="{{ url('/mobile') }}">
                       <img src="/img/mobile_logo.png" alt="logo" width="120">
                   </a>
-                  <a href="#" class="btn btn-primary pull-right nav-btn" title="订购">订&nbsp;购</a>
+                  <a href="#" onclick="$('html,body').animate({scrollTop: $('#footer').offset().top}, 600);" class="btn btn-primary pull-right nav-btn" title="订购">订&nbsp;购</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -73,15 +73,41 @@
     <main>
         @yield('content')
     </main>
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="footer-bg">
             <div class="container">
                 <div class="row margin-top">
                     <div class="col-xs-6">
-                        <img src="/img/mobile_auratm.png" alt="mobile_auratm.png" width="130">
+                        <img src="/img/mobile_auratm.png" alt="mobile_auratm.png" width="130" draggable="false">
                     </div>
                 </div>
                 <hr class="divider">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <small class="footer-title">销售电话</small>
+                        <h5 class="footer-txt">
+                            <a href="tel:0755-26657982">0755-26657982</a>
+                        </h5>
+                    </div>
+                    <div class="col-xs-12">
+                        <small class="footer-title">公司邮箱</small>
+                        <h5 class="footer-txt">
+                            <a href="mailto:marketing@visiondk.com">marketing@visiondk.com</a>
+                        </h5>
+                    </div>
+                    <div class="col-xs-12">
+                        <small class="footer-title">工作时间</small>
+                        <h5 class="footer-txt">
+                            <a href="">周一至周五 09:00 ~ 18:00 (GMT+8)</a>
+                        </h5>
+                    </div>
+                    <div class="col-xs-12">
+                        <small class="footer-title">公司地址</small>
+                        <h5 class="footer-txt">
+                            <a href="http://j.map.baidu.com/AhgTH">深圳市南山区铜鼓路39号大冲国际中心5号楼902</a>
+                        </h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
