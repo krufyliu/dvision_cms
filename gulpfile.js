@@ -28,6 +28,7 @@ elixir(mix => {
         ], 'public/js/index.js');
     mix.sass('admin.scss')
        .webpack('admin.js');
+    mix.sass('mobile.scss');
     // mix.copy('resources/assets/img', 'public/img');
     // mix.imagemin("resources/assets/img", "public/img");
     mix.copy('resources/assets/vrplay', 'public/vrplay');

@@ -39,3 +39,26 @@ Route::get('/auth/geetest', 'AuthController@getGeetest');
 Route::get('/h5', function () {
   return view('exhibition');
 });
+
+Route::group(['prefix' => 'mobile'], function() {
+  Route::get('/', function() {
+      return view('mobile/home');
+  });
+
+  Route::get('/aura', function() {
+      return view('mobile/aura');
+  });
+
+  Route::get('/aurawork', function() {
+      return view('mobile/aura_work');
+  });
+
+  Route::get('/aurastudio', function() {
+      return view('mobile/aura_studio');
+  });
+
+  Route::get('/service', function() {
+      return view('mobile/service');
+  });
+
+});
