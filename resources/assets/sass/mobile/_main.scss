@@ -1,0 +1,47 @@
+ .nav-btn {
+   margin: 8px 15px;
+   color: #fff;
+   border: 0px;
+   border-radius: 0px;
+   .icon-bar {
+     background-color: #fff!important;
+   }
+ }
+
+ .nav-logo {
+   position: absolute;
+   margin-left: -75px;
+   left: 50%;
+ }
+
+ .navbar-black {
+   background-color: #000;
+ }
+
+ .navbar {
+   border: 0px;
+ }
+
+.navbar-default .navbar-nav > li > a {
+  color: #f0f0f0;
+}
+
+ .navbar-default .navbar-toggle:hover {
+   background-color: #000;
+ }
+
+ .navbar-default .navbar-nav > .open > a:hover {
+   background-color: #000;
+ }
+
+ .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+   color: #f0f0f0;
+ }
+
+ .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+   color: #f0f0f0;
+ }
+
+ .navbar-collapse {
+   border-top: 0px;
+ }

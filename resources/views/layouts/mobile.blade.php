@@ -43,48 +43,28 @@
 </head>
 <body>
     <div class="header">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-black">
             <div class="container-fluid">
                 <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="/img/logo.png" alt="logo" width="120">
-                </a>
+                  <button type="button" class="navbar-toggle pull-left nav-btn" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand nav-logo" href="{{ url('/mobile') }}">
+                      <img src="/img/mobile_logo.png" alt="logo" width="120">
+                  </a>
+                  <a href="#" class="btn btn-primary pull-right nav-btn" title="订购">订&nbsp;购</a>
                 </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                        <li><a href="{{ url('/aura') }}" title="AURA">AURA</a></li>
-                        <li><a href="{{ url('/aurawork') }}" title="AURA Work">AURA Work</a></li>
-                        <li><a href="{{ url('/aurastudio') }}" title="AURA Studio">AURA Studio</a></li>
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{{ url('/mobile/aura') }}" title="AURA">AURA</a></li>
+                        <li><a href="{{ url('/mobile/aurawork') }}" title="AURA Work">AURA Work</a></li>
+                        <li><a href="{{ url('/mobile/aurastudio') }}" title="AURA Studio">AURA Studio</a></li>
+                        <li><a href="{{ url('/mobile/service') }}" title="服务">服务</a></li>
                     </ul>
-                    </li>
-                    <li><a href="/service" title="服务">服务</a></li>
-
-                    <li><a href="/video" title="内容">内容</a></li>
-
-                    <li><a href="/download" title="软件下载">软件下载</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">公司 <span class="caret"></span></a>
-                      <ul class="dropdown-menu dropdown-menu-left">
-                          <li><a href="/about" class="link" title="关于我们">关于我们</a></li>
-                          <li><a href="/join" class="link" title="人才招聘">人才招聘</a></li>
-                          <li><a href="/news" class="link" title="新闻报道">新闻报道</a></li>
-                          <li><a href="/contact" class="link" title="联系我们">联系我们</a></li>
-                      </ul>
-                    </li>
-                    {{-- <li><a href="/about" title="关于我们">关于我们</a></li> --}}
-
-                    <li><a href="/order" class="btn btn-default" title="立即订购">立即订购</a></li>
-                </ul>
                 </div>
             </div>
         </nav>
@@ -95,96 +75,6 @@
     </main>
     <div class="footer">
       <div class="container">
-        <nav class="columns with-4-columns">
-          <div class="column">
-            <div class="section">
-              <label for="">
-                <h3 class="title">网站导航</h3>
-              </label>
-              <ul class="list">
-                <li class="item">
-                  <a href="/aura" class="link" title="AURA">AURA</a>
-                </li>
-                <li class="item">
-                  <a href="/aurawork" class="link" title="AURA Work">AURA Work</a>
-                </li>
-                <li class="item">
-                  <a href="/aurastudio" class="link" title="AURA Studio">AURA Studio</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="column">
-            <div class="section">
-              <label for="">
-                <h3 class="title">服务</h3>
-              </label>
-              <ul class="list">
-                <li class="item">
-                  <a href="/service" class="link" title="VR直播">VR直播</a>
-                </li>
-                <li class="item">
-                  <a href="/service" class="link" title="设备租赁">设备租赁</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="column">
-            <div class="section">
-              <label for="">
-                <h3 class="title">支持</h3>
-              </label>
-              <ul class="list">
-                <li class="item">
-                  <a href="/download" class="link" title="软件下载">软件下载</a>
-                </li>
-                <li class="item">
-                  <a href="/download" class="link" title="固件下载">固件下载</a>
-                </li>
-                <li class="item">
-                  <a href="https://cdn.visiondk.com/download/aura/pdf/aura_guide.pdf?attname=" class="link" target="_blank" title="AURA快速指南" rel="nofollow">AURA快速指南</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="column">
-            <div class="section">
-              <label for="">
-                <h3 class="title">公司</h3>
-              </label>
-              <ul class="list">
-                <li class="item">
-                  <a href="/about" class="link" title="关于我们">关于我们</a>
-                </li>
-                <li class="item">
-                  <a href="/join" class="link" title="人才招聘">人才招聘</a>
-                </li>
-                <li class="item">
-                  <a href="/news" class="link" title="新闻报道">新闻报道</a>
-                </li>
-                <li class="item">
-                  <a href="/contact" class="link" title="联系我们">联系我们</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <div class="secondary">
-          <div class="content">
-            <h4 class="title">全国服务热线：<a href="tel:0755-26657982">0755-26657982</a></h4>
-            <h4 class="title">公司邮箱：<a href="mailto:marketing@visiondk.com">marketing@visiondk.com</a></h4>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="gf-footer">
-          <div class="gf-footer-logo">
-            <img src="/img/logo2.png" alt="logo2" width="120">
-          </div>
-          <div class="gf-footer-legal">
-            <div class="gf-footer-legal-copyright">量子视觉科技有限公司©Copyright  版权所有 <a href="http://www.miibeian.gov.cn/" rel="nofollow">粤ICP备16006475号-1</a></div>
-          </div>
-        </div>
       </div>
     </div>
 
