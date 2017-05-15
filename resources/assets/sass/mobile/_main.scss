@@ -1,3 +1,7 @@
+body { 
+  padding-top: 50px; 
+}
+
  .nav-btn {
    margin: 8px 15px;
    color: #fff;
@@ -44,4 +48,34 @@
 
  .navbar-collapse {
    border-top: 0px;
+ }
+
+ main {
+   position: relative;
+   min-height: 450px;
+ }
+
+ .footer {
+   display: block;
+   position: relative;
+   .footer-bg {
+     width: 100%;
+     min-height: 350px;
+     display: block;
+     background-color: rgba(255, 255, 255, 0.5);
+     background-image: url('/img/mobile_bottom_01.jpg');
+     background-position: center center;
+     background-size: cover;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     margin-top: -10px;
+   }
+ }
+
+ .margin-top {
+   margin-top: 20px;
+ }
+
+ .divider {
+   border-top: 1px solid rgba(215, 215, 215, 0.8);
  }

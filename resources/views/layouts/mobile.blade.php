@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="header">
-        <nav class="navbar navbar-default navbar-black">
+        <nav class="navbar navbar-default navbar-black navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle pull-left nav-btn" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
@@ -74,8 +74,16 @@
         @yield('content')
     </main>
     <div class="footer">
-      <div class="container">
-      </div>
+        <div class="footer-bg">
+            <div class="container">
+                <div class="row margin-top">
+                    <div class="col-xs-6">
+                        <img src="/img/mobile_auratm.png" alt="mobile_auratm.png" width="130">
+                    </div>
+                </div>
+                <hr class="divider">
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->
