@@ -13,6 +13,22 @@
     <title>{{ isset($title) ? $title . '-' : '' }}量子视觉科技官网</title>
     <meta name="keywords" content="量子视觉科技有限公司,量子视觉,VR视频,全景,VR服务,DKVISION, AURA, 专业级VR摄影机">
     <meta name="description" content="DKVISION致力于打造下一代虚拟现实的完整解决方案。AURA 专业级VR摄影机">
+    <div id="wx_pic" style="margin:0 auto;display:none;"><img src="/img/mobile_ss.jpg"></div>
+    
+    <!-- redirect to mobile -->
+    <script type="text/javascript">
+        var u = navigator.userAgent;
+        var width = document.documentElement.clientHeight;
+        if (!u.match(/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/)) {
+          console.log("输出: " + u);
+          if (width > 736) {
+              if (window.location.href.match(/mobile/)) {
+                console.log("mobile地址匹配");
+                window.location.href = window.location.href.replace('/mobile', '');
+              }
+          }
+        }
+    </script>
 
     <!--[if lt IE 9]>
         <script type="text/javascript">

@@ -42,23 +42,23 @@ Route::get('/h5', function () {
 
 Route::group(['prefix' => 'mobile'], function() {
   Route::get('/', function() {
-      return view('mobile/home');
+      return view('mobile/home', [ 'title' => '首页' ]);
   });
 
   Route::get('/aura', function() {
-      return view('mobile/aura');
+      return view('mobile/aura', [ 'title' => 'AURA 专业级VR摄影机' ]);
   });
 
   Route::get('/aurawork', function() {
-      return view('mobile/aura_work');
+      return view('mobile/aura_work', [ 'title' => 'AURA WORK - AURA 专用监看、控制软件' ]);
   });
 
   Route::get('/aurastudio', function() {
-      return view('mobile/aura_studio');
+      return view('mobile/aura_studio', [ 'title' => 'AURA STUDIO - AURA 专用 VR 制作软件' ]);
   });
 
   Route::get('/service', function() {
-      return view('mobile/service');
+      return view('mobile/service', [ 'title' => '服务' ]);
   });
 
 });

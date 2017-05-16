@@ -22,7 +22,7 @@ class StaticController extends Controller
 
     public function aura()
     {
-        return view('aura', ['title' => 'AURA 专业级VR拍摄设备']);
+        return view('aura', ['title' => 'AURA 专业级VR摄影机']);
     }
 
     public function aurawork()
