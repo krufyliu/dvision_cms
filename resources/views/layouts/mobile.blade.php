@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hans">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,10 +20,8 @@
         var u = navigator.userAgent;
         var width = document.documentElement.clientHeight;
         if (!u.match(/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/)) {
-          console.log("输出: " + u);
           if (width > 736) {
               if (window.location.href.match(/mobile/)) {
-                console.log("mobile地址匹配");
                 window.location.href = window.location.href.replace('/mobile', '');
               }
           }

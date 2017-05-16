@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hans">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,6 @@
               } else if (window.location.pathname == "/") {
                 window.location.href = window.location.origin + '/mobile';
               } else {
-                //console.log("未跳转");
               }
           }
         }
