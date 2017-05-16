@@ -21,7 +21,7 @@
                                 <img src="/img/mobile_auratmwork.png" alt="mobile_auratmwork.png" width="200" draggable="false">
                             </div>
                             <div class="title2">
-                                <h2>AURA专属全镜头监视工具。</h2>
+                                <h2>AURA专属全镜头监看工具。</h2>
                             </div>
                         </div>
                         <div class="swiper-slide slide3" onclick="javascript:window.location.href='/mobile/aurastudio';">
@@ -29,7 +29,7 @@
                                 <img src="/img/mobile_auratmstudio.png" alt="mobile_auratmstudio.png" width="220" draggable="false">
                             </div>
                             <div class="title2">
-                                <h2>配合AURA的快速轻剪辑工具。</h2>
+                                <h2>配合AURA的快速轻拼接、剪辑工具。</h2>
                             </div>
                         </div>
                     </div>

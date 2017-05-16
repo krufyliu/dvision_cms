@@ -33,7 +33,7 @@ elixir(mix => {
     // mix.imagemin("resources/assets/img", "public/img");
     mix.copy('resources/assets/vrplay', 'public/vrplay');
     mix.copy('resources/assets/vendor', 'public/vendor');
-    // mix.copy('./node_modules/bootstrap-sass/assets/fonts', 'public/fonts');
+    mix.copy('./node_modules/bootstrap-sass/assets/fonts', 'public/fonts');
     mix.copy('./resources/assets/vendor/summernote/font', 'public/fonts');
     mix.copy('./node_modules/font-awesome/fonts', 'public/fonts');
     mix.version(['public/js/app.js', 'public/js/index.js', 'public/css/app.css']);

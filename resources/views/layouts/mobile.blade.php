@@ -78,6 +78,17 @@
                         <li><a href="{{ url('/mobile/aurawork') }}" title="AURA Work">AURA Work</a></li>
                         <li><a href="{{ url('/mobile/aurastudio') }}" title="AURA Studio">AURA Studio</a></li>
                         <li><a href="{{ url('/mobile/service') }}" title="服务">服务</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PC版入口 <span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li><a href="/video" title="内容">内容</a></li>
+                                <li><a href="/download" title="软件下载">软件下载</a></li>
+                                <li><a href="/about" class="link" title="关于我们">关于我们</a></li>
+                                <li><a href="/join" class="link" title="人才招聘">人才招聘</a></li>
+                                <li><a href="/news" class="link" title="新闻报道">新闻报道</a></li>
+                                <li><a href="/contact" class="link" title="联系我们">联系我们</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -97,10 +108,15 @@
                 </div>
                 <hr class="divider">
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-xs-7" style="margin-top:28px;">
                         <small class="footer-title">销售电话</small>
                         <h5 class="footer-txt">
                             <a href="tel:0755-26657982">0755-26657982</a>
+                        </h5>
+                    </div>
+                    <div class="col-xs-5">
+                        <h5 class="footer-txt text-right">
+                            <a href="tel:0755-26657982"><span class="glyphicon glyphicon-phone-alt tada" aria-hidden="true" style="font-size:64px;"></span></a>
                         </h5>
                     </div>
                     <div class="col-xs-12">

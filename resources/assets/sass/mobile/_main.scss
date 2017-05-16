@@ -30,6 +30,10 @@ body {
   color: #f0f0f0;
 }
 
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: #000;
+}
+
  .navbar-default .navbar-toggle:hover {
    background-color: #000;
  }
@@ -61,7 +65,7 @@ body {
    z-index: 1;
    .footer-bg {
      width: 100%;
-     min-height: 320px;
+     min-height: 340px;
      display: block;
      background-color: rgba(255, 255, 255, 0.5);
      background-image: url('/img/mobile_bottom_01.jpg');
@@ -488,4 +492,35 @@ Pagination Styles
 
 .swiper-visible-switch {
     /* Specific visible button style: */
+}
+
+@keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1)
+    }
+
+    10%,20% {
+        -webkit-transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);
+        transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)
+    }
+
+    30%,50%,70%,90% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)
+    }
+
+    40%,60%,80% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1)
+    }
+}
+
+.tada {
+    animation: tada 2s infinite linear;
 }
