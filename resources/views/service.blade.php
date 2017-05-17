@@ -65,7 +65,7 @@
                                     软件
                                 </p>
                                 <span class="fig_title">
-                                    独立知识产权的可交互式VR播放器
+                                    独立知识产权的可交互式10K VR播放器
                                 </span>
                             </li>
                             <li class="fig">
