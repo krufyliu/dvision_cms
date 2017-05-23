@@ -37,7 +37,7 @@
                                   <a href="https://cdn.visiondk.com/download/aura/work/aura_work_v1.2.9_mac.dmg" title="aura_work_v1.2.9_mac.dmg" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
                                   {{-- <a href="/contact" class="link"  target="_blank" rel="nofollow">使用必读</a> --}}
                                 </div>
-                                <p class="txt small">2017.05.05 Win更新至 v1.2.9 &nbsp;&nbsp; Mac更新至 v1.2.9</p>
+                                <p class="txt small">2017.05.05 更新至 v1.2.9</p>
                                 {{-- <p class="txt">未开放下载</p> --}}
                             </li>
                             <li class="fig">
