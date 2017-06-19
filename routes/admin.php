@@ -24,6 +24,7 @@ Route::patch('profile', 'AdminController@updateProfile');
 Route::resource('posts', 'PostController');
 Route::resource('videos', 'VideoController');
 Route::resource('career_jobs', 'CareerJobController');
+Route::resource('download', 'DownloadController');
 Route::get('/feedbacks/export', 'FeedbackController@exportExcel');
 Route::resource('feedbacks', 'FeedbackController');
 

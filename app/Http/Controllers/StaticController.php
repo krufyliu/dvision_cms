@@ -9,6 +9,7 @@ use App\Models\CareerJob;
 use App\Models\Post;
 use App\Models\Video;
 use App\Models\Feedback;
+use App\Models\Download;
 use Validator;
 use File;
 
@@ -47,7 +48,9 @@ class StaticController extends Controller
 
     public function download()
     {
-        return view('download', ['title' => '软件下载']);
+
+        $download = Download::oldest()->first();
+        return view('download', ['title' => '软件下载', 'download' => $download]);
     }
 
     public function join()
