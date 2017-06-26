@@ -132,6 +132,7 @@
                     {{-- <li><a href="/about" title="关于我们">关于我们</a></li> --}}
 
                     <li><a href="/order" class="btn btn-default" title="立即订购">立即订购</a></li>
+                    <li><a href="/contact" class="btn btn-default" title="加盟代理">加盟代理</a></li>
                 </ul>
                 </div>
             </div>
