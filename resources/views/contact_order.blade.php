@@ -11,7 +11,7 @@
                         <div class="divider"></div>
                         <p class="txt">业内目前唯一款可量产的10K、3D、VR拍摄设备：AURA <br>现正式接受预定！ </p>
                         <p class="txt"><a href="{{ url('/aura') }}">产品详情</a></p>
-                        <span class="title"><small>订购价</small> ¥98,000</span>
+                        {{-- <span class="title"><small>订购价</small> ¥98,000</span> --}}
                     </div>
                     <div class="text_panel2">
                         <ul class="figs">
