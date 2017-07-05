@@ -15,7 +15,7 @@
                             <li class="fig">
                                 <form class="form-horizontal" role="form" method="post" action="{{ url('/contact')  }}">
                                     {{ csrf_field() }}
-
+                                    <input type="hidden" name="type" value="1">
                                     <div class="form-group">
                                         <div class="input-bace">
                                             <input type="text" name="name" class="form-control" required="" placeholder="公司或个人名称 / Company or individual name">

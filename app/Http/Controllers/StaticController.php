@@ -74,6 +74,11 @@ class StaticController extends Controller
         return view('contact_order', ['title' => '订购']);
     }
 
+    public function contact_franchise()
+    {
+        return view('contact_franchise', ['title' => '加盟']);
+    }
+
     public function success()
     {
         return view('success', ['title' => '提交成功']);
@@ -87,6 +92,7 @@ class StaticController extends Controller
                 'phone' => $request->input('phone'),
                 'email' => $request->input('email'),
                 'content' => $request->input('content'),
+                'type' => $request->input('type')
             ]
         );
         return redirect()->action('StaticController@success');

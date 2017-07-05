@@ -15,6 +15,7 @@
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                 <tr>
+                                    <th>类型</th>
                                     <th>名称</th>
                                     <th>邮箱</th>
                                     <th>电话</th>
@@ -25,6 +26,7 @@
                                 <tbody>
                                 @foreach($feedbacks as $feedback)
                                     <tr class="{{ $loop->iteration % 2 == 0 ? 'even' : 'odd' }}">
+                                        <td>{{ $feedback->getTypeString() }}</td>
                                         <td>{{ $feedback->name }}</td>
                                         <td>{{ $feedback->email }}</td>
                                         <td>{{ $feedback->phone }}</td>
@@ -47,6 +49,10 @@
                                                         <div class="modal-body">
                                                             <table class="table table-bordered">
                                                                 <tbody>
+                                                                <tr>
+                                                                    <td class="text-right">类型</td>
+                                                                    <td>{{ $feedback->getTypeString() }}</td>
+                                                                </tr>
                                                                 <tr>
                                                                     <td class="text-right">名称</td>
                                                                     <td>{{ $feedback->name }}</td>

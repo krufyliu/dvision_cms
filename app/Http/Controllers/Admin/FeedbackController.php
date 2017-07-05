@@ -32,14 +32,14 @@ class FeedbackController extends Controller
                 $data = $this->prepareExcelData();
                 $sheet->rows($data);
                 $endLine = count($data)+1;
-                $sheet->cells("A1:E1", function($cells) {
+                $sheet->cells("A1:F1", function($cells) {
                     $cells->setBackground('#3aafd6');
                 });
                 $sheet->setFontFamily('MicrosoftYahei');
                 $sheet->setAutoSize(true);
                 for($i = 1; $i <= $endLine; $i++) {
-                    $sheet->setWidth("D", 94);
-                    $sheet->cells("A{$i}:E{$i}", function($cells) {
+                    $sheet->setWidth("E", 94);
+                    $sheet->cells("A{$i}:F{$i}", function($cells) {
                         $cells->setAlignment('left');
                         $cells->setValignment('top');
 
@@ -64,6 +64,7 @@ class FeedbackController extends Controller
 
     protected function prepareExcelData() {
         $headers = [
+            'type' => '类型',
             'name' => '公司或个人名称',
             'phone' => '联系电话',
             'email' => '联系邮箱',
@@ -74,7 +75,7 @@ class FeedbackController extends Controller
             $sub_content = $this->utf8_str_split($f->content, 50);
             $new_content = join("\n", $sub_content);
             return [
-                $f->name, $f->phone, $f->email, $new_content, $f->created_at
+                $f->getTypeString(), $f->name, $f->phone, $f->email, $new_content, $f->created_at
             ];
         })->all();
         array_unshift($data, array_values($headers));

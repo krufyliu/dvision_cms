@@ -22,9 +22,13 @@ Route::get('/download', 'StaticController@download');
 
 
 Route::get('/team', 'StaticController@team');
+Route::get('/success', 'StaticController@success');
+
+
 Route::get('/contact', 'StaticController@contact');
 Route::get('/order', 'StaticController@contact_order');
-Route::get('/success', 'StaticController@success');
+Route::get('/franchise', 'StaticController@contact_franchise');
+
 Route::post('/contact', 'StaticController@contactSubmit');
 
 Route::get('/video', 'StaticController@video');
