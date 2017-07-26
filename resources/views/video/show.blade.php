@@ -56,7 +56,7 @@
             settings["soundurl"] = "{{ $video->url['audio'] }}";
         }
         if (!document.domain || isAndroid || isiOS) {
-            $("#pano").append('<div class="text-center" style="padding-top:80px;"><h2>提示</h2><p>为保证给您带来良好的视觉体验</p><p>建议在PC使用 <strong>Chrome</strong> 浏览器观看VR视频</p><p><a href="{{ $video->url['mobile'] }}" class="btn btn-primary" role="button" rel="nofollow">点击播放</a></p></div>');
+            $("#pano").append('<div class="text-center" style="padding-top:85px; transform:scale(3.1);"><h2>提示</h2><p>为保证给您带来良好的视觉体验</p><p>建议在PC使用 <strong>Chrome</strong> 浏览器观看VR视频</p><p><a href="{{ $video->url['mobile'] }}" class="btn btn-primary" role="button" rel="nofollow">点击播放</a></p></div>');
         } else {
             embedpano({
                 vars: settings,
