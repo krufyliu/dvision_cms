@@ -21,3 +21,5 @@ Homestead.yaml
 *.m4a
 *.log
 .vscode/
+temp
+*.back
