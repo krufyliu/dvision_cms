@@ -60,7 +60,7 @@
         <div class="auramini section-03">
             <div class="container">
                 <div class="content">
-                    <img src="img/auramini_sec03_01.jpg" width="1194" alt="auramini_sec03_01" class="auramini_sec03_01" draggable="false">
+                    <img src="img/auramini_sec03_01.jpg" width="1440" alt="auramini_sec03_01" class="auramini_sec03_01" draggable="false">
                     <div class="text_panel">
                         <span class="title">&nbsp;&nbsp;8目镜头，效率与画质的更优结合。</span>
                         <p class="txt">使用更多的鱼眼中心无畸变画面，得到色彩还原度更搞解析度更好的360°*360° 4K/6K/8K 3D画质<br>同时将镜头数目控制在8目，降低用户素材量，提升制作效率</p>
