@@ -109,6 +109,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
                     <ul class="dropdown-menu dropdown-menu-left">
                         <li><a href="{{ url('/aura') }}" title="AURA">AURA</a></li>
+                        <li><a href="{{ url('/auramini') }}" title="AURA mini">AURA mini</a></li>
                         <li><a href="{{ url('/aurawork') }}" title="AURA Work">AURA Work</a></li>
                         <li><a href="{{ url('/aurastudio') }}" title="AURA Studio">AURA Studio</a></li>
                     </ul>

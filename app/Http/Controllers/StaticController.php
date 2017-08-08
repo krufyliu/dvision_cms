@@ -26,6 +26,11 @@ class StaticController extends Controller
         return view('aura', ['title' => 'AURA 专业级VR摄影机']);
     }
 
+    public function auramini()
+    {
+        return view('aura_mini', ['title' => 'AURA mini 专业级VR摄影机']);
+    }
+
     public function aurawork()
     {
         return view('aura_work', ['title' => 'AURA WORK - AURA 专用监看、控制软件']);

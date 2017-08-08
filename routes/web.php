@@ -13,6 +13,7 @@
 
 Route::get('/', 'StaticController@home');
 Route::get('/aura', 'StaticController@aura');
+Route::get('/auramini', 'StaticController@auramini');
 Route::get('/aurawork', 'StaticController@aurawork');
 Route::get('/aurastudio', 'StaticController@aurastudio');
 Route::get('/service', 'StaticController@service');
