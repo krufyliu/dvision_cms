@@ -18,7 +18,7 @@
     <!-- redirect to mobile -->
     <script type="text/javascript">
         var u = navigator.userAgent;
-        var width = document.documentElement.clientHeight;
+        var width = document.documentElement.clientWidth;
         if (!u.match(/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/)) {
           if (width > 736) {
               if (window.location.href.match(/mobile/)) {
