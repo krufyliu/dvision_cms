@@ -8,7 +8,7 @@
                     <img src="img/auramini_sec01_01.jpg" width="1024" alt="auramini_sec01_01" class="auramini_sec01_01" draggable="false">
                     <div class="text_panel">
                         <span class="title">AURA mini</span>
-                        <p class="txt">不仅专业, 更是效率。</p>
+                        <p class="txt">&nbsp;不仅专业, 更是效率。</p>
                         <!--a href="#" class="link">宣传视频</a-->
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                     <img src="img/auramini_sec03_01.jpg" width="1440" alt="auramini_sec03_01" class="auramini_sec03_01" draggable="false">
                     <div class="text_panel">
                         <span class="title">&nbsp;&nbsp;8目镜头，效率与画质的更优结合。</span>
-                        <p class="txt">使用更多的鱼眼中心无畸变画面，得到色彩还原度更搞解析度更好的360°*360° 4K/6K/8K 3D画质<br>同时将镜头数目控制在8目，降低用户素材量，提升制作效率</p>
+                        <p class="txt">使用更多的鱼眼中心无畸变画面，得到色彩还原度更搞解析度更好的 360° * 360° 4K/6K/8K 3D画质<br>同时将镜头数目控制在8目，降低用户素材量，提升制作效率</p>
                     </div>
                 </div>
             </div>
@@ -90,141 +90,144 @@
                     </div>
                     <div class="text_panel6">
                         <p class="txt"><sup style="color:#5ac8fa;">[1]</sup> Ilg, Eddy, et al. "Flownet 2.0: Evolution of optical flow estimation with deep networks." arXiv preprint arXiv:1612.01925 (2016).
-</p>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        {{--  <div class="aura section-05">
+        <div class="auramini section-05">
             <div class="container">
                 <div class="content">
-                    <img src="img/aura_sec05_01.png" width="960" alt="aura_sec05_01" class="aura_sec05_01" draggable="false">
-                    <img src="img/aura_sec05_02.png" width="660" alt="aura_sec05_02" class="aura_sec05_02">
+                    <img src="img/auramini_sec05_02.png" width="720" alt="auramini_sec05_02" class="auramini_sec05_02" draggable="false">
                     <div class="text_panel" draggable="false">
-                        <span class="title">全方位录音，<br>完美呈现当下环境。</span>
-                        <div class="divider"></div>
-                        <p class="txt">AURA采用球形环绕立体声采集技术，<br>360x360度全向采集环境音效，不放过任何<br>声响，细腻采集，让音频更沉浸，配合全景<br>画面如同身临其境。</p>
-                    </div>
-                    <div class="text_panel2">
-                        <ul class="figs">
-                            <li class="fig">
-                                <span class="fig_title">
-                    采集类型
-                    </span>
-                                <p class="fig_value">
-                                    环绕立体采集
-                                </p>
-                            </li>
-                            <li class="fig">
-                                <span class="fig_title">
-                    录音范围
-                    </span>
-                                <p class="fig_value">
-                                    360x360度
-                                </p>
-                            </li>
-                        </ul>
-                        <ul class="figs">
-                            <li class="fig">
-                                <span class="fig_title">
-                    录制时间
-                    </span>
-                                <p class="fig_value">
-                                    1小时
-                                </p>
-                            </li>
-                            <li class="fig">
-                                <span class="fig_title">
-                    音频传感类型
-                    </span>
-                                <p class="fig_value">
-                                    全向
-                                </p>
-                            </li>
-                        </ul>
+                        <span class="title">4K 全景直播的一键解决方案</span>
+                        <p class="txt">AURA mini + 工作电脑 +网线 配合AURA Live一键实现高质量全景直播</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="aura section-06">
+        <div class="auramini section-06">
             <div class="container">
                 <div class="content">
-                    <img src="img/aura_sec06_01.png" width="800" alt="aura_sec06_01" class="aura_sec06_01" draggable="false">
-                    <img src="img/aura_sec06_02.png" width="800" alt="aura_sec06_02" class="aura_sec06_02" draggable="false">
-                    <div class="text_panel">
-                        <span class="title">软硬结合，<br>让创作更为流畅。</span>
-                        <div class="divider"></div>
-                        <p class="txt">量子视觉自主研发的 AURA WORK 、AURA <br>STUDIO 软件，支持实时监看各个镜头画面，<br>远程设置单个、或多个镜头参数，一键快速素材<br>导出、拼接、剪辑，并通过本地或者 SaaS 服务器<br>进行高品质 3D 拼接和立体深层渲染。</p>
+                    <img src="img/auramini_sec06_01.jpg" width="1440" alt="auramini_sec06_01" class="auramini_sec06_01" draggable="false">
+                    <div class="text_panel" draggable="false">
+                        <span class="title">&nbsp;&nbsp;上天入地，都能。</span>
+                        <p class="txt">静止、移动、航拍等场景都完美适配</p>
                     </div>
-                    <div class="text_panel2">
+                </div>
+            </div>
+        </div>
+        <div class="auramini section-07">
+            <div class="container">
+                <div class="content">
+                    <img src="img/auramini_sec07_01.png" width="740" alt="auramini_sec07_01" class="auramini_sec07_01" draggable="false">
+                    <img src="img/auramini_sec07_02.png" width="740" alt="auramini_sec07_02" class="auramini_sec07_02" draggable="false">
+                    <div class="text_panel">
+                        <span class="title">效率创作的必备良器</span>
                         <ul class="figs">
                             <li class="fig">
-                                <span class="fig_title">
-                    程序支持
-                    </span>
+                                <img src="img/auramini_sec07_03.png" width="70" alt="auramini_sec07_03"  draggable="false">
                                 <p class="fig_value">
-                                    <br>Windows 10<br><br> mac OS
+                                实时监控
+                                </p>
+                            </li>
+                            <li class="fig">
+                                <img src="img/auramini_sec07_04.png" width="70" alt="auramini_sec07_04"  draggable="false">
+                                <p class="fig_value">
+                                一键控制 
+                                </p>
+                            </li>
+                            <li class="fig">
+                                <img src="img/auramini_sec07_05.png" width="70" alt="auramini_sec07_05"  draggable="false">
+                                <p class="fig_value">
+                                素材整理
+                                </p>
+                            </li>
+                            <li class="fig">
+                                <img src="img/auramini_sec07_06.png" width="70" alt="auramini_sec07_06"  draggable="false">
+                                <p class="fig_value">
+                                 高效拼接
                                 </p>
                             </li>
                         </ul>
-                        <!--ul class="figs">
-                <li class="fig">
-                    <span class="fig_title">
-                    遥控程序支持
-                    </span>
-                    <p class="fig_value">
-                    Android 4.0
-                    </p>
-                </li>
-                </ul>
-                <ul class="figs">
-                <li class="fig">
-                    <span class="fig_title">
-                    相机控制支持
-                    </span>
-                    <p class="fig_value">
-                    蓝牙 4.0
-                    </p>
-                </li>
-                </ul-->
                     </div>
                     <div class="text_panel3">
                         <img src="img/aura_sec06_03.png" width="238" alt="aura_sec06_03" class="aura_sec06_03" draggable="false">
-                        <p class="txt">AURA 专用监看、控制软件</p>
+                        <br>
                         <a href="/aurawork" class="link">了解更多</a>
                     </div>
                     <div class="text_panel4">
                         <img src="img/aura_sec06_04.png" width="200" alt="aura_sec06_04" class="aura_sec06_04" draggable="false">
-                        <p class="txt">AURA 专用 VR 制作软件</p>
+                         <br>
                         <a href="/aurastudio" class="link">了解更多</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="aura section-07">
+        <div class="auramini section-08">
             <div class="container">
                 <div class="content">
-                    <img id="video_btn" src="img/aura_sec07_02.png" width="193" alt="aura_sec07_02" class="aura_sec07_02" data-toggle="modal" data-target="#video_dlg" data-theVideo="//player.youku.com/embed/XMjY0NTgxNzQ3Ng==">
+                    <img src="img/auramini_sec08_01.png" width="243" alt="auramini_sec08_01" class="auramini_sec08_01" draggable="false">
                     <div class="text_panel">
-                        <span class="title">AURA宣传视频</span>
-                        <div class="divider"></div>
-                        <p class="txt">播放过程可以使用打开音响效果更佳。</p>
+                        <span class="title">相机规格</span>
+                    </div>
+                    <div class="text_panel2">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td class="left">相机名称</td>
+                            <td class="right">AURA mini</td>
+                            <td class="left">图形传感器</td>
+                            <td class="right">8*Sony 背照式 COMS 传感器 音频</td>
+                          </tr>
+                          <tr>
+                            <td class="left">视频分辨率</td>
+                            <td class="right">4K  60fps / 30fps / 25fps</td>
+                            <td class="left">音频</td>
+                            <td class="right">4路内置Mic(可外接有源音频)</td>
+                          </tr>
+                          <tr>
+                            <td class="left">&nbsp;</td>
+                            <td class="right">6K  30fps / 25fps 3D</td>
+                            <td class="left">存储支持</td>
+                            <td class="right">SD卡</td>
+                          </tr>
+                          <tr>
+                            <td class="left">&nbsp;</td>
+                            <td class="right">8K  30fps / 25fps 3D</td>
+                            <td class="left">数据接口</td>
+                            <td class="right">千兆网口</td>
+                          </tr>
+                          <tr>
+                            <td class="left">照片分辨率</td>
+                            <td class="right">8K 3D</td>
+                            <td class="left">电源与续航</td>
+                            <td class="right">6300mAh 可拆卸(70分钟录制)</td>
+                          </tr>
+                          <tr>
+                            <td class="left">编码格式</td>
+                            <td class="right">H.264/H.265</td>
+                            <td class="left">机身材质</td>
+                            <td class="right">铝合金+PC</td>
+                          </tr>
+                          <tr>
+                            <td class="left">录制格式</td>
+                            <td class="right">MP4/AVI/JPG</td>
+                            <td class="left">尺寸</td>
+                            <td class="right">D152mm H105m</td>
+                          </tr>
+                          <tr>
+                            <td class="left">镜头</td>
+                            <td class="right">8 * F2.0</td>
+                            <td class="left">重量</td>
+                            <td class="right">1.3KG</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="aura section-09">
-            <div class="container">
-                <div class="content">
-                    <img src="img/aura_sec09_01.jpg" width="860" alt="aura_sec09_01" class="aura_sec09_01" draggable="false">
-                    <div class="text_panel">
-                        <span class="title">品质所在，<br>知名企业所认可。</span>
-                        <div class="divider"></div>
-                        <p class="txt">AURA的品质和强大被业内外都为之交赞，<br>多所知名企业所选用。</p>
-                    </div>
-                </div>
-            </div>
-        </div>  --}}
     </div>
     <div class="bfooter">
         <div class="container bar">
