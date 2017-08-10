@@ -178,7 +178,7 @@
                             <td class="left">相机名称</td>
                             <td class="right">AURA mini</td>
                             <td class="left">图形传感器</td>
-                            <td class="right">8*Sony 背照式 COMS 传感器 音频</td>
+                            <td class="right">8*Sony 背照式 COMS 传感器</td>
                           </tr>
                           <tr>
                             <td class="left">视频分辨率</td>
