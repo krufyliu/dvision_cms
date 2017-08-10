@@ -214,7 +214,7 @@
                             <td class="left">录制格式</td>
                             <td class="right">MP4/AVI/JPG(照片)</td>
                             <td class="left">尺寸</td>
-                            <td class="right">D:152mm , H:105m</td>
+                            <td class="right">D:152mm , H:105mm</td>
                           </tr>
                           <tr>
                             <td class="left">镜头</td>
