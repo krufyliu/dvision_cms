@@ -86,7 +86,7 @@ class StaticController extends Controller
 
     public function contact_lease()
     {
-        return view('contact_lease', ['title' => 'A+ 计划']);
+        return view('contact_lease', ['title' => 'A+计划']);
     }
 
     public function success()
