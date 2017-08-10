@@ -10,10 +10,11 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide1">
                             <div class="title txt">
-                                <h1>DK AURA</h1>
+                                <h1>AURA</h1>
                                 <span>全球首款 10K 360度 3D 专业VR摄影机</span>
-                                <h2>天圆地方，尽收一隅</h2>
-                                <a href="{{ url('/aura') }}" title="了解更多">了解更多</a>
+                                <h2>天圆地方，尽收一隅</h2><br>
+                                <a href="{{ url('/aura') }}" title="了解更多">了解更多</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="{{ url('/lease') }}" title="A+ 计划" class="btn btn-default">A+ 计划&nbsp;</a>
                             </div>
                         </div>
                         <div class="swiper-slide slide2">

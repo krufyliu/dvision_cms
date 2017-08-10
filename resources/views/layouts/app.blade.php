@@ -60,35 +60,6 @@
     <script src="{{ elixir('/js/index.js') }}"></script>
 </head>
 <body>
-    {{-- <header class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img alt="Brand" height="20" src="/image/logo.png">
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="navbar-collapse-1"  role="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{ url('/aura') }}">AURA</a></li>
-                    <li><a href="#">产品</a></li>
-                    <li><a href="{{ url('/service') }}">服务</a></li>
-                    <li><a href="{{ url('/video') }}">内容</a></li>
-                    <li><a href="{{ url('/news') }}">新闻</a></li>
-                    <li><a href="{{ url('/team') }}">关于我们</a></li>
-                    <li><a href="{{ url('/contact') }}">联系</a></li>
-                    <li><a href="#">下载</a></li>
-                </ul>
-            </div>
-        </div>Ï
-    </header> --}}
-
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-default">
@@ -146,35 +117,6 @@
     <main>
         @yield('content')
     </main>
-
-    {{-- <footer role="contentinfo">
-        <div class="container">
-            <hr>
-            <div class="row">
-                <div class="col-sm-12 col-lg-6 col-lg-offset-3">
-                    <h4 class="text-center">
-                    <img src="qcode.png">
-                    </h4>
-                    <p class="small text-center text-muted">关注公众号订阅最新信息<br><br></p>
-                </div>
-                <div class="col-sm-12 col-lg-6 col-lg-offset-3">
-                    <ul class="footer-links text-center">
-                        <li><a href="{{ url('/service') }}">服务</a></li>
-                        <li><a href="{{ url('/video') }}">内容</a></li>
-                        <li><a href="{{ url('/news') }}">新闻</a></li>
-                        <li><a href="{{ url('/team') }}">关于我们</a></li>
-                        <li><a href="{{ url('/contact') }}">联系</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-sm-12 col-lg-6 col-lg-offset-3">
-                    <br>
-                    <p class="small text-center text-muted">Copyright©2016 量子视觉科技有限公司 保留所有权利</p> 
-                    <p class="small text-center text-muted"><a href="http://www.miibeian.gov.cn/">粤ICP备16006475号-1</a></p>
-                </div>
-            </div>
-        </div>
-    </footer> --}}
 
     <div class="footer">
       <div class="container">
@@ -257,21 +199,6 @@
               </ul>
             </div>
           </div>
-          {{-- <div class="column">
-            <div class="section">
-              <label for="">
-                <h3 class="title">报道</h3>
-              </label>
-              <ul class="list">
-                <li class="item">
-                  <a href="/news" class="link">新闻报道</a>
-                </li>
-                <li class="item">
-                  <a href="/contact" class="link">用户反馈</a>
-                </li>
-              </ul>
-            </div>
-          </div> --}}
         </nav>
         <div class="secondary">
           <div class="content">

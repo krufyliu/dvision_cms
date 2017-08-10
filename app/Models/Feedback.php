@@ -24,6 +24,9 @@ class Feedback extends Model
             case 3:
                 $string = "加盟";
                 break;
+            case 4:
+                $string = "租赁";
+                break;
             default: 
                 $string = "留言";
                 break;

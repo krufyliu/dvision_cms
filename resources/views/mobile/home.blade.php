@@ -11,6 +11,7 @@
                         <div class="swiper-slide slide1" onclick="javascript:window.location.href='/mobile/aura';">
                             <div class="title txt">
                                 <img src="/img/mobile_auratm.png" alt="mobile_auratm.png" width="120" draggable="false">
+                                <a href="{{ url('/lease') }}" title="A+ 计划" class="btn btn-default">A+ 计划&nbsp;</a>
                             </div>
                             <div class="title2">
                                 <h2>唯一可量产的专业级VR摄影机</h2>

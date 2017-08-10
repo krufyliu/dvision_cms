@@ -150,9 +150,9 @@
                 margin-bottom: 5px;
             }
             span {
-                font-size: 13px;
+                font-size: 16px;
                 letter-spacing: 0.005em;
-                font-weight: 400;
+                font-weight: 300;
                 line-height: 1.37373;
             }
             h2 {
@@ -163,14 +163,23 @@
             }
             a {
                 font-size: 16px;
-                padding: 8px;
+                padding: 8px 3px;
                 font-weight: 300;
-                color: rgba(255, 255, 255, .8);
+                color: rgba(255, 255, 255, .9);
                 border-bottom: 1px solid #3399cc;
                 text-decoration: none;
                 &:hover {
                     color: rgba(255, 255, 255, 1);
                 }
+            }
+            a.btn {
+                background-color: #3aafd6;
+                border-color: #2aa4cc;
+                padding: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-top: 5px;
+                border-radius: 0px;
             }
         }
         .slide2 {

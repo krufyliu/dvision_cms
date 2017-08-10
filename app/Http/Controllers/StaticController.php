@@ -84,6 +84,11 @@ class StaticController extends Controller
         return view('contact_franchise', ['title' => '加盟']);
     }
 
+    public function contact_lease()
+    {
+        return view('contact_lease', ['title' => 'A+ 计划']);
+    }
+
     public function success()
     {
         return view('success', ['title' => '提交成功']);

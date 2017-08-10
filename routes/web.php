@@ -29,6 +29,7 @@ Route::get('/success', 'StaticController@success');
 Route::get('/contact', 'StaticController@contact');
 Route::get('/order', 'StaticController@contact_order');
 Route::get('/franchise', 'StaticController@contact_franchise');
+Route::get('/lease', 'StaticController@contact_lease');
 
 Route::post('/contact', 'StaticController@contactSubmit');
 
