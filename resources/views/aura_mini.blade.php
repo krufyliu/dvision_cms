@@ -25,7 +25,7 @@
                                 镜头
                                 </span>
                                 <p class="fig_value">
-                                 8目F2.0全玻镜头
+                                 8目F2.0全玻璃镜头
                                 </p>
                             </li>
                             <li class="fig">
@@ -190,7 +190,7 @@
                             <td class="left">&nbsp;</td>
                             <td class="right">6K  30fps / 25fps 3D</td>
                             <td class="left">存储支持</td>
-                            <td class="right">SD卡</td>
+                            <td class="right">TF卡</td>
                           </tr>
                           <tr>
                             <td class="left">&nbsp;</td>
@@ -212,9 +212,9 @@
                           </tr>
                           <tr>
                             <td class="left">录制格式</td>
-                            <td class="right">MP4/AVI/JPG</td>
+                            <td class="right">MP4/AVI/JPG(照片)</td>
                             <td class="left">尺寸</td>
-                            <td class="right">D152mm H105m</td>
+                            <td class="right">D:152mm , H:105m</td>
                           </tr>
                           <tr>
                             <td class="left">镜头</td>
