@@ -143,7 +143,7 @@ main {
             width: 64px;
             height: 64px;
             border-radius: 100%;
-            background: rgba(180, 180, 180, 0.25) url(../img/arrows.png) no-repeat center 17px;
+            background: rgba(180, 180, 180, 0.25) url(/img/arrows.png) no-repeat center 17px;
             opacity: 0;
             -webkit-transition: opacity 0.5s ease;
             transition: opacity 0.5s ease;
@@ -168,7 +168,7 @@ main {
             width: 64px;
             height: 64px;
             border-radius: 100%;
-            background: rgba(180, 180, 180, 0.25) url(../img/arrows.png) no-repeat center -71px;
+            background: rgba(180, 180, 180, 0.25) url(/img/arrows.png) no-repeat center -71px;
             opacity: 0;
             -webkit-transition: opacity 0.5s ease;
             transition: opacity 0.5s ease;
@@ -237,7 +237,7 @@ main {
         }
         /*内容样式*/
         .slide1 {
-            background: #000 url(../img/mobile_home_01.jpg) no-repeat center;
+            background: #000 url(/img/mobile_home_01.jpg) no-repeat center;
             background-size: auto 100%;
         }
         .slide1 .title {
@@ -296,7 +296,7 @@ main {
             }
         }
         .slide2 {
-            background: #fff url(../img/mobile_home_02.jpg) no-repeat center;
+            background: #fff url(/img/mobile_home_02.jpg) no-repeat center;
             background-size: auto 100%;
         }
         .slide2 .title {
@@ -344,7 +344,7 @@ main {
             }
         }
         .slide3 {
-            background: #fff url(../img/mobile_home_03.jpg) no-repeat center;
+            background: #fff url(/img/mobile_home_03.jpg) no-repeat center;
             background-size: auto 100%;
         }
         .slide3 .title {
@@ -553,7 +553,7 @@ Pagination Styles
         }
         height: 460px;
         background-color: #f2f2f2;
-        background-image: url(../img/contact_order_sec01_01.jpg);
+        background-image: url(/img/contact_order_sec01_01.jpg);
         background-position: top center;
         background-size: cover;
         position: relative;

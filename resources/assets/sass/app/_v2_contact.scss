@@ -12,7 +12,7 @@
     .section-01 {
         height: 900px;
         background-color: #f2f2f2;
-        background-image: url(../img/contact_sec01_01.jpg);
+        background-image: url(/img/contact_sec01_01.jpg);
         background-position: center center;
         background-size: cover;
         .content {
@@ -58,7 +58,7 @@
                     padding: 20px 30px;
                     .input-bace {
                         input {
-                          height: 40px;
+                            height: 40px;
                         }
                         input,
                         textarea {
@@ -78,11 +78,11 @@
                             text-align: center;
                         }
                         button.btn {
-                          border-radius: 0px;
-                          height: 40px;
+                            border-radius: 0px;
+                            height: 40px;
                         }
                         .gt_holder.gt_float {
-                          margin: 0px auto;
+                            margin: 0px auto;
                         }
                     }
                 }
@@ -91,7 +91,6 @@
                 }
             }
         }
-
         .text_panel3 {
             position: absolute;
             left: 401px;

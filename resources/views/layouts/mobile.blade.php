@@ -35,7 +35,7 @@
     <![endif]-->
 
     <!-- Styles -->
-    <link href="{{ elixir('/css/mobile.css') }}" rel="stylesheet">
+    <link href="{{ elixir('css/mobile.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -52,8 +52,8 @@
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
-    <script src="{{ elixir('/js/app.js') }}"></script>
-    <script src="{{ elixir('/js/index.js') }}"></script>
+    <script src="{{ elixir('js/app.js') }}"></script>
+    <script src="{{ elixir('js/index.js') }}"></script>
 </head>
 <body>
     <div class="header">

@@ -12,19 +12,19 @@
     .section-01 {
         height: 940px;
         background-color: #f2f2f2;
-        background-image: url(../img/contact_order_sec01_01.jpg);
+        background-image: url(/img/contact_order_sec01_01.jpg);
         background-position: top center;
         background-size: cover;
         .content {
             height: 940px;
         }
         .divider {
-          margin: 0px auto;
-          height: 2px;
-          width: 200px;
-          margin-top: 10px;
-          margin-bottom: 10px;
-          border-bottom: 2px solid #3399cc;
+            margin: 0px auto;
+            height: 2px;
+            width: 200px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3399cc;
         }
         .text_panel {
             position: absolute;
@@ -45,11 +45,11 @@
                 margin-bottom: 20px;
             }
             a {
-              color: #3aafd6;
-              cursor: pointer;
+                color: #3aafd6;
+                cursor: pointer;
             }
             small {
-              font-size: 80%;
+                font-size: 80%;
             }
         }
         .text_panel2 {
@@ -73,7 +73,7 @@
                     padding: 20px 30px;
                     .input-bace {
                         input {
-                          height: 40px;
+                            height: 40px;
                         }
                         input,
                         textarea {
@@ -93,11 +93,11 @@
                             text-align: center;
                         }
                         button.btn {
-                          border-radius: 0px;
-                          height: 40px;
+                            border-radius: 0px;
+                            height: 40px;
                         }
                         .gt_holder.gt_float {
-                          margin: 0px auto;
+                            margin: 0px auto;
                         }
                     }
                 }
@@ -106,7 +106,6 @@
                 }
             }
         }
-
         .text_panel3 {
             position: absolute;
             left: 401px;
@@ -119,7 +118,7 @@
                 letter-spacing: 0.005em;
             }
             a {
-              color: #3aafd6;
+                color: #3aafd6;
             }
         }
     }

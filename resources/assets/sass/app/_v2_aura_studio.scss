@@ -12,7 +12,7 @@
     .section-01 {
         height: 800px;
         background-color: #fff;
-        background-image: url(../img/aurastudio_sec01_01.jpg);
+        background-image: url(/img/aurastudio_sec01_01.jpg);
         background-position: center center;
         background-size: cover;
         .content {
@@ -52,8 +52,8 @@
                 border-bottom: 2px solid #3399cc;
             }
             img {
-              margin-left: 60px;
-              margin-top: 35px;
+                margin-left: 60px;
+                margin-top: 35px;
             }
         }
     }
@@ -117,7 +117,7 @@
     .section-03 {
         height: 800px;
         background-color: #f5f5f5;
-        background-image: url(../img/aurastudio_sec03_01.jpg);
+        background-image: url(/img/aurastudio_sec03_01.jpg);
         background-position: center center;
         background-size: cover;
         .content {

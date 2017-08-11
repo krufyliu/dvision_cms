@@ -12,7 +12,7 @@
     .section-01 {
         height: 480px;
         background-color: #fff;
-        background-image: url(../img/join_sec01_01.jpg);
+        background-image: url(/img/join_sec01_01.jpg);
         background-position: top center;
         background-size: cover;
         .content {
@@ -51,9 +51,9 @@
             height: 560px;
         }
         .join_sec02_01 {
-          position: absolute;
-          top: 200px;
-          left: 47;
+            position: absolute;
+            top: 200px;
+            left: 47;
         }
         .text_panel {
             position: absolute;
@@ -180,10 +180,10 @@
                         font-weight: 300;
                     }
                     .icons {
-                      width: 230px;
-                      height: 348px;
-                      background-position: top center;
-                      background-size: cover;
+                        width: 230px;
+                        height: 348px;
+                        background-position: top center;
+                        background-size: cover;
                     }
                     .intro {
                         transition: all .3s ease-out;
@@ -208,10 +208,10 @@
                             font-weight: 300;
                         }
                         a {
-                          color: #3aafd6;
-                          font-size: 13px;
-                          font-weight: 300;
-                          cursor: pointer;
+                            color: #3aafd6;
+                            font-size: 13px;
+                            font-weight: 300;
+                            cursor: pointer;
                         }
                     }
                 }
