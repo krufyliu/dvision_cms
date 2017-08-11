@@ -109,7 +109,7 @@
                 <hr class="divider">
                 <div class="row">
                     <div class="col-xs-7" style="margin-top:28px;">
-                        <small class="footer-title">销售电话</small>
+                        <small class="footer-title">全国服务热线</small>
                         <h5 class="footer-txt">
                             <a href="tel:0755-26657982">0755-26657982</a>
                         </h5>

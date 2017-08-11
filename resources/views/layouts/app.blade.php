@@ -20,7 +20,7 @@
         var width = document.documentElement.clientHeight;
         if (u.match(/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/)) {
           if (width < 737) {
-              if (window.location.href.match(/aura|service/)) {
+              if (window.location.href.match(/aura|service|lease/)) {
                 if(!window.location.href.match(/auramini/)) {
                   window.location.href = window.location.origin + '/mobile' + window.location.pathname;
                 } 

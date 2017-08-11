@@ -67,4 +67,7 @@ Route::group(['prefix' => 'mobile'], function() {
       return view('mobile/service', [ 'title' => '服务' ]);
   });
 
+  Route::get('/lease', function() {
+      return view('mobile/contact_lease', [ 'title' => 'A+计划' ]);
+  });
 });
