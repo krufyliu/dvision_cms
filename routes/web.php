@@ -55,6 +55,10 @@ Route::group(['prefix' => 'mobile'], function() {
       return view('mobile/aura', [ 'title' => 'AURA 专业级VR摄影机' ]);
   });
 
+  Route::get('/auramini', function() {
+      return view('mobile/aura_mini', [ 'title' => 'AURA mini 专业级VR摄影机' ]);
+  });
+
   Route::get('/aurawork', function() {
       return view('mobile/aura_work', [ 'title' => 'AURA WORK - AURA 专用监看、控制软件' ]);
   });

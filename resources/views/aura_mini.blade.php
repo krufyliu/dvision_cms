@@ -5,7 +5,7 @@
         <div class="auramini section-01">
             <div class="container">
                 <div class="content">
-                    <img src="img/auramini_sec01_01.jpg" width="1024" alt="auramini_sec01_01" class="auramini_sec01_01" draggable="false">
+                    <img src="img/auramini_sec01_01.png" width="768" alt="auramini_sec01_01" class="auramini_sec01_01" draggable="false">
                     <div class="text_panel">
                         <span class="title">AURA mini</span>
                         <p class="txt">&nbsp;不仅专业, 更是效率。</p>
@@ -63,7 +63,7 @@
                     <img src="img/auramini_sec03_01.jpg" width="1440" alt="auramini_sec03_01" class="auramini_sec03_01" draggable="false">
                     <div class="text_panel">
                         <span class="title">&nbsp;&nbsp;8目镜头，效率与画质的更优结合。</span>
-                        <p class="txt">使用更多的鱼眼中心无畸变画面，得到色彩还原度更搞解析度更好的 360° * 360° 4K/6K/8K 3D画质<br>同时将镜头数目控制在8目，降低用户素材量，提升制作效率</p>
+                        <p class="txt">使用更多的鱼眼中心无畸变画面，得到色彩还原度更高、解析度更好的 360° * 360° 4K/6K/8K 3D画质<br>同时将镜头数目控制在8目，降低用户素材量，提升制作效率</p>
                     </div>
                 </div>
             </div>
@@ -182,7 +182,7 @@
                           </tr>
                           <tr>
                             <td class="left">视频分辨率</td>
-                            <td class="right">4K  60fps / 30fps / 25fps</td>
+                            <td class="right">4K  60fps / 30fps 3D</td>
                             <td class="left">音频</td>
                             <td class="right">4路内置Mic(可外接有源音频)</td>
                           </tr>

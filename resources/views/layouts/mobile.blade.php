@@ -75,6 +75,7 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{ url('/mobile/aura') }}" title="AURA">AURA</a></li>
+                        <li><a href="{{ url('/mobile/auramini') }}" title="AURA mini">AURA mini</a></li>
                         <li><a href="{{ url('/mobile/aurawork') }}" title="AURA Work">AURA Work</a></li>
                         <li><a href="{{ url('/mobile/aurastudio') }}" title="AURA Studio">AURA Studio</a></li>
                         <li><a href="{{ url('/mobile/service') }}" title="服务">服务</a></li>
