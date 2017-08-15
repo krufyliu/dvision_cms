@@ -5,7 +5,7 @@
         <div class="auramini section-01">
             <div class="container">
                 <div class="content">
-                    <img src="img/auramini_sec01_01.png" width="768" alt="auramini_sec01_01" class="auramini_sec01_01" draggable="false">
+                    <img src="img/auramini_sec01_01.jpg" width="768" alt="auramini_sec01_01" class="auramini_sec01_01" draggable="false">
                     <div class="text_panel">
                         <span class="title">AURA mini</span>
                         <p class="txt">&nbsp;不仅专业, 更是效率。</p>
