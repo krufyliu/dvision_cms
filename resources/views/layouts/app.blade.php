@@ -22,6 +22,9 @@
           if (width < 737) {
               if (window.location.href.match(/aura|service|lease/)) {
                   window.location.href = window.location.origin + '/mobile' + window.location.pathname;
+              } else if (window.location.pathname == "/") {
+                window.location.href = window.location.origin + '/mobile';
+              } else {
               }
           }
         }
