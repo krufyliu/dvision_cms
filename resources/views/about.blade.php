@@ -119,7 +119,7 @@ DKVISION AURA 全景拍摄设备是目前唯一可量产10K 3D VR相机，可以
                     </div>
                     <div class="text_panel2">
                         <p class="tag">ADDRESS</p>
-                        <p class="txt"><a href="http://j.map.baidu.com/AhgTH" target="_blank" rel="nofollow">深圳市南山区铜鼓路39号大冲国际中心5号楼902</a><br><br></p>
+                        <p class="txt"><a href="http://j.map.baidu.com/xeP99" target="_blank" rel="nofollow">深圳市南山区粤海街道高新南一道德赛科技大厦<br>标识层10层(自然层9层)1002室</a><br><br></p>
                         <p class="tag">BUSINESS HOURS</p>
                         <p class="txt">周一至周五 09:00 ~ 18:00<br><br></p>
                         <p class="tag">TEL</p>

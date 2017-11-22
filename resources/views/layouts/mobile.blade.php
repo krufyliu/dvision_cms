@@ -135,7 +135,7 @@
                     <div class="col-xs-12">
                         <small class="footer-title">公司地址</small>
                         <h5 class="footer-txt">
-                            <a href="http://j.map.baidu.com/AhgTH">深圳市南山区铜鼓路39号大冲国际中心5号楼902</a>
+                            <a href="http://j.map.baidu.com/xeP99">深圳市南山区粤海街道高新南一道德赛科技大厦标识层10层(自然层9层)1002室</a>
                         </h5>
                     </div>
                 </div>
