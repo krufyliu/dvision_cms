@@ -57,8 +57,12 @@
                                 <div class="icons">
                                     <img src="img/download_sec01_04.png" alt="download_sec01_04" width="200" draggable="false">
                                 </div>
-                                <span class="title">敬请期待</span>
+                                <span class="title">即刻体验</span>
                                 <p class="txt">只需要搭配一台服务器，您就可以使用AURA进行4K VR直播，<br>将奇幻的场景分享到世界的每一个角落。</p>
+                                <div class="links">
+                                  <a href="{{ $download->aura['live']['url'] }}" title="{{ $download->aura['live']['title'] }}" class="link"  target="_blank" rel="nofollow" download>&nbsp;立即下载</a>
+                                  {{-- <a href="/contact" class="link"  target="_blank" rel="nofollow">使用必读</a> --}}
+                                </div>
                                 {{-- <div class="links">
                                   <a href="/contact" class="link" rel="nofollow"><img src="/img/icon-win.png" width="17" class="ics" draggable="false">&nbsp;Win10</a>
                                   <a href="/contact" class="link" rel="nofollow"><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
