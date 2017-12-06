@@ -53,7 +53,6 @@ class StaticController extends Controller
 
     public function download()
     {
-
         $download = Download::oldest()->first();
         return view('download', ['title' => '软件下载', 'download' => $download]);
     }
@@ -97,7 +96,8 @@ class StaticController extends Controller
     public function contactSubmit(Request $request)
     {
         $this->contactValidator($request)->validate();
-        Feedback::create([
+        Feedback::create(
+            [
                 'name' => $request->input('name'),
                 'phone' => $request->input('phone'),
                 'email' => $request->input('email'),
@@ -108,7 +108,7 @@ class StaticController extends Controller
         return redirect()->action('StaticController@success');
     }
 
-    protected  function contactValidator(Request $request)
+    protected function contactValidator(Request $request)
     {
         return Validator::make($request->all(), [
             'name' => 'required',
@@ -146,8 +146,9 @@ class StaticController extends Controller
         return view('video.show', ['video' => $video, 'title' => $video->title . ' 内容']);
     }
 
-    public function zshuang() {
-        return view('zshuang');    
+    public function zshuang()
+    {
+        return view('zshuang');
     }
 
     public function verification(Request $request)
@@ -169,7 +170,7 @@ class StaticController extends Controller
     public function getvideos()
     {
         $path = storage_path() . '/logs/videos.json';
-        if(File::exists($path)) {
+        if (File::exists($path)) {
             $json = json_decode(File::get($path), true);
         } else {
             $json =  ["err_msg" => "faild", "data" => []];
@@ -181,7 +182,7 @@ class StaticController extends Controller
     public function getlives()
     {
         $path = storage_path() . '/logs/lives.json';
-        if(File::exists($path)) {
+        if (File::exists($path)) {
             $json = json_decode(File::get($path), true);
             info($json);
         } else {
@@ -190,4 +191,9 @@ class StaticController extends Controller
         return response()->json($json);
     }
 
+    public function getdownload()
+    {
+        $download =  Download::oldest()->first();
+        return response()->json($download);
+    }
 }

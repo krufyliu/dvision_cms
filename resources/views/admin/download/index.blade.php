@@ -21,29 +21,58 @@
                         <h3 class="panel-title">Aura Studio</h3>
                     </div>
                     <div class="panel-body">
-                        <div class="form-group">
-                            <label class="control-label">Image URL</label>
-                            {!! Form::text('aura[studio][image_url]', null, ['class' => 'form-control']) !!}
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label">Image URL</label>
+                                {!! Form::text('aura[studio][image_url]', null, ['class' => 'form-control']) !!}
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Description</label>
+                                {!! Form::text('aura[studio][description]', null, ['class' => 'form-control']) !!}
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label class="control-label">Win URL</label>
-                            {!! Form::text('aura[studio][win][url]', null, ['class' => 'form-control']) !!}
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Win</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label class="control-label">Win URL</label>
+                                        {!! Form::text('aura[studio][win][url]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Win Title</label>
+                                        {!! Form::text('aura[studio][win][title]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Win Version</label>
+                                        {!! Form::text('aura[studio][win][version]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label class="control-label">Win Title</label>
-                            {!! Form::text('aura[studio][win][title]', null, ['class' => 'form-control']) !!}
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Mac URL</label>
-                            {!! Form::text('aura[studio][mac][url]', null, ['class' => 'form-control']) !!}
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Mac Title</label>
-                            {!! Form::text('aura[studio][mac][title]', null, ['class' => 'form-control']) !!}
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Version</label>
-                            {!! Form::text('aura[studio][version]', null, ['class' => 'form-control']) !!}
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Mac</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label class="control-label">Mac URL</label>
+                                        {!! Form::text('aura[studio][mac][url]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Mac Title</label>
+                                        {!! Form::text('aura[studio][mac][title]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Mac Version</label>
+                                        {!! Form::text('aura[studio][mac][version]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -53,29 +82,57 @@
                         <h3 class="panel-title">Aura Work</h3>
                     </div>
                     <div class="panel-body">
-                        <div class="form-group">
-                            <label class="control-label">Image URL</label>
-                            {!! Form::text('aura[work][image_url]', null, ['class' => 'form-control']) !!}
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label">Image URL</label>
+                                {!! Form::text('aura[work][image_url]', null, ['class' => 'form-control']) !!}
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Description</label>
+                                {!! Form::text('aura[work][description]', null, ['class' => 'form-control']) !!}
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label class="control-label">Win URL</label>
-                            {!! Form::text('aura[work][win][url]', null, ['class' => 'form-control']) !!}
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Win</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label class="control-label">Win URL</label>
+                                        {!! Form::text('aura[work][win][url]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Win Title</label>
+                                        {!! Form::text('aura[work][win][title]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Win Version</label>
+                                        {!! Form::text('aura[work][win][version]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label class="control-label">Win Title</label>
-                            {!! Form::text('aura[work][win][title]', null, ['class' => 'form-control']) !!}
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Mac URL</label>
-                            {!! Form::text('aura[work][mac][url]', null, ['class' => 'form-control']) !!}
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Mac Title</label>
-                            {!! Form::text('aura[work][mac][title]', null, ['class' => 'form-control']) !!}
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Version</label>
-                            {!! Form::text('aura[work][version]', null, ['class' => 'form-control']) !!}
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Mac</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label class="control-label">Mac URL</label>
+                                        {!! Form::text('aura[work][mac][url]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Mac Title</label>
+                                        {!! Form::text('aura[work][mac][title]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Win Version</label>
+                                        {!! Form::text('aura[work][mac][version]', null, ['class' => 'form-control']) !!}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

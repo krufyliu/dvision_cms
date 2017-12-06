@@ -23,3 +23,4 @@ Route::post('/verification', 'StaticController@verification');
 
 Route::get('/getvideos', 'StaticController@getvideos');
 Route::get('/getlives', 'StaticController@getlives');
+Route::get('/getdownload', 'StaticController@getdownload');

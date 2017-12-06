@@ -21,9 +21,9 @@
                                 <div class="links">
                                   <a href="{{ $download->aura['studio']['win']['url'] }}" title="{{ $download->aura['studio']['win']['title'] }}" class="link"  target="_blank" rel="nofollow" download><img src="/img/icon-win.png" width="17" class="ics" draggable="false">&nbsp;Win10</a>
                                   <a href="{{ $download->aura['studio']['mac']['url'] }}" title="{{ $download->aura['studio']['mac']['title'] }}" class="link" target="_blank" rel="nofollow" download><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
-                                  {{-- <a href="/contact" class="link" rel="nofollow">使用必读</a> --}}
+                                  {{--  <a href="#" class="link" rel="nofollow">更新日志</a>  --}}
                                 </div>
-                                <p class="txt small">{{ $download->aura['studio']['version'] }}</p>
+                                <p class="txt small">{{ $download->aura['studio']['description'] }}</p>
                                 {{-- <p class="txt">未开放下载</p> --}}
                             </li>
                             <li class="fig right">
@@ -37,7 +37,7 @@
                                   <a href="{{ $download->aura['work']['mac']['url'] }}" title="{{ $download->aura['work']['mac']['title'] }}" class="link"  target="_blank" rel="nofollow" download><img src="/img/icon-mac.png" width"17" class="ics" draggable="false">&nbsp;MacOS</a>
                                   {{-- <a href="/contact" class="link"  target="_blank" rel="nofollow">使用必读</a> --}}
                                 </div>
-                                <p class="txt small">{{ $download->aura['work']['version'] }}</p>
+                                <p class="txt small">{{ $download->aura['work']['description'] }}</p>
                                 {{-- <p class="txt">未开放下载</p> --}}
                             </li>
                             <li class="fig">
