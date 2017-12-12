@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="main contact">
+    <div class="main franchise">
         <div class="cont section-01">
             <div class="container">
                 <div class="content">

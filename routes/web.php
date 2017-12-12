@@ -26,7 +26,7 @@ Route::get('/team', 'StaticController@team');
 Route::get('/success', 'StaticController@success');
 
 
-Route::get('/contact', 'StaticController@contact');
+Route::get('/support', 'StaticController@contact')->name('contact');
 Route::get('/order', 'StaticController@contact_order');
 Route::get('/franchise', 'StaticController@contact_franchise');
 Route::get('/lease', 'StaticController@contact_lease');
@@ -43,35 +43,35 @@ Route::get('/news', 'StaticController@news');
 Route::get('zshuang', 'StaticController@zshuang');
 Route::get('/auth/geetest', 'AuthController@getGeetest');
 Route::get('/h5', function () {
-  return view('exhibition');
+    return view('exhibition');
 });
 
-Route::group(['prefix' => 'mobile'], function() {
-  Route::get('/', function() {
-      return view('mobile/home', [ 'title' => '首页' ]);
-  });
+Route::group(['prefix' => 'mobile'], function () {
+    Route::get('/', function () {
+        return view('mobile/home', [ 'title' => '首页' ]);
+    });
 
-  Route::get('/aura', function() {
-      return view('mobile/aura', [ 'title' => 'AURA 专业级VR摄影机' ]);
-  });
+    Route::get('/aura', function () {
+        return view('mobile/aura', [ 'title' => 'AURA 专业级VR摄影机' ]);
+    });
 
-  Route::get('/auramini', function() {
-      return view('mobile/aura_mini', [ 'title' => 'AURA mini 专业级VR摄影机' ]);
-  });
+    Route::get('/auramini', function () {
+        return view('mobile/aura_mini', [ 'title' => 'AURA mini 专业级VR摄影机' ]);
+    });
 
-  Route::get('/aurawork', function() {
-      return view('mobile/aura_work', [ 'title' => 'AURA WORK - AURA 专用监看、控制软件' ]);
-  });
+    Route::get('/aurawork', function () {
+        return view('mobile/aura_work', [ 'title' => 'AURA WORK - AURA 专用监看、控制软件' ]);
+    });
 
-  Route::get('/aurastudio', function() {
-      return view('mobile/aura_studio', [ 'title' => 'AURA STUDIO - AURA 专用 VR 制作软件' ]);
-  });
+    Route::get('/aurastudio', function () {
+        return view('mobile/aura_studio', [ 'title' => 'AURA STUDIO - AURA 专用 VR 制作软件' ]);
+    });
 
-  Route::get('/service', function() {
-      return view('mobile/service', [ 'title' => '服务' ]);
-  });
+    Route::get('/service', function () {
+        return view('mobile/service', [ 'title' => '服务' ]);
+    });
 
-  Route::get('/lease', function() {
-      return view('mobile/contact_lease', [ 'title' => 'A+计划' ]);
-  });
+    Route::get('/lease', function () {
+        return view('mobile/contact_lease', [ 'title' => 'A+计划' ]);
+    });
 });

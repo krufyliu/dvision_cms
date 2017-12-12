@@ -7,13 +7,13 @@
             <div class="container">
                 <div class="content">
                     <div class="text_panel">
-                        <span class="title">CONTACT US</span>
-                        <p class="txt">联系我们</p>
+                        <span class="title">CONTACT US/SUPPORT</span>
+                        <p class="txt">联系我们/服务支持</p>
                     </div>
                     <div class="text_panel2">
                         <ul class="figs">
                             <li class="fig">
-                                <form class="form-horizontal" role="form" method="post" action="{{ url('/contact')  }}">
+                                <form class="form-horizontal" role="form" method="post" action="/contact">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="type" value="1">
                                     <div class="form-group">

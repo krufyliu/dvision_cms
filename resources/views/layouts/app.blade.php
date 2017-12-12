@@ -98,7 +98,7 @@
                           <li><a href="/about" class="link" title="关于我们">关于我们</a></li>
                           <li><a href="/join" class="link" title="人才招聘">人才招聘</a></li>
                           <li><a href="/news" class="link" title="新闻报道">新闻报道</a></li>
-                          <li><a href="/contact" class="link" title="联系我们">联系我们</a></li>
+                          <li><a href="{{ route('contact') }}" class="link" title="联系我们">联系我们</a></li>
                       </ul>
                     </li>
                     {{-- <li><a href="/about" title="关于我们">关于我们</a></li> --}}
@@ -192,7 +192,7 @@
                   <a href="/news" class="link" title="新闻报道">新闻报道</a>
                 </li>
                 <li class="item">
-                  <a href="/contact" class="link" title="联系我们">联系我们</a>
+                  <a href="{{ route('contact') }}" class="link" title="联系我们">联系我们</a>
                 </li>
               </ul>
             </div>
