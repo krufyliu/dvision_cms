@@ -87,7 +87,7 @@
                     </li>
                     {{-- <li><a href="/aura">AURA</a></li> --}}
 
-                    <li><a href="/service" title="服务">服务</a></li>
+                    <li><a href="/service" title="服务与支持">服务与支持</a></li>
 
                     <li><a href="/video" title="内容">内容</a></li>
 
