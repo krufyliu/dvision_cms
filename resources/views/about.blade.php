@@ -8,7 +8,7 @@
                 <div class="content">
                     <div class="text_panel">
                         <span class="title">ABOUT US</span>
-                        <p class="txt">量子视觉(DKVISION)致力于打造下一代虚拟现实的完整解决方案。<br>
+                        <p class="txt">深圳市量子视觉科技有限公司(DKVISION)致力于打造下一代虚拟现实的完整解决方案。<br>
 
 公司基于最先进的计算机视觉技术以及最专业硬件开发团队，将软件、硬件以及工业设计进行高效整合，为用户打造电影级别的虚拟现实体验。<br>
 
