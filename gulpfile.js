@@ -24,6 +24,7 @@ elixir(mix => {
             'v2/v2_idangerous.swiper.js',
             'v2/v2_idangerous.swiper.progress.js',
             'v2/v2_scrollreveal.js',
+            'v2/v2_headroom.js',
             'v2/v2_index.js'
         ], 'public/js/index.js');
     mix.sass('admin.scss')

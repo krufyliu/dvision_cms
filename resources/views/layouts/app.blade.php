@@ -37,7 +37,8 @@
     <![endif]-->
 
     <!-- Styles -->
-    <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
+    {{--  <link href="{{ elixir('css/app.css') }}" rel="stylesheet">  --}}
+    <link href="/css/app.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -58,54 +59,70 @@
     <script src="{{ elixir('js/index.js') }}"></script>
 </head>
 <body>
-    <div class="header">
+    <div class="header headroom">
         <div class="container">
             <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="/img/logo.png" alt="logo" width="120">
-                </a>
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="{{ url('/') }}">
+                      <img src="/img/logo2.png" alt="logo2" width="120">
+                  </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                        <li><a href="{{ url('/aura') }}" title="AURA">AURA</a></li>
-                        <li><a href="{{ url('/auramini') }}" title="AURA mini">AURA mini</a></li>
-                        <li><a href="{{ url('/aurawork') }}" title="AURA Work">AURA Work</a></li>
-                        <li><a href="{{ url('/aurastudio') }}" title="AURA Studio">AURA Studio</a></li>
-                    </ul>
-                    </li>
-                    {{-- <li><a href="/aura">AURA</a></li> --}}
+                <div class="nav navbar-nav navbar-left">
+                    <div class="dropdown menu-item">
+                      <a href="#" class="dropdown-toggle" role="button">产品</a>
+                      <div class="sub-menu">
+                        aaa
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a href="{{ url('/aura') }}" title="AURA">AURA</a></li>
+                            <li><a href="{{ url('/auramini') }}" title="AURA mini">AURA mini</a></li>
+                            <li><a href="{{ url('/aurawork') }}" title="AURA Work">AURA Work</a></li>
+                            <li><a href="{{ url('/aurastudio') }}" title="AURA Studio">AURA Studio</a></li>
+                        </ul>
+                      </div>
+                    </div>
 
-                    <li><a href="/service" title="服务">服务</a></li>
+                    <div class="menu-item"><a href="/video" title="内容">内容</a></div>
 
-                    <li><a href="/video" title="内容">内容</a></li>
+                    <div class="menu-item"><a href="/download" title="软件下载">软件下载</a></div>
+                    <div class="dropdown menu-item">
+                      <a href="#" class="dropdown-toggle" role="button">关于我们</a>
+                      <div class="sub-menu">
+                        bbb
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a href="/about" class="link" title="关于我们">关于我们</a></li>
+                            <li><a href="/join" class="link" title="人才招聘">人才招聘</a></li>
+                            <li><a href="/news" class="link" title="新闻报道">新闻报道</a></li>
+                            <li><a href="{{ route('contact') }}" class="link" title="联系我们">联系我们</a></li>
+                        </ul>
+                      </div>
+                    </div>
 
-                    <li><a href="/download" title="软件下载">软件下载</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">公司 <span class="caret"></span></a>
-                      <ul class="dropdown-menu dropdown-menu-left">
-                          <li><a href="/about" class="link" title="关于我们">关于我们</a></li>
-                          <li><a href="/join" class="link" title="人才招聘">人才招聘</a></li>
-                          <li><a href="/news" class="link" title="新闻报道">新闻报道</a></li>
-                          <li><a href="{{ route('contact') }}" class="link" title="联系我们">联系我们</a></li>
-                      </ul>
-                    </li>
-                    {{-- <li><a href="/about" title="关于我们">关于我们</a></li> --}}
-
-                    <li><a href="/order" class="btn btn-default" title="立即订购">立即订购</a></li>
-                    <li><a href="/franchise" class="btn btn-default" title="加盟代理">加盟代理</a></li>
-                </ul>
+                    <div class="dropdown menu-item">
+                      <a href="/service" class="dropdown-toggle" role="button" title="服务与支持">服务与支持</a>
+                      <div class="sub-menu">
+                        ccc
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li><a href="/about" class="link" title="关于我们">关于我们</a></li>
+                            <li><a href="/join" class="link" title="人才招聘">人才招聘</a></li>
+                            <li><a href="/news" class="link" title="新闻报道">新闻报道</a></li>
+                            <li><a href="{{ route('contact') }}" class="link" title="联系我们">联系我们</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="nav navbar-nav navbar-right">
+                    <div><a href="/order" class="btn btn-default" title="立即订购">立即订购</a></div>
+                    <div><a href="/franchise" class="btn btn-default" title="加盟代理">加盟代理</a></div>
+                </div>
                 </div>
             </div>
             </nav>
@@ -143,12 +160,6 @@
                 <h3 class="title">服务</h3>
               </label>
               <ul class="list">
-                {{-- <li class="item">
-                  <a href="/service" class="link">专业级VR制作</a>
-                </li>
-                <li class="item">
-                  <a href="/service" class="link">云渲染</a>
-                </li> --}}
                 <li class="item">
                   <a href="/service" class="link" title="VR直播">VR直播</a>
                 </li>
@@ -216,7 +227,6 @@
         </div>
       </div>
   </div>
-
     <!-- Scripts -->
     @yield('script')
 </body>

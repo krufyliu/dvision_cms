@@ -1,4 +1,19 @@
 $(document).ready(function() {
+  // 获取页面元素
+  var myElement = document.getElementsByClassName('headroom')[0];
+  // 创建 Headroom 对象，将页面元素传递进去
+  var headroom  = new Headroom(myElement, {
+    tolerance: 5,
+    offset : 205,
+    classes: {
+      initial: "animated",
+      pinned: "slideDown",
+      unpinned: "slideUp"
+    }
+  });
+  // 初始化
+  headroom.init(); 
+
   if ($('.swiper-container').length > 0) {
     // JavaScript Document
     autoplay = true;
