@@ -77,45 +77,70 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <div class="nav navbar-nav navbar-left">
-                    <div class="dropdown menu-item">
+                    <div class="dropdown menu-item" id="menu-product">
                       <a href="#" class="dropdown-toggle" role="button">产品</a>
-                      <div class="sub-menu">
-                        aaa
-                        <ul class="dropdown-menu dropdown-menu-left">
-                            <li><a href="{{ url('/aura') }}" title="AURA">AURA</a></li>
-                            <li><a href="{{ url('/auramini') }}" title="AURA mini">AURA mini</a></li>
-                            <li><a href="{{ url('/aurawork') }}" title="AURA Work">AURA Work</a></li>
-                            <li><a href="{{ url('/aurastudio') }}" title="AURA Studio">AURA Studio</a></li>
-                        </ul>
+                      <div class="sub-menu-bg">
+                        <div class="sub-menu">
+                          <a href="{{ route('aura') }}">
+                            <img class="img-medium" alt="" src="/img/menu-aura.png" style="">
+                            <span>Aura</span>
+                          </a>
+                          <a href="{{ route('auramini') }}">
+                            <img class="img-medium" alt="" src="/img/menu-aura-mini.png" style="">
+                            <span>AuraMini</span>
+                          </a>
+                          <a href="#">
+                            <img class="img-medium" alt="" src="/img/menu-other.png" style="">
+                            <span>配件</span>
+                          </a>
+                        </div>
                       </div>
                     </div>
 
                     <div class="menu-item"><a href="/video" title="内容">内容</a></div>
 
                     <div class="menu-item"><a href="/download" title="软件下载">软件下载</a></div>
-                    <div class="dropdown menu-item">
-                      <a href="#" class="dropdown-toggle" role="button">关于我们</a>
-                      <div class="sub-menu">
-                        bbb
-                        <ul class="dropdown-menu dropdown-menu-left">
-                            <li><a href="/about" class="link" title="关于我们">关于我们</a></li>
-                            <li><a href="/join" class="link" title="人才招聘">人才招聘</a></li>
-                            <li><a href="/news" class="link" title="新闻报道">新闻报道</a></li>
-                            <li><a href="{{ route('contact') }}" class="link" title="联系我们">联系我们</a></li>
-                        </ul>
+                    <div class="dropdown menu-item" id="menu-about">
+                      <a href="{{ route('about') }}" class="dropdown-toggle" role="button">关于我们</a>
+                      <div class="sub-menu-bg">
+                        <div class="sub-menu">
+                          <a href="{{ route('about') }}">
+                            <img class="img-medium" alt="" src="/img/menu-about.png" style="">
+                            <span>关于我们</span>
+                          </a>
+                          <a href="{{ route('join') }}">
+                            <img class="img-medium" alt="" src="/img/menu-join.png" style="">
+                            <span>人才招聘</span>
+                          </a>
+                          <a href="{{ route('news') }}">
+                            <img class="img-medium" alt="" src="/img/menu-news.png" style="">
+                            <span>新闻报道</span>
+                          </a>
+                          <a href="{{ route('contact') }}">
+                            <img class="img-medium" alt="" src="/img/menu-contact.png" style="">
+                            <span>联系留言</span>
+                          </a>
+                        </div>
                       </div>
                     </div>
 
-                    <div class="dropdown menu-item">
-                      <a href="/service" class="dropdown-toggle" role="button" title="服务与支持">服务与支持</a>
-                      <div class="sub-menu">
-                        ccc
-                        <ul class="dropdown-menu dropdown-menu-left">
-                            <li><a href="/about" class="link" title="关于我们">关于我们</a></li>
-                            <li><a href="/join" class="link" title="人才招聘">人才招聘</a></li>
-                            <li><a href="/news" class="link" title="新闻报道">新闻报道</a></li>
-                            <li><a href="{{ route('contact') }}" class="link" title="联系我们">联系我们</a></li>
-                        </ul>
+                    <div class="dropdown menu-item" id="menu-support">
+                      <a href="#" class="dropdown-toggle" role="button" title="服务与支持">服务与支持</a>
+                      <div class="sub-menu-bg">
+                        <div class="sub-menu">
+                          <a href="#">
+                            <img class="img-medium" alt="" src="/img/menu-product-support.png" style="">
+                            <span>产品支持</span>
+                          </a>
+                          <a href="#">
+                            <img class="img-medium" alt="" src="/img/menu-bug-nav.png" style="">
+                            <span>售后与维修服务</span>
+                          </a>
+                          <a href="#">
+                            <img class="img-medium" alt="" src="/img/menu-agreement.png" style="">
+                            <span>条款与协议</span>
+                          </a>
+                        </div>
                       </div>
                     </div>
                 </div>

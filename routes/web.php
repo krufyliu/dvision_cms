@@ -12,12 +12,12 @@
 */
 
 Route::get('/', 'StaticController@home');
-Route::get('/aura', 'StaticController@aura');
-Route::get('/auramini', 'StaticController@auramini');
+Route::get('/aura', 'StaticController@aura')->name('aura');
+Route::get('/auramini', 'StaticController@auramini')->name('auramini');
 Route::get('/aurawork', 'StaticController@aurawork');
 Route::get('/aurastudio', 'StaticController@aurastudio');
 Route::get('/service', 'StaticController@service');
-Route::get('/about', 'StaticController@about');
+Route::get('/about', 'StaticController@about')->name('about');
 Route::get('/download', 'StaticController@download');
 
 
@@ -26,7 +26,7 @@ Route::get('/team', 'StaticController@team');
 Route::get('/success', 'StaticController@success');
 
 
-Route::get('/support', 'StaticController@contact')->name('contact');
+Route::get('/contact', 'StaticController@contact')->name('contact');
 Route::get('/order', 'StaticController@contact_order');
 Route::get('/franchise', 'StaticController@contact_franchise');
 Route::get('/lease', 'StaticController@contact_lease');
@@ -35,9 +35,9 @@ Route::post('/contact', 'StaticController@contactSubmit');
 
 Route::get('/video', 'StaticController@video');
 Route::get('/video/{id}', 'StaticController@videoShow');
-Route::get('/join', 'StaticController@join');
+Route::get('/join', 'StaticController@join')->name('join');
 
-Route::get('/news', 'StaticController@news');
+Route::get('/news', 'StaticController@news')->name('news');
 // Route::get('/news/{id}', 'StaticController@newsShow');
 // zshuang
 Route::get('zshuang', 'StaticController@zshuang');
