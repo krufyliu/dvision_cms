@@ -11,7 +11,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ isset($title) ? $title . '-' : '' }}量子视觉科技官网</title>
-    <meta name="keywords" content="量子视觉科技有限公司,量子视觉,VR视频,全景,VR服务,DKVISION, AURA, 专业级VR摄影机">
+    <meta name="keywords" content="量子视觉科技有限公司,量子视觉,VR视频,全景,VR服务,DKVISION,AURA,专业级VR摄影机,全景相机,全景视频,全景图片,360度全景照相机,全景拍摄,三维全景">
     <meta name="description" content="DKVISION致力于打造下一代虚拟现实的完整解决方案。AURA 专业级VR摄影机">
 
     <!-- redirect to mobile -->
