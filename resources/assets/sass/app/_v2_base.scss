@@ -274,39 +274,30 @@
     }
 }
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes slideUp {
     0% {
-        opacity: 0
-    }
-    50% {
-        opacity: 0
+        transform: translateY(0)
     }
     100% {
-        opacity: 1
+        transform: translateY(-64px)
     }
 }
 
-@-moz-keyframes fadein {
+@-moz-keyframes slideUp {
     0% {
-        opacity: 0
-    }
-    50% {
-        opacity: 0
+        transform: translateY(0)
     }
     100% {
-        opacity: 1
+        transform: translateY(-64px)
     }
 }
 
-@-o-keyframes fadein {
+@-o-keyframes slideUp {
     0% {
-        opacity: 0
-    }
-    50% {
-        opacity: 0
+        transform: translateY(0)
     }
     100% {
-        opacity: 1
+        transform: translateY(-64px)
     }
 }
 
