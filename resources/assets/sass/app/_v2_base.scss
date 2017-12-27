@@ -226,30 +226,87 @@
     animation-name: slideDown
 }
 
-@-webkit-keyframes slideUp {
+@-webkit-keyframes fadein {
     0% {
-        -webkit-transform: translateY(0)
+        opacity: 0
+    }
+    50% {
+        opacity: 0
     }
     100% {
-        -webkit-transform: translateY(-64px)
+        opacity: 1
     }
 }
 
-@-moz-keyframes slideUp {
+@-moz-keyframes fadein {
     0% {
-        -moz-transform: translateY(0)
+        opacity: 0
+    }
+    50% {
+        opacity: 0
     }
     100% {
-        -moz-transform: translateY(-64px)
+        opacity: 1
     }
 }
 
-@-o-keyframes slideUp {
+@-o-keyframes fadein {
     0% {
-        -o-transform: translateY(0)
+        opacity: 0
+    }
+    50% {
+        opacity: 0
     }
     100% {
-        -o-transform: translateY(-64px)
+        opacity: 1
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes fadein {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fadein {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
     }
 }
 
@@ -332,10 +389,20 @@
             .sub-menu-bg {
                 height: 165px;
                 z-index: 4;
+                transition: -webkit-transform .2s ease-in-out;
+                transition: transform .2s ease-in-out;
+                transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1)
             }
+        }
+        .dropdown.menu-item.enter {
             .sub-menu {
-                transition-delay: 0.3s;
                 display: flex;
+                // transition-delay: .3s;
+                animation-duration: .3s;
+                animation-name: fadein;
+                animation-fill-mode: both;
             }
         }
         // .menu-item.open .sub-menu {
@@ -350,8 +417,10 @@
             overflow: hidden;
             box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
             transform-origin: top left;
-            transition: all .25s;
+            // transition: all .35s;
             z-index: 3;
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
         }
         .menu-item .sub-menu {
             display: none;
@@ -360,7 +429,7 @@
             width: auto;
             padding: 0px 0;
             z-index: 4;
-            transition: all .25s;
+            // transition: all .35s;
             a {
                 display: flex;
                 -webkit-box-orient: vertical;
@@ -395,13 +464,13 @@
             }
         }
         #menu-product.menu-item .sub-menu {
-            left: 470px;
+            left: -80px;
         }
         #menu-about.menu-item .sub-menu {
-            left: 598px;
+            left: -380px;
         }
         #menu-support.menu-item .sub-menu {
-            left: 726px;
+            left: -364px;
         }
     }
     .navbar-default .navbar-nav>div>a.btn {

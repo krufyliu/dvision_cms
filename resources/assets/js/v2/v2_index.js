@@ -14,6 +14,15 @@ $(document).ready(function() {
   // 初始化
   headroom.init(); 
 
+  //导航栏动效
+  $('.dropdown.menu-item').on('mouseenter', function(){
+    var e = $(this);
+    e.addClass("enter");
+  });
+  $('.dropdown.menu-item').on('mouseleave', function(){
+    $('.dropdown.menu-item').removeClass("enter");
+  });
+
   if ($('.swiper-container').length > 0) {
     // JavaScript Document
     autoplay = true;
