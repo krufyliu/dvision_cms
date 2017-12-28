@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width" />
+    {{--  <meta name="viewport" content="width=device-width" />  --}}
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
@@ -17,7 +17,7 @@
     <!-- redirect to mobile -->
     <script type="text/javascript">
         var u = navigator.userAgent;
-        var width = document.documentElement.clientHeight;
+        var width = screen.width;
         if (u.match(/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/)) {
           if (width < 737) {
               if (window.location.href.match(/aura|service|lease/)) {
@@ -101,7 +101,7 @@
 
                     <div class="menu-item"><a href="/download" title="软件下载">软件下载</a></div>
                     <div class="dropdown menu-item" id="menu-about">
-                      <a href="{{ route('about') }}" class="dropdown-toggle" role="button">关于我们</a>
+                      <a href="#" class="dropdown-toggle" role="button">关于我们</a>
                       <div class="sub-menu-bg">
                       </div>
                       <div class="sub-menu">
