@@ -79,7 +79,7 @@
                                 <span class="title">远程设置</span>
                                 <p class="txt">本应用远程设置量子视觉 VR 全景摄像参数，监控VR摄像机画面。</p>
                                 <div class="links">
-                                  <a href="https://itunes.apple.com/cn/app/aura-remote/id1296187375?mt=8" title="aura remote" class="link"  target="_blank" rel="nofollow" download><img src="/img/icon-mac.png" width"17"="" class="ics" draggable="false">&nbsp;立即安装</a>
+                                  <a href="https://itunes.apple.com/cn/app/aura-remote/id1296187375?mt=8" title="aura remote" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-mac.png" width"17"="" class="ics" draggable="false">&nbsp;立即安装</a>
                                   {{-- <a href="/contact" class="link"  target="_blank" rel="nofollow">使用必读</a> --}}
                                 </div>
                                 {{--  <p class="txt small">{{ $download->aura['firmware']['version'] }}</p>  --}}
