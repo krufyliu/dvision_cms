@@ -77,7 +77,7 @@
                                     <img src="/img/download_sec01_05.png" alt="download_sec01_05" width="264" draggable="false">
                                 </div>
                                 <span class="title">远程设置</span>
-                                <p class="txt">本应用远程设置量子视觉 VR 全景摄像参数，监控VR摄像机画面。</p>
+                                <p class="txt">AURA Remote用于远程设置量子视觉AURA Mini VR 全景摄像参数，监控VR摄像机画面。</p>
                                 <div class="links">
                                   <a href="https://itunes.apple.com/cn/app/aura-remote/id1296187375?mt=8" title="aura remote" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-mac.png" width"17"="" class="ics" draggable="false">&nbsp;立即安装</a>
                                   {{-- <a href="/contact" class="link"  target="_blank" rel="nofollow">使用必读</a> --}}
