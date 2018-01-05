@@ -439,11 +439,12 @@
                 opacity: 1;
                 -webkit-transform: translateX(50%);
                 transform: translateX(50%);
-                opacity: 0.6;
+                opacity: 0.9;
                 transition: all .25s;
                 text-decoration-line: none;
                 &:hover {
                     opacity: 1;
+                    color: #3399bb;
                 }
                 span {
                     font-size: 14px;

@@ -82,18 +82,18 @@
                       <div class="sub-menu-bg">
                       </div>
                       <div class="sub-menu">
-                        <a href="{{ route('aura') }}">
-                          <img class="img-medium" alt="" src="/img/menu-aura.png" style="">
-                          <span>Aura</span>
-                        </a>
                         <a href="{{ route('auramini') }}">
                           <img class="img-medium" alt="" src="/img/menu-aura-mini.png" style="">
-                          <span>AuraMini</span>
+                          <span style="font-size: 16px; font-weight: 400;">Mini</span>
                         </a>
-                        <a href="#">
+                        <a href="{{ route('aura') }}">
+                          <img class="img-medium" alt="" src="/img/menu-aura.png" style="">
+                          <span style="font-size: 16px; font-weight: 400;">Aura</span>
+                        </a>
+                        {{--  <a href="#">
                           <img class="img-medium" alt="" src="/img/menu-other.png" style="">
                           <span>配件</span>
-                        </a>
+                        </a>  --}}
                       </div>
                     </div>
 
