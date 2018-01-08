@@ -8,6 +8,22 @@
                     <a class="arrow-left" href="#" rel="nofollow"><span></span></a>
                     <a class="arrow-right" href="#" rel="nofollow"><span></span></a>
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide slide3">
+                            <div class="title txt">
+                                <img src="img/banner03-1.png">
+                                <p class="time">2018/01/09-12</p>
+                                <p class="sub">35636,South Hall 4,LVCC,Las Vegas, NV</p>
+                                <br><br><br>
+                                <p class="time2">INVITATION</p>
+                                <p class="sub2"><strong>深圳市量子视觉科技有限公司</strong>诚邀您参观于<br>
+                                    1月9日-12日，美国，拉斯维加斯会展中心<br>
+                                    举办的<strong>国际消费电子展（CES）</strong>，届时我司<br>
+                                    将与华为海思一起展出全景摄影机AURA mini。<br>
+                                    邀你共同见证，改变未来。</p>
+                            </div>
+                            <div class="title2">
+                            </div>
+                        </div>
                         <div class="swiper-slide slide1">
                             <div class="title txt">
                                 <h1>AURA</h1>
@@ -21,19 +37,11 @@
 
                             <!--h2 class="homepage-headline txt">Series 2 新登场。</h2-->
                         </div>
-                        <!--div class="swiper-slide slide3">
-                <div class="title txt">
-                    <img src="img/logo_macbookpro_large.png">
-                    <p>
-                    一身才华，一触即发
-                    </p>
-                </div>
-                </div-->
                     </div>
                     <ul class="pagination autoplay">
                         <li><span><i></i></span></li>
                         <li><span><i></i></span></li>
-                        <!--li><span><i></i></span></li-->
+                        <li><span><i></i></span></li>
                     </ul>
                 </div>
             </div>
