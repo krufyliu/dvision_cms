@@ -212,7 +212,7 @@
             <img src="/img/logo2.png" alt="logo2" width="120">
           </div>
           <div class="gf-footer-legal">
-            <div class="gf-footer-legal-copyright">量子视觉科技有限公司©Copyright  版权所有 <a href="http://www.miibeian.gov.cn/" rel="nofollow">粤ICP备16006475号-1</a></div>
+            <div class="gf-footer-legal-copyright">量子视觉科技有限公司©Copyright  版权所有 <a href="http://www.miibeian.gov.cn/" rel="nofollow">粤ICP备16006475号-1</a><br>Shenzhen Deep Kernel Vision Co.,Ltd.</div>
           </div>
         </div>
       </div>
