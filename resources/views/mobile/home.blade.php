@@ -7,7 +7,19 @@
                 <div class="swiper-container">
                     <a class="arrow-left" href="#" rel="nofollow"><span></span></a>
                     <a class="arrow-right" href="#" rel="nofollow"><span></span></a>
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper" onclick="javascript:window.location.href='/mobile/auramini';">
+                        <div class="swiper-slide slide4">
+                            <div class="title txt">
+                                <img src="/img/mobile_home_05.png" alt="mobile_home_05.png" width="120" draggable="false">
+                            </div>
+                            <div class="title3">
+                                <p class="time">2018/01/09-12 </p>
+                                <p class="sub">35636,South Hall 4,LVCC,Las Vegas, NV</p>
+                            </div>
+                            <div class="title2">
+                                <h2>AURA Mini</h2>
+                            </div>
+                        </div>
                         <div class="swiper-slide slide1" onclick="javascript:window.location.href='/mobile/aura';">
                             <div class="title txt">
                                 <img src="/img/mobile_auratm.png" alt="mobile_auratm.png" width="120" draggable="false">
@@ -35,6 +47,7 @@
                         </div>
                     </div>
                     <ul class="pagination autoplay">
+                        <li><span><i></i></span></li>
                         <li><span><i></i></span></li>
                         <li><span><i></i></span></li>
                         <li><span><i></i></span></li>
