@@ -71,6 +71,19 @@
                                 <p class="txt small">&nbsp;</p>
                                 <p class="txt"></p>
                             </li>
+
+                            <li class="fig">
+                                <div class="icons" style="margin-top: 27px; margin-bottom: 25px;">
+                                    <img src="/img/download_sec01_05.png" alt="download_sec01_05" width="264" draggable="false">
+                                </div>
+                                <span class="title">远程设置</span>
+                                <p class="txt">AURA Remote用于远程设置量子视觉AURA Mini VR 全景摄像参数，监控VR摄像机画面。</p>
+                                <div class="links">
+                                  <a href="https://itunes.apple.com/cn/app/aura-remote/id1296187375?mt=8" title="aura remote" class="link"  target="_blank" rel="nofollow"><img src="/img/icon-mac.png" width"17"="" class="ics" draggable="false">&nbsp;立即安装</a>
+                                  {{-- <a href="/contact" class="link"  target="_blank" rel="nofollow">使用必读</a> --}}
+                                </div>
+                                {{--  <p class="txt small">{{ $download->aura['firmware']['version'] }}</p>  --}}
+                            </li>
                         </ul>
                     </div>
                 </div>

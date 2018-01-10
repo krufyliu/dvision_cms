@@ -39,7 +39,7 @@
         }
     }
     .section-02 {
-        height: 680px;
+        min-height: 680px;
         background-color: #fff;
         background-position: center center;
         background-size: cover;
@@ -102,6 +102,53 @@
                 font-weight: 300;
                 letter-spacing: 0.1em;
                 margin-bottom: 20px;
+            }
+        }
+    }
+    .section-04 {
+        min-height: 680px;
+        background-color: #fff;
+        .text_panel {
+            position: relative;
+            left: 0px;
+            top: 30px;
+            text-align: center;
+            .title {
+                color: #000;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 36px;
+            }
+            p.txt {
+                padding-top: 20px;
+                color: #000;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                padding-bottom: 30px;
+            }
+        }
+        .nav.nav-tabs {
+            margin-bottom: 20px;
+        }
+        #myTabContent {
+            .panel-group {
+                .panel-default .panel-heading {
+                    background-color: #fff;
+                    color: #4a90e2;
+                }
+                .panel-default .panel-body {
+                    border-top: none;
+                    img.big {
+                        margin: 0px auto;
+                    }
+                    p {
+                        font-size: 16px;
+                        a {
+                            color: #4a90e2;
+                        }
+                    }
+                }
             }
         }
     }

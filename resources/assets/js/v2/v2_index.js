@@ -29,7 +29,7 @@ $(document).ready(function() {
     autoplay = true;
     resize = true;
     var mySwiper = new Swiper('.swiper-container', {
-      autoplay: 3000,
+      autoplay: 4000,
       progress: true,
       speed: 1000,
       paginationClickable: true,

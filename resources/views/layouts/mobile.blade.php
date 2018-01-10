@@ -36,6 +36,7 @@
 
     <!-- Styles -->
     <link href="{{ elixir('css/mobile.css') }}" rel="stylesheet">
+    {{--  <link href="/css/mobile.css" rel="stylesheet">  --}}
 
     <!-- Scripts -->
     <script>
