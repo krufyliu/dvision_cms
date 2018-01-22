@@ -124,7 +124,8 @@
                       </div>
                     </div>
 
-                    <div class="dropdown menu-item" id="menu-support">
+                    <div class="menu-item"><a href="/service" title="服务与支持">服务与支持</a></div>
+                    {{--  <div class="dropdown menu-item" id="menu-support">
                       <a href="#" class="dropdown-toggle" role="button" title="服务与支持">服务与支持</a>
                       <div class="sub-menu-bg">
                       </div>
@@ -142,7 +143,7 @@
                           <span>条款与协议</span>
                         </a>
                       </div>
-                    </div>
+                    </div>  --}}
                 </div>
                 <div class="nav navbar-nav navbar-right">
                     <div><a href="/order" class="btn btn-default" title="立即订购">立即订购</a></div>

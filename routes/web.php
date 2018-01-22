@@ -19,6 +19,7 @@ Route::get('/aurastudio', 'StaticController@aurastudio');
 Route::get('/service', 'StaticController@service');
 Route::get('/about', 'StaticController@about')->name('about');
 Route::get('/download', 'StaticController@download');
+Route::get('/download/{type}', 'StaticController@download_show');
 
 
 

@@ -53,8 +53,18 @@ class StaticController extends Controller
 
     public function download()
     {
+        return view('download.index', ['title' => '软件下载']);
+    }
+
+    public function download_show($type)
+    {
         $download = Download::oldest()->first();
-        return view('download', ['title' => '软件下载', 'download' => $download]);
+        \Debugbar::info($download->aura['mini8']);
+        if ($type == 'aura') {
+            return view('download.show_aura', ['title' => '软件下载', 'aura20' => $download->aura['aura20']]);
+        } elseif ($type == 'auramini') {
+            return view('download.show_mini', ['title' => '软件下载', 'mini8' => $download->aura['mini8']]);
+        }
     }
 
     public function join()
@@ -194,6 +204,7 @@ class StaticController extends Controller
     public function getdownload()
     {
         $download =  Download::oldest()->first();
+        $download->aura = $download->aura['mini8'];
         return response()->json($download);
     }
 }
