@@ -59,7 +59,7 @@ class StaticController extends Controller
     public function download_show($type)
     {
         $download = Download::oldest()->first();
-        \Debugbar::info($download->aura['mini8']);
+        // \Debugbar::info($download->aura['mini8']);
         if ($type == 'aura') {
             return view('download.show_aura', ['title' => '软件下载', 'aura20' => $download->aura['aura20']]);
         } elseif ($type == 'auramini') {
