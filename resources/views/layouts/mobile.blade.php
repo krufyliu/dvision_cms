@@ -19,13 +19,13 @@
     <script type="text/javascript">
         var u = navigator.userAgent;
         var width = screen.width;
-        if (!u.match(/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/)) {
+        {{--  if (!u.match(/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/)) {  --}}
           if (width > 736) {
               if (window.location.href.match(/mobile/)) {
                 window.location.href = window.location.href.replace('/mobile', '');
               }
           }
-        }
+        {{--  }  --}}
     </script>
 
     <!--[if lt IE 9]>

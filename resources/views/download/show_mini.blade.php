@@ -16,7 +16,7 @@
                                 
                                     <div class="block-content left">
                                 
-                                        <h2 class="text-name">Aura Work</h2>
+                                        <h2 class="text-name">AURA Work</h2>
                                         <h3 class="text-title">相机控制客户端</h3>
                                         <p class="text-desc">{{ $mini8['work']['description'] }}</p>
                                 
@@ -61,8 +61,8 @@
                                     </div>
                                 
                                     <div class="block-content left">
-                                        <h2 class="text-name">Aura Studio</h2>
-                                        <h3 class="text-title">内容拼接整理程序</h3>
+                                        <h2 class="text-name">AURA Studio</h2>
+                                        <h3 class="text-title">素材拼接、编辑软件</h3>
                                         <p class="text-desc">{{ $mini8['studio']['description'] }}</p>
                                 
                                         <ul class="ul-platform">
@@ -107,7 +107,7 @@
                                         </div>
                                     
                                         <div class="block-content left">
-                                            <h2 class="text-name">AuraMini FIRMWARE</h2>
+                                            <h2 class="text-name">AURAmini FIRMWARE</h2>
                                             <h3 class="text-title">配套相机固件</h3>
                                             <p class="text-desc">{{ $mini8['firmware']['description'] }}</p>
                                             <ul class="ul-platform">
@@ -123,8 +123,7 @@
                                                         <img src="/img/icon-download.png">
                                                         <span>固件下载</span>
                                                     </a>
-                                                    <a href="#" target="_blank" class="link-upgrade">如何升级固件?</a>
-                                                    <a href="#" target="_blank" class="link-upgrade">如何升级固件?</a>
+                                                    {{--  <a href="#" target="_blank" class="link-upgrade">如何升级固件?</a>  --}}
                                                     </div>
                                                 </li>
                                             </ul>
@@ -143,7 +142,7 @@
                                 
                                     <div class="block-content left">
                                 
-                                        <h2 class="text-name">AuraMini REMOTE</h2>
+                                        <h2 class="text-name">AURAmini REMOTE</h2>
                                         <h3 class="text-title">无线控制程序</h3>
                                         <p class="text-desc">{{ $mini8['remote']['description'] }}</p>
                                 
@@ -156,14 +155,14 @@
                                                     {!! $mini8['remote']['appstore']['log'] !!}
                                                 </div>
                                                 
-                                                <a href="{{ $mini8['remote']['appstore']['url'] }}" title="{{ $mini8['remote']['appstore']['title'] }}" target="_blank" class="btn btn btn-dark">
-                                                    {{--  <span class="version-qrcode">
-                                                    <i id="insta360-player-android-qrcode"><canvas width="102" height="102"></canvas></i>
-                                                    </span>  --}}
+                                                <a href="{{ $mini8['remote']['appstore']['url'] }}" title="{{ $mini8['remote']['appstore']['title'] }}" target="_blank" class="btn btn-dark">
+                                                    <span class="version-qrcode">
+                                                    <i id="player-ios-qrcode"><img src="https://qr.api.cli.im/qr?data=https%253A%252F%252Fitunes.apple.com%252Fcn%252Fapp%252Faura-remote%252Fid1296187375&level=H&transparent=false&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=1&logourl=http%3A&size=102&kid=cliim&key=4353efba14b13ae8aaff4b676d6a57cc" alt="" style="width: 102px; margin: 0px;"></i>
+                                                    </span>
                                                     <img src="/img/icon-mac.png">
                                                     <span>App Store</span>
                                                 </a>
-                                                <a href="//static.insta360.com/html/help/Player_help/Android/ch/android_player_help_ch_supportdevice.html" target="_blank" class="instruction-link">机型兼容列表（部分）</a>
+                                                {{--  <a href="//static.insta360.com/html/help/Player_help/Android/ch/android_player_help_ch_supportdevice.html" target="_blank" class="instruction-link">机型兼容列表（部分）</a>  --}}
                                                 </div>
                                             </li>
                                         </ul>

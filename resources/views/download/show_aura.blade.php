@@ -16,7 +16,7 @@
                                 
                                     <div class="block-content left">
                                 
-                                        <h2 class="text-name">Aura Work</h2>
+                                        <h2 class="text-name">AURA Work</h2>
                                         <h3 class="text-title">相机控制客户端</h3>
                                         <p class="text-desc">{{ $aura20['work']['description'] }}</p>
                                 
@@ -61,9 +61,9 @@
                                     </div>
                                 
                                     <div class="block-content left">
-                                        <h2 class="text-name">Aura Studio</h2>
-                                        <h3 class="text-title">内容拼接整理程序</h3>
-                                        <p class="text-desc"></p>
+                                        <h2 class="text-name">AURA Studio</h2>
+                                        <h3 class="text-title">素材拼接、编辑软件</h3>
+                                        <p class="text-desc">{{ $aura20['studio']['description'] }}</p>
                                 
                                         <ul class="ul-platform">
                                             <li class="list-item">
@@ -107,7 +107,7 @@
                                         </div>
                                     
                                         <div class="block-content left">
-                                            <h2 class="text-name">AuraA FIRMWARE</h2>
+                                            <h2 class="text-name">AURA FIRMWARE</h2>
                                             <h3 class="text-title">配套相机固件</h3>
                                             <p class="text-desc">{{ $aura20['firmware']['description'] }}</p>
                                             <ul class="ul-platform">
