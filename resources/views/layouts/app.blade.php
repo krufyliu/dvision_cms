@@ -20,8 +20,10 @@
         var width = screen.width;
         if (u.match(/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/)) {
           if (width < 737) {
-              if (window.location.href.match(/aura|service|lease/)) {
-                  window.location.href = window.location.origin + '/mobile' + window.location.pathname;
+              if (window.location.href.match(/aura|service|lease|support/)) {
+                  if (!window.location.href.match(/download\/auramini|download\/aura/)) {
+                    window.location.href = window.location.origin + '/mobile' + window.location.pathname;
+                  }
               } else if (window.location.pathname == "/") {
                 window.location.href = window.location.origin + '/mobile';
               } else {
