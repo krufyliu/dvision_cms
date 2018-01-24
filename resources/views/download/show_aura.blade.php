@@ -78,6 +78,7 @@
                                                     <img src="/img/icon-win.png">
                                                     <span>Win10</span>
                                                 </a>
+                                                <a href="http://v.youku.com/v_show/id_XMzIzMTUxMjQ4OA==.html?spm=a2hzp.8244740.0.0" target="_blank" class="instruction-link">软件使用教程</a>
                                                 </div>
                                             </li>
                                             <li class="list-item">
