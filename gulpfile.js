@@ -6,6 +6,7 @@ require('laravel-elixir-imagemin');
 // elixir.config.js.uglify.options.compace = false;
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
+gulp.del = require('del');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -18,6 +19,7 @@ const imagemin = require('gulp-imagemin');
  */
 
 elixir(mix => {
+    gulp.del(['public/build/rev-manifest.json']);
     mix.sass('app.scss')
         .webpack('app.js')
         .scripts([

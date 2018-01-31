@@ -7,7 +7,7 @@
                 <div class="content">
                     <img src="img/aurastudio_sec01_02.png" width="800" alt="aurastudio_sec01_02" class="aurastudio_sec01_02" draggable="false">
                     <div class="text_panel">
-                        <span class="title">快速编辑  云端精拼</span>
+                        <span class="title">快速编辑  本地精拼</span>
                         <div class="divider"></div>
                         <img src="img/aura_sec06_04.png" alt="aura_sec06_03" width="211">
                     </div>
@@ -19,7 +19,7 @@
                 <div class="content">
                     <img src="img/aurastudio_sec02_01.jpg" width="1100" alt="aurastudio_sec02_01" class="aurastudio_sec02_01" draggable="false">
                     <div class="text_panel">
-                        <span class="title">流畅剪辑<br>云端精拼的专业体验</span>
+                        <span class="title">流畅剪辑<br>本地精拼的专业体验</span>
                         <div class="divider"></div>
                         <p class="txt">AURA Studio可以协助内容创作者对一体机素材进行统一拷贝，<br>并对拷贝的素材进行简单地拼接和剪辑，剪辑好的素材同时<br>同步到量子云服务器，进行精细拼接，体验更专业更流畅的<br>专业剪辑体验。</p>
                     </div>
