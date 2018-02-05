@@ -286,6 +286,103 @@
                     }
                 }
             }
+            .section-04b {
+                height: 800px;
+                background-color: #0c0c0c;
+                border-bottom: 1px solid #1d1d1d;
+                .content {
+                    height: 800px;
+                }
+                .auramini_sec04_01 {
+                    position: absolute;
+                    left: 0px;
+                    top: 240px;
+                }
+                .text_panel {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    left: 379px;
+                    top: 80px;
+                    text-align: center;
+                    .title {
+                        color: #fff;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    p.txt {
+                        padding-top: 20px;
+                        color: #d2d1d1;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 0.005em;
+                        margin-bottom: 40px;
+                    }
+                }
+                .text_panel2 {
+                    position: absolute;
+                    left: 0px;
+                    top: 236px;
+                    // text-align: center;
+                    .title {
+                        color: #f1f1f1;
+                        font-weight: 300;
+                        letter-spacing: 0.1em;
+                        font-size: 28px;
+                    }
+                }
+                .text_panel3 {
+                    position: absolute;
+                    right: 0px;
+                    top: 236px;
+                    // text-align: center;
+                    .title {
+                        color: #f1f1f1;
+                        font-weight: 300;
+                        letter-spacing: 0.1em;
+                        font-size: 28px;
+                    }
+                }
+                .text_panel4 {
+                    position: absolute;
+                    left: 40px;
+                    top: 640px;
+                    // text-align: center;
+                    p.txt {
+                        text-align: center;
+                        color: #8c8787;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: 0.05em;
+                    }
+                }
+                .text_panel5 {
+                    position: absolute;
+                    right: 10px;
+                    top: 640px;
+                    // text-align: center;
+                    p.txt {
+                        text-align: center;
+                        color: #8c8787;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: 0.05em;
+                    }
+                }
+                .text_panel6 {
+                    position: absolute;
+                    left: 151px;
+                    bottom: 40px;
+                    p.txt {
+                        text-align: center;
+                        color: #8c8787;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: 0.05em;
+                    }
+                }
+            }
             .section-05a {
                 height: 840px;
                 background-color: #020609;

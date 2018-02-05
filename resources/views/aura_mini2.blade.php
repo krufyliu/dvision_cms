@@ -126,6 +126,33 @@
                 </div>
             </div>
         </div>
+        <div class="auramini section-04b">
+            <div class="container">
+                <div class="content">
+                    <img src="img/auramini_sec04_01.jpg" width="1194" alt="auramini_sec04_01" class="auramini_sec04_01" draggable="false">
+                    <div class="text_panel">
+                        <span class="title">基于深度学习的光流算法 </span>
+                        <p class="txt">无缝拼接的基础上，对于运动物体拼接优化更好</p>
+                    </div>
+                    <div class="text_panel2">
+                        <span class="title">DK FlowNet 2.0 <sup style="color:#5ac8fa;">[1]</sup> + Aura Dataset </span>
+                    </div>
+                    <div class="text_panel3">
+                        <span class="title">Calculation Based on Layers</span>
+                    </div>
+                    <div class="text_panel4">
+                        <p class="txt">采用准确度最高光流方案，并针对AURA mini镜头<br>方案构建数据集进行据集模型优化</p>
+                    </div>
+                    <div class="text_panel5">
+                        <p class="txt">运动物体分离进行区域光流计算，减少光流算法带来的变形副作用</p>
+                    </div>
+                    <div class="text_panel6">
+                        <p class="txt"><sup style="color:#5ac8fa;">[1]</sup> Ilg, Eddy, et al. "Flownet 2.0: Evolution of optical flow estimation with deep networks." arXiv preprint arXiv:1612.01925 (2016).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="auramini section-05">
             <div class="container">
                 <div class="content">
