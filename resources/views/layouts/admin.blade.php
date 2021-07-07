@@ -78,6 +78,12 @@
                         <li>
                             <a href="{{ url('/admin/career_jobs') }}"><i class="fa fa-newspaper-o fa-fw"></i> 职位</a>
                         </li>
+                        <li>
+                            <a href="{{ url('/admin/feedbacks') }}"><i class="fa fa-comments fa-fw"></i> 留言</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('/admin/download') }}"><i class="fa fa-download fa-fw"></i> 下载</a>
+                        </li>
                         <!-- <li>
                             <a href="#"><i class="fa fa-user fa-fw"></i> 账户</a>
                         </li>

@@ -27,9 +27,10 @@ class PostController extends Controller
         $this->validator($request)->validate();
         Post::create([
                 'title' => $request->input('title'),
-                'content' => $request->input('content'),
+                'link' => $request->input('link'),
                 'cover_image' => $request->input('cover_image'),
                 'status' => 1,
+                'content' => '',
                 'creator_id' => $request->user()->id
             ]
         );
@@ -50,7 +51,7 @@ class PostController extends Controller
     {
         $post = Post::find($id);
         $this->validator($request)->validate();
-        $post->update($request->only(['title', 'cover_image', 'content']));
+        $post->update($request->only(['title', 'cover_image', 'link']));
         return redirect()->action('Admin\PostController@index');
     }
 
@@ -65,7 +66,7 @@ class PostController extends Controller
         return Validator::make($request->all(), [
             'title' => 'required',
             'cover_image' => 'required',
-            'content' => 'required'
+            'link' => 'required'
         ]);
     }
 }

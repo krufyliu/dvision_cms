@@ -56,7 +56,7 @@
     </image>
 
     <!-- set the default view -->
-    <view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="130" fovmax="130" distortion="0.0" />
+    <view hlookat="0" vlookat="0" fovtype="DFOV" fov="130" fovmin="120" fovmax="135" distortion="0.0" />
 
     <!-- add the video sources and play the video -->
     <action name="add_video_sources">

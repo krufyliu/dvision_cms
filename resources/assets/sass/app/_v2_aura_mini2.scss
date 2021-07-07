@@ -1,0 +1,890 @@
+        .main.dkauramini2 {
+            .auramini {
+                width: 100%;
+                overflow: hidden;
+                z-index: 1;
+                position: relative;
+                .content {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+            .section-01 {
+                height: 680px;
+                background-color: #0a0a0a;
+                border-bottom: 1px solid #1d1d1d;
+                background-image: url(/img/auramini2_sec01_02.jpg);
+                background-position: center top;
+                background-size: cover;
+                .content {
+                    height: 680px;
+                }
+                .auramini2_sec01_01 {
+                    position: absolute;
+                    right: 40px;
+                    top: 80px;
+                }
+                .text_panel {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    left: 40px;
+                    top: 194px;
+                    .title {
+                        color: #11a6ec;
+                        font-weight: 400;
+                        letter-spacing: 0.04em;
+                        font-size: 54px;
+                    }
+                    p.txt {
+                        color: #f0f0f0;
+                        font-size: 30px;
+                        font-weight: 300;
+                        letter-spacing: 0.03em;
+                        margin-bottom: 20px;
+                        text-align: left;
+                    }
+                    p.txt2 {
+                        color: #f0f0f0;
+                        font-size: 16px;
+                        font-weight: 300;
+                        letter-spacing: 0.03em;
+                        margin-bottom: 20px;
+                        text-align: left;
+                    }
+                    .link {
+                        color: #9e9e9e;
+                        letter-spacing: 0.1em;
+                        border-bottom: 1px solid #3399cc;
+                        padding: 10px;
+                        text-decoration: none;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .section-02 {
+                height: 720px;
+                // background-color: #000;
+                background-image: url(/img/auramini2_sec02_01.jpg);
+                background-position: center center;
+                background-size: cover;
+                .content {
+                    height: 720px;
+                }
+                .text_panel {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    left: 40px;
+                    top: 190px;
+                    text-align: center;
+                    .title {
+                        color: #fff;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    .figs {
+                        list-style: none;
+                        font-weight: 300;
+                        color: #f0f0f0;
+                        position: relative;
+                        height: 60px;
+                        .fig {
+                            position: relative;
+                            text-align: center;
+                            width: 180px;
+                            margin-bottom: 54px;
+                            .fig_title {
+                                font-size: 26px;
+                            }
+                            .fig_value {
+                                font-weight: 300;
+                                font-size: 16px;
+                                color: #262626;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+                .text_panel2 {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    right: 40px;
+                    top: 190px;
+                    text-align: center;
+                    .title {
+                        color: #fff;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    .figs {
+                        list-style: none;
+                        font-weight: 300;
+                        color: #f0f0f0;
+                        position: relative;
+                        height: 60px;
+                        .fig {
+                            position: relative;
+                            text-align: center;
+                            width: 180px;
+                            margin-bottom: 54px;
+                            .fig_title {
+                                font-size: 26px;
+                            }
+                            .fig_value {
+                                font-weight: 300;
+                                font-size: 16px;
+                                color: #262626;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+                .text_panel3 {
+                    position: absolute;
+                    right: 40px;
+                    top: 100px;
+                    .title {
+                        color: #fff;
+                        font-weight: 500;
+                        letter-spacing: 0.04em;
+                        font-size: 54px;
+                    }
+                }
+            }
+            .section-02b {
+                height: 280px;
+                .content {
+                    height: 280px;
+                }
+                .text_panel {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    left: 57px;
+                    top: 80px;
+                    text-align: center;
+                    .title {
+                        color: #fff;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    .figs {
+                        list-style: none;
+                        font-weight: 300;
+                        color: #f0f0f0;
+                        position: relative;
+                        display: table;
+                        .fig {
+                            position: relative;
+                            text-align: center;
+                            width: 180px;
+                            float: left;
+                            .fig_title {
+                                font-size: 26px;
+                            }
+                            .fig_value {
+                                font-weight: 300;
+                                font-size: 16px;
+                                color: #262626;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .section-03 {
+                height: 780px;
+                background-color: #fff;
+                background-image: url(/img/auramini2_sec03_01.jpg);
+                background-position: center center;
+                background-size: cover;
+                .content {
+                    height: 780px;
+                }
+                .auramini2_sec03_02 {
+                    position: absolute;
+                    left: 538px;
+                    top: 340px;
+                    transition: all .2s linear;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                    cursor: pointer;
+                }
+                .text_panel {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    left: 297px;
+                    top: 80px;
+                    text-align: center;
+                    .title {
+                        color: #fff;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    p.txt {
+                        padding-top: 20px;
+                        color: #f0f0f0;
+                        font-size: 16px;
+                        font-weight: 300;
+                        letter-spacing: 0.05em;
+                        margin-bottom: 40px;
+                        line-height: 2.2em;
+                    }
+                }
+            }
+            .section-04 {
+                height: 840px;
+                background-color: #fff;
+                .content {
+                    height: 840px;
+                }
+                .auramini_sec04_01 {
+                    position: absolute;
+                    left: 0px;
+                    top: 240px;
+                }
+                .text_panel {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    left: 525px;
+                    top: 40px;
+                    text-align: center;
+                    .title {
+                        color: #000;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    p.txt {
+                        color: #39393a;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 0.005em;
+                    }
+                }
+                .text_panel2 {
+                    position: absolute;
+                    left: 161px;
+                    top: 150px;
+                    // text-align: center;
+                    .title {
+                        color: #f1f1f1;
+                        font-weight: 300;
+                        letter-spacing: 0.1em;
+                        font-size: 28px;
+                    }
+                }
+            }
+            .section-04b {
+                height: 800px;
+                background-color: #0c0c0c;
+                border-bottom: 1px solid #1d1d1d;
+                .content {
+                    height: 800px;
+                }
+                .auramini_sec04_01 {
+                    position: absolute;
+                    left: 0px;
+                    top: 240px;
+                }
+                .text_panel {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    left: 379px;
+                    top: 80px;
+                    text-align: center;
+                    .title {
+                        color: #fff;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    p.txt {
+                        padding-top: 20px;
+                        color: #d2d1d1;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 0.005em;
+                        margin-bottom: 40px;
+                    }
+                }
+                .text_panel2 {
+                    position: absolute;
+                    left: 0px;
+                    top: 236px;
+                    // text-align: center;
+                    .title {
+                        color: #f1f1f1;
+                        font-weight: 300;
+                        letter-spacing: 0.1em;
+                        font-size: 28px;
+                    }
+                }
+                .text_panel3 {
+                    position: absolute;
+                    right: 0px;
+                    top: 236px;
+                    // text-align: center;
+                    .title {
+                        color: #f1f1f1;
+                        font-weight: 300;
+                        letter-spacing: 0.1em;
+                        font-size: 28px;
+                    }
+                }
+                .text_panel4 {
+                    position: absolute;
+                    left: 40px;
+                    top: 640px;
+                    // text-align: center;
+                    p.txt {
+                        text-align: center;
+                        color: #8c8787;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: 0.05em;
+                    }
+                }
+                .text_panel5 {
+                    position: absolute;
+                    right: 10px;
+                    top: 640px;
+                    // text-align: center;
+                    p.txt {
+                        text-align: center;
+                        color: #8c8787;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: 0.05em;
+                    }
+                }
+                .text_panel6 {
+                    position: absolute;
+                    left: 151px;
+                    bottom: 40px;
+                    p.txt {
+                        text-align: center;
+                        color: #8c8787;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: 0.05em;
+                    }
+                }
+            }
+            .section-05a {
+                height: 840px;
+                background-color: #020609;
+                background-image: url(/img/auramini2_sec05_01.jpg);
+                background-position: center center;
+                background-size: cover;
+                .content {
+                    height: 840px;
+                }
+                .auramini_sec05_02 {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    z-index: 2;
+                }
+                .text_panel {
+                    z-index: 3;
+                    position: absolute;
+                    left: 349px;
+                    top: 40px;
+                    text-align: center;
+                    .title {
+                        color: #f0f0f0;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    p.txt {
+                        padding-top: 20px;
+                        color: #f0f0f0;
+                        font-size: 16px;
+                        font-weight: 300;
+                        letter-spacing: 0.05em;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            .section-05 {
+                height: 780px;
+                background-color: #020609;
+                background-image: url(/img/auramini2_sec05_02.jpg);
+                background-position: center center;
+                background-size: cover;
+                .content {
+                    height: 780px;
+                }
+                .auramini_sec05_02 {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    z-index: 2;
+                }
+                .text_panel {
+                    z-index: 3;
+                    position: absolute;
+                    left: 507px;
+                    top: 80px;
+                    text-align: center;
+                    .title {
+                        color: #f0f0f0;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    p.txt {
+                        padding-top: 20px;
+                        color: #f0f0f0;
+                        font-size: 16px;
+                        font-weight: 300;
+                        letter-spacing: 0.05em;
+                        margin-bottom: 40px;
+                    }
+                }
+                .text_panel2 {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    left: 197px;
+                    top: 180px;
+                    text-align: center;
+                    .title {
+                        color: #fff;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    .figs {
+                        list-style: none;
+                        font-weight: 300;
+                        color: #f0f0f0;
+                        position: relative;
+                        display: table;
+                        .fig {
+                            position: relative;
+                            text-align: center;
+                            width: 160px;
+                            float: left;
+                            .fig_title {
+                                font-size: 26px;
+                            }
+                            .fig_value {
+                                font-weight: 300;
+                                font-size: 16px;
+                                color: #f0f0f0;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+                .text_panel3 {
+                    z-index: 3;
+                    position: absolute;
+                    left: 218px;
+                    top: 320px;
+                    text-align: center;
+                    p.txt {
+                        color: #f0f0f0;
+                        font-size: 16px;
+                        font-weight: 300;
+                        letter-spacing: 0.05em;
+                        line-height: 2.1em;
+                    }
+                }
+            }
+            .section-06.a {
+                background-image: url(/img/auramini2_sec08_01.jpg);
+            }
+            .section-06.b {
+                background-image: url(/img/auramini2_sec08_02.jpg);
+            }
+            .section-06.c {
+                background-image: url(/img/auramini2_sec08_03.jpg);
+            }
+            .section-06 {
+                height: 820px;
+                background-position: center center;
+                background-size: cover;
+                transition: all .2s linear;
+                .content {
+                    height: 820px;
+                }
+                .auramini_sec06_01 {
+                    position: absolute;
+                    left: -123px;
+                    top: 0px;
+                }
+                .text_panel {
+                    z-index: 3;
+                    position: absolute;
+                    left: 147px;
+                    top: 260px;
+                    text-align: center;
+                    .figs {
+                        list-style: none;
+                        font-weight: 300;
+                        color: #fff;
+                        position: relative;
+                        display: table;
+                        .fig {
+                            position: relative;
+                            text-align: center;
+                            width: 300px;
+                            float: left;
+                            height: 188px;
+                            .fig_title {
+                                font-size: 26px;
+                            }
+                            .fig_value {
+                                position: absolute;
+                                bottom: 0px;
+                                left: 50%;
+                                margin-left: -25px;
+                                font-weight: 300;
+                                font-size: 16px;
+                                color: #fff;
+                                margin-top: 20px;
+                            }
+                            .blue {
+                                display: none;
+                            }
+                            .black {
+                                display: block;
+                            }
+                            cursor: pointer;
+                        }
+                        .fig.active {
+                            .fig_value {
+                                color: #11a6ec;
+                            }
+                            .blue {
+                                display: block;
+                            }
+                            .black {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .section-07 {
+                height: 1060px;
+                background-color: #1d1d1f;
+                .content {
+                    height: 1060px;
+                }
+                .auramini_sec04_01 {
+                    position: absolute;
+                    left: 0px;
+                    top: 240px;
+                }
+                .text_panel {
+                    z-index: 3;
+                    position: absolute;
+                    left: 435px;
+                    top: 80px;
+                    text-align: center;
+                    .title {
+                        color: #f0f0f0;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    p.txt {
+                        padding-top: 20px;
+                        color: #f0f0f0;
+                        font-size: 16px;
+                        font-weight: 300;
+                        letter-spacing: 0.05em;
+                        margin-bottom: 40px;
+                    }
+                }
+                .text_panel2 {
+                    position: absolute;
+                    left: 260px;
+                    top: 200px;
+                    // text-align: center;
+                    .title {
+                        color: #f1f1f1;
+                        font-weight: 300;
+                        letter-spacing: 0.1em;
+                        font-size: 28px;
+                    }
+                }
+                .text_panel3 {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    left: 210px;
+                    top: 290px;
+                    .figs {
+                        list-style: none;
+                        font-weight: 300;
+                        color: #f0f0f0;
+                        position: relative;
+                        display: table;
+                        .fig {
+                            position: relative;
+                            text-align: center;
+                            width: 270px;
+                            float: left;
+                            .fig_title {
+                                font-size: 26px;
+                            }
+                            .fig_value {
+                                font-weight: 300;
+                                font-size: 16px;
+                                color: #f0f0f0;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+                .text_panel4 {
+                    position: absolute;
+                    left: 117px;
+                    top: 380px;
+                    // text-align: center;
+                    .title {
+                        color: #f1f1f1;
+                        font-weight: 300;
+                        letter-spacing: 0.1em;
+                        font-size: 28px;
+                    }
+                }
+                .text_panel5 {
+                    position: absolute;
+                    left: 563px;
+                    top: 940px;
+                    a {
+                        color: #11a6ec;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .section-07b {
+                height: 1180px;
+                background-color: #1d1d1f;
+                .content {
+                    height: 1180px;
+                }
+                .auramini_sec04_01 {
+                    position: absolute;
+                    left: 0px;
+                    top: 240px;
+                }
+                .text_panel {
+                    z-index: 3;
+                    position: absolute;
+                    left: 435px;
+                    top: 60px;
+                    text-align: center;
+                    .title {
+                        color: #f0f0f0;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    p.txt {
+                        padding-top: 20px;
+                        color: #f0f0f0;
+                        font-size: 16px;
+                        font-weight: 300;
+                        letter-spacing: 0.05em;
+                        margin-bottom: 40px;
+                    }
+                }
+                .text_panel2 {
+                    position: absolute;
+                    left: 247px;
+                    top: 160px;
+                    // text-align: center;
+                    .title {
+                        color: #f1f1f1;
+                        font-weight: 300;
+                        letter-spacing: 0.1em;
+                        font-size: 28px;
+                    }
+                }
+                .text_panel3 {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    left: 237px;
+                    top: 210px;
+                    .figs {
+                        list-style: none;
+                        font-weight: 300;
+                        color: #f0f0f0;
+                        position: relative;
+                        display: table;
+                        .fig {
+                            position: relative;
+                            text-align: center;
+                            width: 180px;
+                            float: left;
+                            .fig_title {
+                                font-size: 26px;
+                            }
+                            .fig_value {
+                                font-weight: 300;
+                                font-size: 16px;
+                                color: #f0f0f0;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+                .text_panel4 {
+                    position: absolute;
+                    left: 117px;
+                    top: 360px;
+                    // text-align: center;
+                    .title {
+                        color: #f1f1f1;
+                        font-weight: 300;
+                        letter-spacing: 0.1em;
+                        font-size: 28px;
+                    }
+                }
+                .text_panel5 {
+                    position: absolute;
+                    left: 563px;
+                    top: 1060px;
+                    a {
+                        color: #11a6ec;
+                    }
+                }
+            }
+            .section-08 {
+                height: 2000px;
+                background-color: #fff;
+                background-position: center center;
+                background-size: cover;
+                .content {
+                    height: 2000px;
+                }
+                .auramini_sec08_01 {
+                    position: absolute;
+                    right: 100px;
+                    top: 80px;
+                }
+                .text_panel {
+                    position: absolute;
+                    left: 97px;
+                    top: 180px;
+                    text-align: left;
+                    .title {
+                        color: #464545;
+                        font-weight: 300;
+                        letter-spacing: 0em;
+                        font-size: 36px;
+                    }
+                    p.txt {
+                        padding-top: 20px;
+                        color: #333;
+                        font-size: 16px;
+                        font-weight: 300;
+                        letter-spacing: 0.005em;
+                        margin-bottom: 40px;
+                    }
+                }
+                .text_panel2 {
+                    position: absolute;
+                    left: 97px;
+                    top: 380px;
+                    text-align: left;
+                    table {
+                        // border: none;
+                        width: 1000px;
+                        color: #6b6b6b;
+                        font-weight: 300;
+                        td {
+                            padding: 0 4px;
+                            line-height: 2.533em;
+                            // border-top: 1px solid #f2f2f2;
+                        }
+                        td.right {
+                            width: 54%;
+                            color: #4D4D4D;
+                            font-size: 18px;
+                            padding: 16px 0;
+                        }
+                        td.left {
+                            width: 26%;
+                            color: #4D4D4D;
+                            font-size: 18px;
+                            padding: 16px 0;
+                        }
+                    }
+                }
+            }
+            .section-10 {
+                height: 800px;
+                background-color: #f5f5f5;
+                background-image: url(/img/aura_sec10_01.jpg);
+                background-position: center center;
+                background-size: cover;
+                .content {
+                    height: 800px;
+                }
+                .aura_sec10_01 {
+                    position: absolute;
+                    right: 0px;
+                    top: 100px;
+                }
+                .text_panel {
+                    position: absolute;
+                    // width: 230px;
+                    // height: 170px;
+                    left: 0px;
+                    top: 280px;
+                    text-align: left;
+                    .title {
+                        color: #f0f0f0;
+                        font-weight: 300;
+                        letter-spacing: 0.1em;
+                        font-size: 36px;
+                    }
+                    p.txt {
+                        padding-top: 20px;
+                        color: #f0f0f0;
+                        font-size: 16px;
+                        font-weight: 300;
+                        letter-spacing: 0.005em;
+                        margin-bottom: 40px;
+                    }
+                    .divider {
+                        height: 2px;
+                        width: 200px;
+                        margin-top: 20px;
+                        border-bottom: 2px solid #3399cc;
+                    }
+                    .link {
+                        color: #f0f0f0;
+                        letter-spacing: 0.1em;
+                        border-bottom: 1px solid #3399cc;
+                        padding: 10px;
+                        text-decoration: none;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }

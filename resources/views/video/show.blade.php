@@ -1,33 +1,37 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container margin-middle">
-    <div id="pano" style="width:100%;">
-        <noscript>
-        <table style="width:100%;height:100%;">
-        <tr style="vertical-align:middle;text-align:center;">
-            <td>
-                ERROR:<br>
-                <br>
-                Javascript not activated<br>
-                <br>
-            </td>
-        </tr>
-        </table>
-        </noscript>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <p class="h3">
-                    {{ $video->title }}
-                </p>
-                <p>
-                    {!! $video->description !!}
-                </p>
+    <div class="main videoshow">
+        <div class="vdosw section-01">
+            <div class="content">
+                <div id="pano" style="width:100%;">
+                    <noscript>
+                    <table style="width:100%;height:100%;">
+                    <tr style="vertical-align:middle;text-align:center;">
+                        <td>
+                            ERROR:<br>
+                            <br>
+                            Javascript not activated<br>
+                            <br>
+                        </td>
+                    </tr>
+                    </table>
+                    </noscript>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="h3">
+                            {{ $video->title }}
+                        </p>
+                        <p>
+                            {!! $video->description !!}
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 </div>
 @endsection
 
@@ -35,6 +39,10 @@
     <script type="text/javascript" src="/vrplay/krpano.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
+        $('#pano').height($('#pano').width()*(6.8/16));
+        window.onresize = function() {
+            $('#pano').height($('#pano').width()*(6.8/16));
+        }
         var u = navigator.userAgent;
         var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
         var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
@@ -47,10 +55,8 @@
         if(isiOS){
             settings["soundurl"] = "{{ $video->url['audio'] }}";
         }
-        if (!document.domain ||
-              (navigator.userAgent.indexOf("Android") >= 0 && navigator.userAgent.indexOf("QQ") >= 0) ||
-              (navigator.userAgent.indexOf("Mac OS X") >= 0 && navigator.userAgent.indexOf("OS 10_0_2") >= 0)) {
-            $("#pano").append('<div class="text-center"><br><br><h2>提示</h2><p>为保证给您带来良好的视觉体验</p><p>请使用PC观看VR视频</p><p>推荐使用 <strong>Chrome</strong> 浏览器</p></div>');
+        if (!document.domain || isAndroid || isiOS) {
+            $("#pano").append('<div class="text-center" style="padding-top:85px; transform:scale(3.1);"><h2>提示</h2><p>为保证给您带来良好的视觉体验</p><p>建议在PC使用 <strong>Chrome</strong> 浏览器观看VR视频</p><p><a href="{{ $video->url['mobile'] }}" class="btn btn-primary" role="button" rel="nofollow">点击播放</a></p></div>');
         } else {
             embedpano({
                 vars: settings,
@@ -67,64 +73,6 @@
                     depth: false,
                     stencil: false
                 }
-            });
-        }
-        function selecthtml5usage() {
-            if (navigator.userAgent.indexOf("Android") >= 0 && navigator.userAgent.indexOf("QQ") >= 0) {
-                return "auto+css3d"
-            } else {
-                return "prefer";
-            }
-        }
-        // console.log(isiOS);
-        if (isAndroid || isiOS) {
-            var winWidth = $(window).width();
-            var winHeight = $(window).height();
-            if (winWidth > winHeight) {
-                $("#krpanoSWFObject").css({
-                    'position':'fixed',
-                    'top':0,
-                    'bottom':0,
-                    'left':0,
-                    'right':0
-                })
-            } else {
-                $("#krpanoSWFObject").css({
-                    'position':'relative',
-                    'top':'auto',
-                    'bottom':'auto',
-                    'left':'auto',
-                    'right':'auto'
-                })
-            }
-            $(window).resize(function () {
-                var winWidth = $(window).width();
-                var winHeight = $(window).height();
-                if (winWidth > winHeight) {
-                    $("#krpanoSWFObject").css({
-                        'position':'fixed',
-                        'top':0,
-                        'bottom':0,
-                        'left':0,
-                        'right':0
-                    })
-                } else {
-                    $("#krpanoSWFObject").css({
-                        'position':'relative',
-                        'top':'auto',
-                        'bottom':'auto',
-                        'left':'auto',
-                        'right':'auto'
-                    })
-                }
-            })
-        }
-
-        if(document.documentElement.clientWidth > 768) {
-            $('.video > .video-item ').each(function() {
-                $(this).hoverdir({
-                    hoverDelay: 75
-                });
             });
         }
     });

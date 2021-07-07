@@ -1,0 +1,107 @@
+.main.contact {
+    .cont {
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        .content {
+            position: relative;
+            width: 100%;
+        }
+    }
+    .section-01 {
+        height: 900px;
+        background-color: #f2f2f2;
+        background-image: url(/img/contact_sec01_01.jpg);
+        background-position: center center;
+        background-size: cover;
+        .content {
+            height: 900px;
+        }
+        .text_panel {
+            position: absolute;
+            left: 186px;
+            top: 140px;
+            text-align: center;
+            .title {
+                color: #fff;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                font-size: 64px;
+            }
+            p.txt {
+                color: #f0f0f0;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.1em;
+                margin-bottom: 20px;
+            }
+        }
+        .text_panel2 {
+            position: absolute;
+            left: 297px;
+            top: 280px;
+            .figs {
+                padding-top: 20px;
+                list-style: none;
+                color: #f0f0f0;
+                font-weight: 300;
+                position: relative;
+                height: 80px;
+                .fig {
+                    position: relative;
+                    text-align: left;
+                    width: 600px;
+                    height: 480px;
+                    float: left;
+                    background-color: rgba(252, 252, 252, 0.1);
+                    padding: 20px 30px;
+                    .input-bace {
+                        input {
+                            height: 40px;
+                        }
+                        input,
+                        textarea {
+                            background-color: rgba(0, 0, 0, 0.3);
+                            border: 0px;
+                            border-radius: 0px;
+                            resize: none;
+                            color: #fff;
+                            letter-spacing: 0.01em;
+                        }
+                        input::-ms-input-placeholder,
+                        textarea::-ms-input-placeholder {
+                            text-align: center;
+                        }
+                        input::-webkit-input-placeholder,
+                        textarea::-webkit-input-placeholder {
+                            text-align: center;
+                        }
+                        button.btn {
+                            border-radius: 0px;
+                            height: 40px;
+                        }
+                        .gt_holder.gt_float {
+                            margin: 0px auto;
+                        }
+                    }
+                }
+                .fig.right {
+                    margin-left: 60px;
+                }
+            }
+        }
+        .text_panel3 {
+            position: absolute;
+            left: 401px;
+            bottom: 20px;
+            text-align: center;
+            p.txt {
+                color: #f0f0f0;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.005em;
+            }
+        }
+    }
+}

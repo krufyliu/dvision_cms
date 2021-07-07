@@ -16,3 +16,11 @@ use Illuminate\Http\Request;
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
+
+
+Route::post('/verification', 'StaticController@verification');
+
+
+Route::get('/getvideos', 'StaticController@getvideos');
+Route::get('/getlives', 'StaticController@getlives');
+Route::get('/getdownload', 'StaticController@getdownload');

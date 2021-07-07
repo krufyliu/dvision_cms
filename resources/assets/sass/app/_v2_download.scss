@@ -1,0 +1,359 @@
+    .main.download {
+        .dld {
+            width: 100%;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+            .content {
+                margin-top: 74px;
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin-bottom: 114px;
+            }
+        }
+        .section-01 {
+            min-height: 70vh;
+            position: relative;
+            display: block;
+            .header-nav {
+                position: relative;
+                margin-bottom: 48px;
+                font-size: 20px;
+                color: #2D2D2D;
+                font-weight: 700;
+            }
+            .wrapper {
+                font-size: 0;
+                margin: 0 -12px;
+                .link {
+                    position: relative;
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 380px;
+                    height: 380px;
+                    border: 1px solid #F2F2F2;
+                    border-radius: 4px;
+                    background-color: #fff;
+                    margin: 12px;
+                    transition: box-shadow .25s, -webkit-transform .25s;
+                    transition: box-shadow .25s, transform .25s;
+                    transition: box-shadow .25s, transform .25s, -webkit-transform .25s;
+                    &:hover {
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, .05);
+                        -webkit-transform: translateY(-4px);
+                        transform: translateY(-4px);
+                    }
+                    .helper {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        .logo {
+                            height: 16px;
+                            margin-bottom: 20px;
+                        }
+                        .tip {
+                            text-align: center;
+                            font-size: 12px;
+                            color: #737373;
+                            padding-bottom: 40px;
+                        }
+                        .product {
+                            width: 235px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .main.download_show {
+        background-color: #eeeeee;
+        .contentbox {
+            max-width: 1024px;
+            padding: 0 24px;
+            margin: 0 auto;
+        }
+        .mini {
+            width: 100%;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+            // margin-top: 114px;
+            .content {
+                margin-top: 48px;
+                position: relative;
+                width: 100%;
+                height: auto;
+                // margin-bottom: 114px;
+            }
+        }
+        .section-01 {
+            min-height: 70vh;
+            position: relative;
+            display: block;
+            .left {
+                float: left;
+            }
+            .header-nav {
+                .breadcrumb {
+                    padding: 0px;
+                }
+                li {
+                    position: relative;
+                    margin-bottom: 48px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    a {
+                        color: #3aafd6;
+                    }
+                }
+            }
+            .wrap {
+                width: 100%;
+                margin: 0 auto;
+                .container-block {
+                    background: #FFF;
+                    margin-bottom: 48px;
+                    // border-radius: 4px;
+                    .section-box {
+                        padding: 0 48px;
+                        display: table;
+                        .block-icon {
+                            padding: 48px 18px 0 0;
+                            width: 118px;
+                            img {
+                                width: 100%
+                            }
+                        }
+                        .block-content {
+                            padding-left: 28px;
+                            padding-top: 58px;
+                            .img-title {
+                                height: 18px
+                            }
+                            .text-name {
+                                margin: 0;
+                                padding: 0;
+                                color: #9f9e9e;
+                                font-size: 24px;
+                                font-weight: 300
+                            }
+                            .text-title {
+                                margin: 0;
+                                padding: 0;
+                                color: #000;
+                                font-size: 24px;
+                                font-weight: 400;
+                                margin-top: 5px;
+                            }
+                            .text-desc {
+                                padding: 18px 0 0;
+                                margin: 0;
+                                color: #7c7b7b;
+                                font-size: 14px;
+                                max-width: 576px
+                            }
+                            .ul-platform {
+                                padding: 48px 0;
+                                margin: 0;
+                                list-style: none;
+                                display: table;
+                                // align-items: flex-end;
+                                .list-item {
+                                    float: left;
+                                    width: 255px;
+                                    border-right: solid #f8f8f8 1px;
+                                    padding-left: 32px;
+                                    &:first-child {
+                                        width: 222px;
+                                        padding-left: 0
+                                    }
+                                    &:last-child {
+                                        border-right: none
+                                    }
+                                    .detail {
+                                        position: relative;
+                                        h4 {
+                                            color: #5d5b5b;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            margin: 0;
+                                            padding: 6px 0 0
+                                        }
+                                        .version-note,
+                                        .version-update-time {
+                                            color: #8f8f8f;
+                                            margin: 0;
+                                            font-size: 14px;
+                                            line-height: 24px
+                                        }
+                                        p.version-update-time {
+                                            margin: 0;
+                                            overflow: hidden;
+                                            white-space: nowrap
+                                        }
+                                        .version-note {
+                                            margin: 0;
+                                            width: 200px;
+                                            min-height: 192px;
+                                            overflow: hidden;
+                                            ul {
+                                                list-style: none;
+                                                padding-left: 0;
+                                                li {
+                                                    font-size: 14px;
+                                                    line-height: 20px;
+                                                    padding: 6px 0 0
+                                                }
+                                            }
+                                            p {
+                                                margin: 0;
+                                                padding: 0
+                                            }
+                                        }
+                                        .read-less,
+                                        .read-more {
+                                            padding: 0;
+                                            text-decoration: none;
+                                            color: #8f8f8f;
+                                            font-size: 14px;
+                                            line-height: 24px;
+                                            &:before {
+                                                content: '...';
+                                                display: block
+                                            }
+                                        }
+                                        .read-more {
+                                            position: absolute;
+                                            width: 100%;
+                                            background-color: #fff;
+                                            -webkit-transform: translateY(-48px);
+                                            transform: translateY(-48px)
+                                        }
+                                        .read-less:before {
+                                            content: '...';
+                                            display: none
+                                        }
+                                        .serial-block {
+                                            display: none;
+                                            width: 164px;
+                                            height: 40px;
+                                            margin-right: 8px;
+                                            margin-bottom: 8px;
+                                            position: relative;
+                                            input.serial-number {
+                                                float: left;
+                                                width: 132px;
+                                                height: 40px;
+                                                padding: 8px 12px;
+                                                text-align: center;
+                                                font-size: 12px!important;
+                                                color: silver;
+                                                background-color: #fafafa;
+                                                border: 1px solid #d9d9d9;
+                                                border-radius: 2px;
+                                                transition: .25s ease-in-out
+                                            }
+                                        }
+                                        .btn {
+                                            height: 38px;
+                                            position: relative;
+                                            padding: 6px 15px 6px 13px;
+                                            font-size: 14px!important;
+                                            font-weight: 700;
+                                            border-radius: 4px;
+                                            margin: 8px 8px 0 0;
+                                            &:hover {
+                                                &>.version-qrcode {
+                                                    display: block;
+                                                }
+                                            }
+                                            .version-qrcode {
+                                                display: none;
+                                                position: absolute;
+                                                bottom: 41px;
+                                                left: -5px;
+                                                width: 142px;
+                                                height: 142px;
+                                                padding: 12px 20px;
+                                                background-image: url(/img/download_qrcode-bg.png);
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                i {
+                                                    display: block;
+                                                    width: 102px;
+                                                    height: 102px;
+                                                }
+                                            }
+                                            img {
+                                                width: 17px;
+                                                margin-right: 8px;
+                                                margin-bottom: 4px;
+                                            }
+                                            span {
+                                                line-height: 24px
+                                            }
+                                        }
+                                        .btn.btn-green {
+                                            color: #FFF;
+                                            background: #7fc651;
+                                        }
+                                        .btn.btn-dark {
+                                            color: #fff;
+                                            background: #2D2D2D;
+                                        }
+                                        .btn.btn-blue {
+                                            color: #FFF;
+                                            background: #37b4f3;
+                                        }
+                                        .btn.btn-yellow {
+                                            color: #2D2D2D;
+                                            background: #ffd200;
+                                            border: 1px solid #ffd200;
+                                        }
+                                        .btn.btn-darkblue {
+                                            color: #FFF;
+                                            background: #587cd5;
+                                        }
+                                        .btn.btn-green:hover {
+                                            background-color: #76b44e;
+                                        }
+                                        .btn.btn-dark:hover {
+                                            background-color: #000
+                                        }
+                                        .instruction-link {
+                                            margin-top: 20px;
+                                            display: block;
+                                            position: relative;
+                                            font-size: 12px;
+                                            color: #2d2d2d;
+                                        }
+                                        .link-install-how,
+                                        .link-upgrade {
+                                            margin-top: 8px;
+                                            display: block;
+                                            font-size: 12px;
+                                            line-height: 24px;
+                                            color: red;
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

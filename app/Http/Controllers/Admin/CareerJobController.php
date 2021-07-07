@@ -29,6 +29,7 @@ class CareerJobController extends Controller
                 'title' => $request->input('title'),
                 'description' => $request->input('description'),
                 'location' => $request->input('location'),
+                'cover_image' => $request->input('cover_image'),
                 'department' => $request->input('department'),
                 'status' => 1,
                 'creator_id' => $request->user()->id
@@ -53,7 +54,7 @@ class CareerJobController extends Controller
     {
         $career_job = CareerJob::find($id);
         $this->validator($request)->validate();
-        $career_job->update($request->only(['title', 'description', 'location', 'department']));
+        $career_job->update($request->only(['title', 'description', 'cover_image', 'location', 'department']));
         return redirect()->action('Admin\CareerJobController@index');
     }
 
@@ -69,7 +70,8 @@ class CareerJobController extends Controller
             "title" => "required",
             "description" => "required",
             "location" => "required",
-            "department" => "required"
+            "department" => "required",
+            "cover_image" => "required"
         ]);
     }
 }
